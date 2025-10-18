@@ -30,7 +30,7 @@ export default function ProcessSection() {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {phases.map((phase, i) => (
+          {phases.map((phase) => (
             <div
               key={phase.title}
               className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow"

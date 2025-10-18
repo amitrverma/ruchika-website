@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -24,7 +23,7 @@ export default function Hero() {
           href="/contact"
           className="btn text-md"
         >
-         LET'S CONNECT OVER A CALL
+         LET&apos;S CONNECT OVER A CALL
         </a>
         </div>
 
