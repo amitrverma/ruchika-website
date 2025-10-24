@@ -8,16 +8,27 @@ import FitSection from "./components/Home/FitSection";
 import FinalCTASection from "./components/Home/FinalCTASection";
 
 export default function HomePage() {
+  const Divider = () => (
+    <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent my-16 md:my-24" />
+  );
+
   return (
     <main className="flex flex-col">
       <Hero />
+      <Divider />
       <PositioningSection />
+      <Divider />
       <AboutIntroSection />
+      <Divider />
       <BeliefSection />
+      <Divider />
       <ServicesOverviewSection />
+      <Divider />
       <TestimonialSection />
+      <Divider />
       <FitSection />
-      <FinalCTASection  />
+      <Divider />
+      <FinalCTASection />
     </main>
   );
 }

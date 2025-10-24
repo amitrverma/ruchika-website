@@ -1,91 +1,129 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function AboutIntroSection() {
   return (
-    <section className="bg-brandAccent py-20">
-      <div className="container grid md:grid-cols-[3fr_2fr] items-center gap-12">
-        {/* Text column */}
-        <div className="space-y-5">
-          <h2 className="text-3xl md:text-4xl font-serif text-brandDark leading-snug">
-            Hi, I’m Ruchika — your strategic partner for brand messaging
-            and copywriting services
+    <section className="relative bg-gradient-to-br from-brand-accent/10 via-white to-brand-accent/20 py-24 overflow-hidden">
+      <div className="container grid md:grid-cols-[3fr_2fr] items-center gap-12 max-w-6xl relative z-10">
+
+        {/* === TEXT COLUMN === */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+          className="space-y-5 text-brand-dark"
+        >
+          <h2 className="text-3xl md:text-5xl font-serif leading-snug mb-4">
+            Hi, I’m <span className="text-brand-accent relative">
+              Ruchika
+              <motion.span
+                layoutId="underline"
+                className="absolute -bottom-1 left-0 w-full h-[2px] bg-brand-accent"
+              />
+            </span> — your strategic partner for brand messaging & copywriting
           </h2>
 
-          <p className="text-brandDark italic text-lg">
+          <p className="text-lg italic">
             When there are many amazing copywriters out there, why choose me?{" "}
-            <span className="text-brandDark text-base">(And I’m only comparing myself to other HUMANS)</span>
+            <span className="block md:inline text-sm text-brand-dark/70 font-normal">
+              (And I’m only comparing myself to other HUMANS)
+            </span>
           </p>
 
-          <h3 className="font-semibold text-brandDark">
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            viewport={{ once: true }}
+            className="font-semibold text-brand-dark mt-6"
+          >
             With my marketing background and copywriting skills, I’ve got your back.
             Here’s what I bring:
-          </h3>
+          </motion.h3>
 
-          <p className="text-brandDark leading-relaxed">
-            After earning my master’s in marketing, I spent 9 years in marketing,
-            writing, and managing content across websites, emails, and social media
-            in the corporate world.
-          </p>
+          <div className="space-y-4 text-brand-dark/90 leading-relaxed">
+            <p>
+              After earning my master’s in marketing, I spent 9 years managing content across
+              websites, emails, and social channels in the corporate world.
+            </p>
 
-          <p className="text-brandDark leading-relaxed">
-            I understand how a marketing funnel works and how to integrate SEO keywords
-            strategically. I structure copy for the best user experience and apply
-            marketing psychology to craft messages that engage and drive results.
-          </p>
+            <p>
+              I understand how a marketing funnel works and how to integrate SEO keywords
+              strategically. I structure copy for the best user experience and apply marketing
+              psychology to craft messages that engage and drive results.
+            </p>
 
-          <p className="text-brandDark leading-relaxed">
-            <strong className="font-semibold text-brandDark">
-              I’m a Copyhackers certified copywriter.
-            </strong>{" "}
-            While marketing and copywriting overlap in research, analysis, and strategy,
-            copywriters have a special skill — they craft messages that resonate deeply
-            and inspire action.
-          </p>
+            <p>
+              <strong className="font-semibold text-brand-dark">
+                I’m a Copyhackers certified copywriter.
+              </strong>{" "}
+              Marketing and copywriting share research, analysis, and strategy —
+              but copywriting adds emotional precision: crafting messages that
+              connect and inspire action.
+            </p>
 
-          <p className="text-brandDark leading-relaxed">
-            So I decided to learn the art of copywriting and brand messaging & tone of voice
-            from top experts in this field.
-          </p>
-        </div>
+            <p>
+              So I learned brand messaging and tone of voice from the top experts in this field
+              — and now help service-based businesses do the same.
+            </p>
+          </div>
+        </motion.div>
 
-        {/* Image column */}
-        <div className="flex flex-col items-center justify-center gap-6">
-          <div className="relative w-[280px] h-[280px] rounded-2xl overflow-hidden border border-gray-200 shadow-md">
+        {/* === IMAGE COLUMN === */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="flex flex-col items-center justify-center gap-6"
+        >
+          {/* Profile image */}
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            className="relative w-[280px] h-[280px] rounded-2xl overflow-hidden border border-brand-accent/20 shadow-lg shadow-brand-accent/10"
+          >
             <Image
-              src="/assets/ruchika-profile.png" // replace with your actual image path
+              src="/assets/ruchika-profile.png"
               alt="Ruchika Ratna - Copywriter and Brand Messaging Specialist"
               fill
               className="object-cover"
               priority
             />
-          </div>
+          </motion.div>
 
           {/* Certification badges */}
-          <div className="flex flex-wrap justify-center gap-4 mt-4">
-            <Image
-              src="/assets/badge-webcopy.png"
-              alt="Copyhackers Web Copy Certificate"
-              width={100}
-              height={100}
-              className="object-contain"
-            />
-            <Image
-              src="/assets/badge-emails.png"
-              alt="Copyhackers Email Copy Certificate"
-              width={100}
-              height={100}
-              className="object-contain"
-            />
-            <Image
-              src="/assets/badge-brandvoice.png"
-              alt="Conversion Copywriting Brand Voice Certificate"
-              width={120}
-              height={120}
-              className="object-contain"
-            />
+          <div className="flex flex-wrap justify-center gap-5 mt-4">
+            {[
+              { src: "/assets/badge-webcopy.png", alt: "Web Copy Certificate", delay: 0 },
+              { src: "/assets/badge-emails.png", alt: "Email Copy Certificate", delay: 0.15 },
+              { src: "/assets/badge-brandvoice.png", alt: "Brand Voice Certificate", delay: 0.3 },
+            ].map((badge, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: badge.delay, duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <Image
+                  src={badge.src}
+                  alt={badge.alt}
+                  width={100}
+                  height={100}
+                  className="object-contain drop-shadow-sm hover:drop-shadow-md transition-all"
+                />
+              </motion.div>
+            ))}
           </div>
-        </div>
+        </motion.div>
       </div>
+
+      {/* === BACKGROUND MOTIF === */}
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-accent/10 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
+      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-brand-accent/20 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3" />
     </section>
   );
 }

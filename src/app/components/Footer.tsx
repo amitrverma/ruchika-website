@@ -3,91 +3,79 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-brandAccent border-t border-gray-100 mt-20">
-      <div className="container py-16 grid md:grid-cols-2 gap-10">
-        {/* Newsletter Section */}
+    <footer className="relative overflow-hidden bg-gradient-to-br from-brandAccent/20 via-white to-brandAccent/10 border-t border-brandDark/10 mt-24">
+      {/* Decorative motifs */}
+      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-brandAccent/10 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3" />
+      <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-brandAccent/15 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
+
+      {/* Main grid */}
+      <div className="relative z-10 container py-20 grid md:grid-cols-[2fr_1fr] gap-16">
+        {/* Newsletter */}
         <div>
-          <h3 className="text-xl font-serif text-brandDark mb-4">
+          <h3 className="text-2xl font-serif text-brandDark mb-5">
             May I enter your inbox?
           </h3>
-
-          <p className="text-brandDark mb-6 max-w-md leading-relaxed">
-            Asking your permission to have a clear, reflective conversation —
-            like a chai or coffee-fuelled chat that leaves you feeling understood.
-            About messages, copy, and building a business.
+          <p className="text-brandDark/90 mb-4 leading-relaxed max-w-md">
+            Thoughtful, chai-fueled reflections on messaging, copy, and building
+            a business that supports your life — not the other way around.
           </p>
-
-          <p className="text-brandDark mb-6">
-            Also, you can email me back any time.
+          <p className="text-brandDark/80 mb-6 italic">
+            You can reply to any email — it’s a real conversation.
           </p>
 
           <form className="max-w-sm space-y-3">
             <input
               type="text"
               placeholder="Name"
-              className="w-full border border-brandDark bg-white rounded-md px-3 py-2 focus:outline-none focus:border-brandDark"
+              className="w-full border border-brandDark/30 bg-white/90 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandAccent/50"
             />
             <input
               type="email"
-              placeholder="Email ID"
-              className="w-full border border-brandDark bg-white rounded-md px-3 py-2 focus:outline-none focus:border-brandDark"
+              placeholder="Email address"
+              className="w-full border border-brandDark/30 bg-white/90 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandAccent/50"
             />
             <button
               type="submit"
-              className="w-full md:w-auto bg-[#c0654f] text-white font-medium tracking-wide px-8 py-2 rounded-md hover:bg-brandDark transition-colors"
+              className="w-full md:w-auto bg-brandAccent text-brandDark font-medium tracking-wide px-8 py-2 rounded-full hover:bg-brandDark hover:text-white transition-all duration-300 shadow-sm"
             >
               SUBSCRIBE
             </button>
           </form>
         </div>
 
-        {/* Quick Links + Social */}
+        {/* Links + Social */}
         <div className="flex flex-col justify-between">
           <div>
-            <h4 className="font-semibold text-brandDark mb-3">Quick Links</h4>
-            <ul className="space-y-1">
-              <li>
-                <Link href="/" className="hover:text-brandAccent font-medium">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="hover:text-brandAccent font-medium"
-                >
-                  About
-                </Link>
-              </li>
-                            <li>
-                <Link
-                  href="/services"
-                  className="hover:text-brandAccent font-medium"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="hover:text-brandAccent font-medium"
-                >
-                  Contact
-                </Link>
-              </li>
+            <h4 className="font-semibold text-brandDark mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-brandDark/90">
+              {[
+                ["Home", "/"],
+                ["About", "/about"],
+                ["Services", "/services"],
+                ["Contact", "/contact"],
+              ].map(([label, href]) => (
+                <li key={label}>
+                  <Link
+                    href={href}
+                    className="hover:text-brandAccent transition-colors font-medium"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div className="mt-10 md:mt-0">
             <h4 className="font-semibold text-brandDark mb-3">
-              Let’s connect on social and be biz friends beyond this page
+              Let’s connect beyond this page
             </h4>
-            <div className="flex gap-4 text-2xl">
+            <div className="flex gap-5 text-2xl">
               <Link
                 href="https://www.linkedin.com/in/ruchikaratna/"
                 target="_blank"
                 aria-label="LinkedIn"
-                className="text-[#0077b5] hover:opacity-80"
+                className="text-[#0077b5] hover:opacity-80 transition-opacity"
               >
                 <FaLinkedin />
               </Link>
@@ -95,7 +83,7 @@ export default function Footer() {
                 href="https://www.instagram.com/"
                 target="_blank"
                 aria-label="Instagram"
-                className="text-[#E4405F] hover:opacity-80"
+                className="text-[#E4405F] hover:opacity-80 transition-opacity"
               >
                 <FaInstagram />
               </Link>
@@ -104,9 +92,12 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Copyright */}
-      <div className="border-t border-brandDark text-center text-sm text-brandDark py-4">
-        © {new Date().getFullYear()} Ruchika Copy Solutions · Made with clarity & chai ☕
+      {/* Divider + Copyright */}
+      <div className="relative border-t border-brandDark/10 py-6 text-center text-sm text-brandDark/80">
+        <p>
+          © {new Date().getFullYear()} <strong>Ruchika Copy Solutions</strong> ·
+          Made with clarity & chai ☕
+        </p>
       </div>
     </footer>
   );
