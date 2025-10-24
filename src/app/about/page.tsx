@@ -28,7 +28,7 @@ export default function AboutPage() {
 
           <div className="relative w-[260px] h-[260px] mx-auto rounded-xl overflow-hidden shadow-md">
             <Image
-              src="/ruchika-about.jpg"
+              src="/assets/ruchika-about.png"
               alt="Ruchika Ratna - Copywriter"
               fill
               className="object-cover"

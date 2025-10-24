@@ -30,7 +30,7 @@ export default function Hero() {
         {/* Right — Image (≈40%) */}
         <div className="relative w-full h-[280px] md:h-[420px]">
           <Image
-            src="/hero-image.jpg"  // replace with your real image
+            src="/assets/hero-image.png"  // replace with your real image
             alt="Ruchika Copy Solutions - strategic copywriting"
             fill
             className="object-cover rounded-2xl shadow-md"

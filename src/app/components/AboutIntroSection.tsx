@@ -52,7 +52,7 @@ export default function AboutIntroSection() {
         <div className="flex flex-col items-center justify-center gap-6">
           <div className="relative w-[280px] h-[280px] rounded-2xl overflow-hidden border border-gray-200 shadow-md">
             <Image
-              src="/ruchika-profile.jpg" // replace with your actual image path
+              src="/assets/ruchika-profile.png" // replace with your actual image path
               alt="Ruchika Ratna - Copywriter and Brand Messaging Specialist"
               fill
               className="object-cover"
@@ -63,21 +63,21 @@ export default function AboutIntroSection() {
           {/* Certification badges */}
           <div className="flex flex-wrap justify-center gap-4 mt-4">
             <Image
-              src="/badge-webcopy.png"
+              src="/assets/badge-webcopy.png"
               alt="Copyhackers Web Copy Certificate"
               width={100}
               height={100}
               className="object-contain"
             />
             <Image
-              src="/badge-emails.png"
+              src="/assets/badge-emails.png"
               alt="Copyhackers Email Copy Certificate"
               width={100}
               height={100}
               className="object-contain"
             />
             <Image
-              src="/badge-brandvoice.png"
+              src="/assets/badge-brandvoice.png"
               alt="Conversion Copywriting Brand Voice Certificate"
               width={120}
               height={120}
