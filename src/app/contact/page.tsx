@@ -1,4 +1,4 @@
-import ContactForm from "../components/ContactForm";
+import ContactForm from "../components/Contact/ContactForm";
 
 export const metadata = {
   title: "Contact | Ruchika Copy Solutions",
@@ -10,9 +10,9 @@ export default function ContactPage() {
   return (
     <main>
       {/* Top intro block */}
-      <section className="bg-[#f9f7f2] py-16 text-center">
+      <section className="bg-brandAccent py-16 text-center">
         <div className="container max-w-3xl">
-          <p className="text-sm uppercase tracking-wide text-gray-500 mb-2">
+          <p className="text-sm uppercase tracking-wide text-brandDark mb-2">
             Ready to start your copywriting project? Let’s connect.
           </p>
           <h1 className="text-2xl md:text-3xl font-serif text-brandDark font-semibold">
@@ -23,7 +23,7 @@ export default function ContactPage() {
 
       {/* Contact info */}
       <section className="bg-white py-12">
-        <div className="container max-w-3xl text-left space-y-4 text-gray-700 leading-relaxed">
+        <div className="container max-w-3xl text-left space-y-4 text-brandDark leading-relaxed">
           <p>
             Contact me via email or fill out the form below, and I’ll get back to you within
             24–48 hours (Monday–Friday).
@@ -43,9 +43,9 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form (client-side) */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-brandAccent py-16">
         <div className="container max-w-2xl">
-          <h2 className="text-center text-xl font-medium mb-8 text-brandDark">
+          <h2 className="text-center text-xl font-medium mb-8 text-brandAccent">
             Contact Form
           </h2>
           <ContactForm />

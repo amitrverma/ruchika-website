@@ -1,11 +1,11 @@
-import Hero from "./components/Hero";
-import PositioningSection from "./components/PositioningSection";
-import AboutIntroSection from "./components/AboutIntroSection";
-import BeliefSection from "./components/BeliefSection";
-import ServicesOverviewSection from "./components/ServicesOverviewSection";
-import TestimonialSection from "./components/TestimonialSection";
-import FitSection from "./components/FitSection";
-import FinalCTASection from "./components/FinalCTASection";
+import Hero from "./components/Home/Hero";
+import PositioningSection from "./components/Home/PositioningSection";
+import AboutIntroSection from "./components/Home/AboutIntroSection";
+import BeliefSection from "./components/Home/BeliefSection";
+import ServicesOverviewSection from "./components/Home/ServicesOverviewSection";
+import TestimonialSection from "./components/Home/TestimonialSection";
+import FitSection from "./components/Home/FitSection";
+import FinalCTASection from "./components/Home/FinalCTASection";
 
 export default function HomePage() {
   return (

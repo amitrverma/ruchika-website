@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function StyleGuidePage() {
   const colors = [
-    { name: "brandLight", hex: "#5eb1bf" },
+    { name: "brandPrimary", hex: "#5eb1bf" },
     { name: "brandAccent", hex: "#ed254e" },
     { name: "brandDark", hex: "#042a2b" },
   ];
@@ -17,12 +17,12 @@ export default function StyleGuidePage() {
         <h1 className="text-5xl font-playfair mb-2 text-brandDark">
           Style Guide
         </h1>
-        <p className="text-gray-600">Visual reference for your design system.</p>
+        <p className="text-brandDark">Visual reference for your design system.</p>
       </section>
 
       {/* Colors */}
       <section>
-        <h2 className="text-2xl font-playfair mb-6 text-gray-900">Brand Colors</h2>
+        <h2 className="text-2xl font-playfair mb-6 text-brandDark">Brand Colors</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {colors.map((c) => (
             <div key={c.name} className="flex flex-col items-center">
@@ -31,7 +31,7 @@ export default function StyleGuidePage() {
                 style={{ backgroundColor: c.hex }}
               />
               <p className="mt-2 font-medium">{c.name}</p>
-              <p className="text-sm text-gray-500">{c.hex}</p>
+              <p className="text-sm text-brandDark">{c.hex}</p>
             </div>
           ))}
         </div>
@@ -39,14 +39,14 @@ export default function StyleGuidePage() {
 
       {/* Typography */}
       <section>
-        <h2 className="text-2xl font-playfair mb-6 text-gray-900">Typography</h2>
+        <h2 className="text-2xl font-playfair mb-6 text-brandDark">Typography</h2>
         <div className="space-y-6">
           <div>
-            <h1 className="text-5xl font-playfair text-gray-900">Playfair & Display</h1>
-            <p className="text-gray-500">Used for headings</p>
+            <h1 className="text-5xl font-playfair text-brandDark">Playfair & Display</h1>
+            <p className="text-brandDark">Used for headings</p>
           </div>
           <div>
-            <p className="text-lg font-inter text-gray-700">
+            <p className="text-lg font-inter text-brandDark">
               Inter — clean and modern for body text.
             </p>
           </div>
@@ -55,7 +55,7 @@ export default function StyleGuidePage() {
 
       {/* Buttons */}
       <section>
-        <h2 className="text-2xl font-playfair mb-6 text-gray-900">Buttons</h2>
+        <h2 className="text-2xl font-playfair mb-6 text-brandDark">Buttons</h2>
         <div className="space-x-4">
           <button className="btn">Primary Button</button>
           <button className="btn-outline">Outline Button</button>
@@ -64,12 +64,12 @@ export default function StyleGuidePage() {
 
       {/* Spacing Scale */}
       <section>
-        <h2 className="text-2xl font-playfair mb-6 text-gray-900">Spacing Scale</h2>
+        <h2 className="text-2xl font-playfair mb-6 text-brandDark">Spacing Scale</h2>
         <div className="flex flex-wrap gap-4">
           {[1, 2, 4, 6, 8, 10, 12].map((s) => (
             <div key={s} className="flex flex-col items-center">
               <div className="bg-gray-200 rounded" style={{ width: `${s * 4}px`, height: "16px" }}></div>
-              <p className="text-sm text-gray-500 mt-1">p-{s}</p>
+              <p className="text-sm text-brandDark mt-1">p-{s}</p>
             </div>
           ))}
         </div>

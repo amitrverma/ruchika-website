@@ -1,6 +1,6 @@
 export default function BeliefSection() {
   return (
-    <section className="bg-[#c0654f] py-20 text-center text-white">
+    <section className="bg-brandPrimary py-20 text-center text-white">
       <div className="container max-w-3xl">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">
           I believe good copywriting is good marketing.

@@ -3,7 +3,7 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#f9f7f2] border-t border-gray-100 mt-20">
+    <footer className="bg-brandAccent border-t border-gray-100 mt-20">
       <div className="container py-16 grid md:grid-cols-2 gap-10">
         {/* Newsletter Section */}
         <div>
@@ -11,13 +11,13 @@ export default function Footer() {
             May I enter your inbox?
           </h3>
 
-          <p className="text-gray-700 mb-6 max-w-md leading-relaxed">
+          <p className="text-brandDark mb-6 max-w-md leading-relaxed">
             Asking your permission to have a clear, reflective conversation —
             like a chai or coffee-fuelled chat that leaves you feeling understood.
             About messages, copy, and building a business.
           </p>
 
-          <p className="text-gray-600 mb-6">
+          <p className="text-brandDark mb-6">
             Also, you can email me back any time.
           </p>
 
@@ -25,12 +25,12 @@ export default function Footer() {
             <input
               type="text"
               placeholder="Name"
-              className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-brandAccent"
+              className="w-full border border-brandDark bg-white rounded-md px-3 py-2 focus:outline-none focus:border-brandDark"
             />
             <input
               type="email"
               placeholder="Email ID"
-              className="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-brandAccent"
+              className="w-full border border-brandDark bg-white rounded-md px-3 py-2 focus:outline-none focus:border-brandDark"
             />
             <button
               type="submit"
@@ -44,7 +44,7 @@ export default function Footer() {
         {/* Quick Links + Social */}
         <div className="flex flex-col justify-between">
           <div>
-            <h4 className="font-semibold text-gray-800 mb-3">Quick Links</h4>
+            <h4 className="font-semibold text-brandDark mb-3">Quick Links</h4>
             <ul className="space-y-1">
               <li>
                 <Link href="/" className="hover:text-brandAccent font-medium">
@@ -79,7 +79,7 @@ export default function Footer() {
           </div>
 
           <div className="mt-10 md:mt-0">
-            <h4 className="font-semibold text-gray-800 mb-3">
+            <h4 className="font-semibold text-brandDark mb-3">
               Let’s connect on social and be biz friends beyond this page
             </h4>
             <div className="flex gap-4 text-2xl">
@@ -105,7 +105,7 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-gray-200 text-center text-sm text-gray-500 py-4">
+      <div className="border-t border-brandDark text-center text-sm text-brandDark py-4">
         © {new Date().getFullYear()} Ruchika Copy Solutions · Made with clarity & chai ☕
       </div>
     </footer>

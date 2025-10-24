@@ -22,7 +22,7 @@ export default function Accordion({ items }: { items: Item[] }) {
               <span className="ml-4">{isOpen ? "–" : "+"}</span>
             </button>
             {isOpen && (
-              <div className="px-5 pb-5 text-gray-600">
+              <div className="px-5 pb-5 text-brandDark">
                 <p className="leading-relaxed">{item.answer}</p>
               </div>
             )}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutIntroSection() {
   return (
-    <section className="bg-[#f9f7f2] py-20">
+    <section className="bg-brandAccent py-20">
       <div className="container grid md:grid-cols-[3fr_2fr] items-center gap-12">
         {/* Text column */}
         <div className="space-y-5">
@@ -11,29 +11,29 @@ export default function AboutIntroSection() {
             and copywriting services
           </h2>
 
-          <p className="text-gray-700 italic text-lg">
+          <p className="text-brandDark italic text-lg">
             When there are many amazing copywriters out there, why choose me?{" "}
-            <span className="text-gray-500 text-base">(And I’m only comparing myself to other HUMANS)</span>
+            <span className="text-brandDark text-base">(And I’m only comparing myself to other HUMANS)</span>
           </p>
 
-          <h3 className="font-semibold text-gray-900">
+          <h3 className="font-semibold text-brandDark">
             With my marketing background and copywriting skills, I’ve got your back.
             Here’s what I bring:
           </h3>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-brandDark leading-relaxed">
             After earning my master’s in marketing, I spent 9 years in marketing,
             writing, and managing content across websites, emails, and social media
             in the corporate world.
           </p>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-brandDark leading-relaxed">
             I understand how a marketing funnel works and how to integrate SEO keywords
             strategically. I structure copy for the best user experience and apply
             marketing psychology to craft messages that engage and drive results.
           </p>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-brandDark leading-relaxed">
             <strong className="font-semibold text-brandDark">
               I’m a Copyhackers certified copywriter.
             </strong>{" "}
@@ -42,7 +42,7 @@ export default function AboutIntroSection() {
             and inspire action.
           </p>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-brandDark leading-relaxed">
             So I decided to learn the art of copywriting and brand messaging & tone of voice
             from top experts in this field.
           </p>

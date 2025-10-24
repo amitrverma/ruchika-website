@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ValuesSection from "../components/about/ValuesSection";
 
 export const metadata = {
   title: "About | Ruchika Copy Solutions",
@@ -10,13 +11,13 @@ export default function AboutPage() {
   return (
     <main>
       {/* Section 1 — Hero / Intro */}
-      <section className="bg-[#f9f7f2] py-20">
+      <section className="bg-brandAccent py-20">
         <div className="container grid md:grid-cols-[2fr_1fr] gap-10 items-center max-w-6xl">
           <div>
             <h2 className="text-3xl font-serif text-brandDark mb-4">
               Hi, I am Ruchika
             </h2>
-            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+            <p className="text-lg text-brandDark mb-4 leading-relaxed">
               I help scaling service providers with their{" "}
               <span className="font-semibold text-brandAccent">
                 brand messaging and conversion-focused copy
@@ -40,7 +41,7 @@ export default function AboutPage() {
 
       {/* Section 2 — Expert Positioning */}
       <section className="bg-white py-20">
-        <div className="container max-w-3xl space-y-5 text-gray-700 leading-relaxed">
+        <div className="container max-w-3xl space-y-5 text-brandDark leading-relaxed">
           <h3 className="text-xl font-serif text-brandDark">
             As you scale, it’s time to position yourself as the expert you’re becoming.
           </h3>
@@ -64,8 +65,8 @@ export default function AboutPage() {
       </section>
 
       {/* Section 3 — Founding Story */}
-      <section className="bg-[#f9f7f2] py-20">
-        <div className="container max-w-3xl space-y-5 text-gray-700 leading-relaxed">
+      <section className="bg-brandAccent py-20">
+        <div className="container max-w-3xl space-y-5 text-brandDark leading-relaxed">
           <h3 className="text-xl font-serif text-brandDark">
             Ruchika Copy Solutions believes in building a business that supports your life,
             not the other way around.
@@ -97,7 +98,7 @@ export default function AboutPage() {
 
       {/* Section 4 — Approach */}
       <section className="bg-white py-20">
-        <div className="container max-w-3xl space-y-5 text-gray-700 leading-relaxed">
+        <div className="container max-w-3xl space-y-5 text-brandDark leading-relaxed">
           <h3 className="text-xl font-serif text-brandDark">
             And here’s what happened next…
           </h3>
@@ -143,57 +144,7 @@ export default function AboutPage() {
       </section>
 
       {/* Section 6 — Values */}
-      <section className="bg-[#f9f7f2] py-20">
-        <div className="container max-w-3xl text-gray-700 leading-relaxed">
-          <h3 className="text-xl font-serif text-brandDark mb-8">
-            The values that shape how I show up & guide our work together
-          </h3>
-
-          <div className="space-y-6">
-            <div>
-              <h4 className="font-semibold text-brandDark">Flexibility</h4>
-              <p>
-                I run my business in a way that supports my life — not the other way around.
-                Hustling isn’t my forte. And I don’t expect you to be “always available” either.
-                I respect your timing and mine. The work we create flows better that way.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-brandDark">Effort</h4>
-              <p>
-                I put 100% effort and intention into every project I take on. Quality means
-                clarity, communication, and commitment to what we’re building together.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-brandDark">Collaboration</h4>
-              <p>
-                I believe good work gets better when we do it together. I don’t work in
-                isolation. I ask for input and share ideas — because your insights matter as
-                much as the strategy and the words.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-brandDark">Empathy</h4>
-              <p>
-                Your audience comes first. Always. I approach copy as a human talking to another
-                human, not a brand shouting at a crowd.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-brandDark">Integrity</h4>
-              <p>
-                I walk my talk. I’m still learning, still growing — but always aligned with
-                honesty, respect, and doing what feels true to both our brands.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ValuesSection />
 
       {/* Section 7 — Closing CTA */}
       <section className="bg-white py-20 text-center">
@@ -201,7 +152,7 @@ export default function AboutPage() {
           <h3 className="text-xl md:text-2xl font-serif text-brandDark mb-3">
             I’m so glad you’re still here!
           </h3>
-          <p className="text-gray-700 mb-8">
+          <p className="text-brandDark mb-8">
             Maybe it’s a sign from the universe :) <br />
             In that case, here’s how we can work together next.
           </p>

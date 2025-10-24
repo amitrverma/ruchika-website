@@ -22,7 +22,7 @@ export default function ContactForm() {
       className="space-y-5 bg-white p-8 rounded-xl border border-gray-200 shadow-sm"
     >
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+        <label htmlFor="name" className="block text-sm font-medium text-brandDark mb-1">
           Name
         </label>
         <input
@@ -37,7 +37,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+        <label htmlFor="email" className="block text-sm font-medium text-brandDark mb-1">
           Email
         </label>
         <input
@@ -52,7 +52,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+        <label htmlFor="message" className="block text-sm font-medium text-brandDark mb-1">
           Message
         </label>
         <textarea

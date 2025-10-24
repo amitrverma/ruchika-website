@@ -30,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <body className="font-sans text-gray-800">
+      <body className="font-sans text-brandPrimary">
         {/* ✅ Wrapper inside body */}
         <div className="flex flex-col min-h-screen">
           <Navbar />

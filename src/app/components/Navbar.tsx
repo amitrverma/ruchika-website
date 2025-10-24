@@ -28,7 +28,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8 text-md font-medium text-gray-700">
+        <nav className="hidden md:flex items-center gap-8 text-md font-medium text-brandDark">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="hover:text-brandAccent transition-colors">
               {link.label}
@@ -47,7 +47,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block px-6 py-4 border-b border-gray-50 hover:bg-gray-50"
+                className="block px-6 py-4 border-b border-gray-50 hover:bg-brandAccent"
                 onClick={() => setOpen(false)}
               >
                 {link.label}

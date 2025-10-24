@@ -1,23 +1,31 @@
 @import "tailwindcss";
 
+/* Define custom theme values */
+@theme {
+  --color-brandPrimary: #D77A61;
+  --color-brandAccent: #FCDE9C;
+  --color-brandDark: #638475;
+  --color-brandSecondary: #B2ABF2;
+  
+  --font-family-sans: var(--font-inter), Inter, sans-serif;
+  --font-family-serif: var(--font-playfair), "Playfair Display", serif;
+}
+
 /* === Base Layer === */
 @layer base {
   html {
     @apply scroll-smooth;
   }
-
   body {
-    @apply text-gray-800 bg-white antialiased;
+    @apply text-brandDark bg-white antialiased;
     font-family: var(--font-inter), Inter, sans-serif;
   }
-
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-playfair), "Playfair Display", serif;
-    @apply text-gray-900;
+    @apply text-brandDark;
   }
-
   a {
-    @apply text-gray-800 hover:text-gray-600 transition-colors duration-200;
+    @apply text-brandDark hover:text-brandDark transition-colors duration-200;
   }
 }
 
@@ -26,11 +34,9 @@
   .btn {
     @apply inline-block px-5 py-2.5 font-medium rounded-lg text-white bg-gray-800 hover:bg-gray-700 transition-colors;
   }
-
   .btn-outline {
-    @apply inline-block px-5 py-2.5 font-medium rounded-lg border border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white transition-colors;
+    @apply inline-block px-5 py-2.5 font-medium rounded-lg border border-gray-800 text-brandDark hover:bg-gray-800 hover:text-white transition-colors;
   }
-
   .container {
     @apply max-w-6xl mx-auto px-6;
   }
