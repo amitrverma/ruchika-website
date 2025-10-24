@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ValuesSection from "../components/about/ValuesSection";
+import ValuesSection from "../components/About/ValuesSection"
 
 export const metadata = {
   title: "About | Ruchika Copy Solutions",
