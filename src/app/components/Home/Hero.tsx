@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="bg-brandAccent py-14 md:py-20">
+    <section className="relative bg-brandPrimary py-30">
       <div className="container mx-auto grid md:grid-cols-[3fr_2fr] items-center gap-10 md:gap-16">
         {/* Left — Text */}
-        <div className="text-center md:text-left space-y-5">
+        <div className="text-center md:text-left space-y-5 text-brandSecondary">
           <p>Messaging-first copywriter for websites, emails & sales pages.</p>
           <h1 className="text-4xl md:text-6xl font-serif text-brandDark leading-tight">
            Strategic copywriting <br/>for service providers on the cusp of growth who want more visibility, authority, and right-fit clients 
@@ -22,7 +22,7 @@ export default function Hero() {
      
         <a
           href="/contact"
-          className="btn text-md text-white bg-brandPrimary hover:bg-brandDark px-6 py-3 rounded-full font-semibold transition-colors block w-max mx-auto md:mx-0"
+          className="btn text-md text-white bg-brandSecondary hover:bg-brandDark px-6 py-3 rounded-full font-semibold transition-colors block w-max mx-auto md:mx-0"
         >
          LET&apos;S CONNECT OVER A CALL
         </a>

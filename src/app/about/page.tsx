@@ -13,28 +13,31 @@ export const metadata = {
 };
 
 export default function AboutPage() {
+    const Divider = () => (
+    <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
+  );
   return (
     <main>
       {/* Section 1 — Hero / Intro */}
       <AboutIntroShort />
-
+      <Divider />
       {/* Section 2 — Expert Positioning */}
       <ScalingPhilosophySection />
-
+    <Divider />
       {/* Section 3 — Founding Story */}
       <OriginStorySection />
-
+    <Divider />
       {/* Section 4 — Approach */}
       <NextChapterSection />
-
+<Divider />
       {/* Section 5 — Purpose */}
       <PurposeSection />
-
+<Divider />
       {/* Section 6 — Values */}
       <ValuesSection />
-
+<div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
       {/* Section 7 — Closing CTA */}
-      <section className="bg-white py-20 text-center">
+      <section className="bg-brandSecondary/50 py-20 text-center">
         <div className="container max-w-2xl">
           <h3 className="text-xl md:text-2xl font-serif text-brandDark mb-3">
             I’m so glad you’re still here!

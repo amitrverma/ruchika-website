@@ -1,33 +1,29 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { Plus, Minus } from "lucide-react";
 
 export default function FAQSection() {
   const faqs = [
     {
-      q: "How much do your services cost?",
-      a: "Every project is unique, so pricing depends on scope, deliverables, and timeline. After our discovery call, I’ll send you a detailed proposal with transparent pricing tailored to your goals.",
+      q: "Can you recommend a designer who’s as good at design as you are at messaging?",
+      a: "Yes, I collaborate with a few trusted designers who share the same approach to thoughtful, conversion-friendly design. I’ll be happy to connect you once we start working together.",
     },
     {
-      q: "How long does a typical project take?",
-      a: "It depends on scope, but a Brand Messaging project typically takes 3–4 weeks; Website Copy projects take 4–6 weeks depending on complexity and revisions.",
+      q: "What about SEO? Do you do that?",
+      a: "Yes — I write SEO-friendly copy that’s optimized for humans first and search engines second. If you need deep keyword research or technical SEO, I can coordinate with your SEO specialist.",
     },
     {
-      q: "Do you work with clients outside India?",
-      a: "Yes! I work with clients globally via email and Zoom. Time zones are never an issue — clarity and communication make collaboration smooth.",
+      q: "Who do you work with?",
+      a: "Mostly service-based business owners, creative professionals, and founders who want clarity and connection in their brand voice — not hype or fluff.",
     },
     {
-      q: "Do you offer payment plans?",
-      a: "Yes, payment is split 50% upfront and 50% on completion. Larger retainers or long-term projects can have structured milestone payments.",
+      q: "What’s the timeline? How soon can we start?",
+      a: "Most projects are booked 2–3 weeks in advance. Once confirmed, timelines typically range from 3–6 weeks depending on the scope.",
     },
     {
-      q: "Which service should I start with?",
-      a: "If you’re unsure, start with Brand Messaging. It sets the foundation for every other copy asset — website, email, or sales page.",
-    },
-    {
-      q: "What if I need revisions?",
-      a: "All projects include up to two rounds of revisions to ensure your copy feels right. My goal is always to make sure the message feels authentically yours.",
+      q: "What’s the process for website copywriting services?",
+      a: "It starts with a discovery call → strategy questionnaire → messaging foundations → drafts and revisions → final delivery. Each step is clear and collaborative.",
     },
   ];
 
@@ -38,44 +34,36 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-white py-20">
-      <div className="container max-w-3xl text-brand-dark leading-relaxed">
-        <h2 className="text-2xl md:text-3xl font-serif text-center mb-12">
-          Like to know a little more before you say hi? I get it.
+    <section className="relative bg-brandPrimary py-30">
+      <div className="container max-w-3xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-serif text-center mb-12 text-brandDark">
+          Like to know a little more before you say hi?
           <br />
-          <span className="text-base font-normal">
+          <span className="text-base font-normal text-gray-600">
             I’ve answered your FAQs below ↓
           </span>
         </h2>
 
-        <div className="divide-y divide-gray-200 border border-gray-100 rounded-2xl shadow-sm bg-gray-50/50">
+        <div className="divide-y divide-brandSecondary">
           {faqs.map((item, i) => (
-            <div
-              key={i}
-              className="px-6 py-5 cursor-pointer hover:bg-gray-100/70 transition-colors"
-              onClick={() => toggle(i)}
-            >
+            <div key={i} className="py-5 cursor-pointer select-none" onClick={() => toggle(i)}>
               <div className="flex justify-between items-center">
-                <h4 className="font-medium text-brand-dark text-base md:text-lg">
+                <h4 className="font-medium text-brandDark text-base md:text-lg">
                   {item.q}
                 </h4>
-                <ChevronDown
-                  className={`w-5 h-5 text-brand-accent transition-transform duration-300 ${
-                    openIndex === i ? "rotate-180" : ""
-                  }`}
-                />
+                <span className="text-brandSecondary text-xl">
+                  {openIndex === i ? <Minus strokeWidth={2} /> : <Plus strokeWidth={2} />}
+                </span>
               </div>
 
               <div
-                className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${
-                  openIndex === i ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+                className={`transition-all duration-300 overflow-hidden ${
+                  openIndex === i ? "max-h-40 mt-3 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="overflow-hidden">
-                  <p className="mt-3 text-gray-700 text-sm md:text-base">
-                    {item.a}
-                  </p>
-                </div>
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                  {item.a}
+                </p>
               </div>
             </div>
           ))}

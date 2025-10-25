@@ -9,7 +9,7 @@ import FinalCTASection from "./components/Home/FinalCTASection";
 
 export default function HomePage() {
   const Divider = () => (
-    <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent my-16 md:my-24" />
+    <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
   );
 
   return (
@@ -29,6 +29,7 @@ export default function HomePage() {
       <FitSection />
       <Divider />
       <FinalCTASection />
+      <Divider />
     </main>
   );
 }

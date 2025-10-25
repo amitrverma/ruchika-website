@@ -15,42 +15,47 @@ export const metadata = {
 };
 
 export default function ServicesPage() {
+      const Divider = () => (
+    <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
+  );
   return (
     <main>
       {/* ============================= */}
       {/*  HERO SECTION */}
       {/* ============================= */}
       <ServicesHero />
-
+      <Divider />
       {/* ============================= */}
       {/*  CLIENT READINESS SECTION */}
       {/* ============================= */}
       <ClientReadinessSection />
-
-      {/* ============================= */}
-      {/*  TESTIMONIAL SECTION */}
-      {/* ============================= */}
-      <TestimonialSection />
-
+      <Divider />
       {/* ============================= */}
       {/*  SERVICES OVERVIEW */}
       {/* ============================= */}
       <ServicesOverview />
-
+      <Divider />
+      {/* ============================= */}
+      {/*  TESTIMONIAL SECTION */}
+      {/* ============================= */}
+      <TestimonialSection />
+      <Divider />
+      
       {/* ============================= */}
       {/*  PROCESS SECTION */}
       {/* ============================= */}
       <ProcessSection />
-
+      <Divider />
       {/* ============================= */}
       {/*  GUARANTEE SECTION */}
       {/* ============================= */}
       <GuaranteeSection />
-
+      <Divider />
       {/* ============================= */}
       {/*  FAQ SECTION */}
       {/* ============================= */}
       <FAQSection />
+      <Divider />
     </main>
   );
 }

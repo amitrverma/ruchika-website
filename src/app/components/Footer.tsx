@@ -3,10 +3,10 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-br from-brandAccent/20 via-white to-brandAccent/10 border-t border-brandDark/10 mt-24">
+    <footer className="relative overflow-hidden bg-gradient-to-br from-brandPrimary/20 via-white to-brandPrimary/10 border-t border-brandDark/10">
       {/* Decorative motifs */}
-      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-brandAccent/10 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3" />
-      <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-brandAccent/15 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
+      <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-brandPrimary/10 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3" />
+      <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-brandPrimary/15 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
 
       {/* Main grid */}
       <div className="relative z-10 container py-20 grid md:grid-cols-[2fr_1fr] gap-16">
@@ -27,16 +27,16 @@ export default function Footer() {
             <input
               type="text"
               placeholder="Name"
-              className="w-full border border-brandDark/30 bg-white/90 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandAccent/50"
+              className="w-full border border-brandDark/30 bg-white/90 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandSecondary/50"
             />
             <input
               type="email"
               placeholder="Email address"
-              className="w-full border border-brandDark/30 bg-white/90 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandAccent/50"
+              className="w-full border border-brandDark/30 bg-white/90 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-brandSecondary/50"
             />
             <button
               type="submit"
-              className="w-full md:w-auto bg-brandAccent text-brandDark font-medium tracking-wide px-8 py-2 rounded-full hover:bg-brandDark hover:text-white transition-all duration-300 shadow-sm"
+              className="w-full md:w-auto bg-brandSecondary text-white font-medium tracking-wide px-8 py-2 rounded-full hover:bg-brandDark hover:text-white transition-all duration-300 shadow-sm"
             >
               SUBSCRIBE
             </button>
@@ -57,7 +57,7 @@ export default function Footer() {
                 <li key={label}>
                   <Link
                     href={href}
-                    className="hover:text-brandAccent transition-colors font-medium"
+                    className="hover:text-brandSecondary transition-colors font-medium"
                   >
                     {label}
                   </Link>
@@ -93,6 +93,7 @@ export default function Footer() {
       </div>
 
       {/* Divider + Copyright */}
+       <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
       <div className="relative border-t border-brandDark/10 py-6 text-center text-sm text-brandDark/80">
         <p>
           © {new Date().getFullYear()} <strong>Ruchika Copy Solutions</strong> ·

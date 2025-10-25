@@ -25,16 +25,7 @@ export default function ProcessSection() {
   ];
 
   return (
-    <section className="bg-brand-accent/10 py-20 relative overflow-hidden">
-      {/* Decorative circular arches */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="relative w-[600px] h-[600px] md:w-[800px] md:h-[800px]">
-          <div className="absolute inset-0 rounded-full border-2 border-brand-accent/10"></div>
-          <div className="absolute inset-[40px] rounded-full border-2 border-brand-accent/20"></div>
-          <div className="absolute inset-[80px] rounded-full border-2 border-brand-accent/30"></div>
-        </div>
-      </div>
-
+    <section className="relative bg-brandPrimary py-30">
       <div className="container relative z-10 max-w-5xl text-brand-dark">
         <h2 className="text-2xl md:text-3xl font-serif text-center mb-14">
           This is how I approach all my copywriting projects
@@ -70,7 +61,7 @@ export default function ProcessSection() {
 
           {/* Center circle */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-40 h-40 rounded-full bg-brand-accent text-brand-dark flex items-center justify-center text-center font-medium shadow-lg">
+            <div className="w-40 h-40 rounded-full bg-white text-brandSecondary flex items-center justify-center text-center font-medium shadow-lg border border-brandSecondary">
               Collaborative <br /> Process
             </div>
           </div>
@@ -85,14 +76,14 @@ export default function ProcessSection() {
             >
               <div className="flex items-center gap-3 mb-3">
                 {p.icon}
-                <h4 className="font-semibold text-brand-dark text-base">{p.title}</h4>
+                <h4 className="font-semibold text-brandDark text-base">{p.title}</h4>
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">{p.desc}</p>
             </div>
           ))}
         </div>
 
-        <p className="mt-16 text-center font-medium text-brand-dark">
+        <p className="mt-16 text-center font-medium text-brandDark">
           I don’t just write copy — I partner with you to create words that work hard for your
           business.
         </p>

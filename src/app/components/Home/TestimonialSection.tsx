@@ -52,14 +52,14 @@ export default function TestimonialSection() {
 
   return (
     <section className="relative bg-white py-24 overflow-hidden">
-      <div className="container max-w-5xl">
+      <div className="container max-w-5xl text-brandSecondary">
         <motion.div
           key={index}
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.6 }}
-          className="bg-brand-accent/10 rounded-3xl shadow-md p-10 md:p-14 grid md:grid-cols-[1fr_2fr] items-center gap-10 md:gap-16"
+          className="bg-white/10 rounded-3xl shadow-md p-10 md:p-14 grid md:grid-cols-[1fr_2fr] items-center gap-10 md:gap-16"
         >
           {/* Image */}
           <div className="relative w-[180px] h-[180px] mx-auto md:mx-0">
@@ -67,12 +67,12 @@ export default function TestimonialSection() {
               src={current.image}
               alt={current.name}
               fill
-              className="object-cover rounded-full border-[6px] border-white shadow-lg ring-4 ring-brand-accent/30"
+              className="object-cover rounded-full border-[6px] border-white shadow-lg ring-4 ring-brandSecondary/30"
             />
           </div>
 
           {/* Testimonial text */}
-          <div className="text-brand-dark">
+          <div className="text-brandDark">
             <div className="relative mb-6">
               <Quote className="absolute -top-10 -left-4 w-12 h-12 text-brand-accent/30" />
               <p className="text-xl md:text-2xl font-serif italic leading-snug relative z-10">
@@ -80,11 +80,11 @@ export default function TestimonialSection() {
               </p>
             </div>
 
-            <p className="text-brand-dark/90 leading-relaxed mb-4">{current.body}</p>
+            <p className="text-brandDark/90 leading-relaxed mb-4">{current.body}</p>
 
-            <div className="border-t border-brand-accent/20 pt-4">
-              <p className="font-semibold text-brand-dark text-lg">{current.name}</p>
-              <p className="text-sm text-brand-dark/70">{current.title}</p>
+            <div className="border-t border-brandSecondary/20 pt-4">
+              <p className="font-semibold text-brandDark text-lg">{current.name}</p>
+              <p className="text-sm text-brandDark/70">{current.title}</p>
             </div>
           </div>
         </motion.div>
@@ -93,25 +93,25 @@ export default function TestimonialSection() {
         <div className="flex justify-center items-center gap-6 mt-10">
           <button
             onClick={prevSlide}
-            className="p-2 rounded-full border border-brand-accent/30 hover:bg-brand-accent/20 transition-all"
+            className="p-2 rounded-full border border-brandSecondary/30 hover:bg-brandSecondary/20 transition-all"
           >
-            <ChevronLeft className="w-5 h-5 text-brand-dark" />
+            <ChevronLeft className="w-5 h-5 text-brandSecondary" />
           </button>
           <div className="flex gap-2">
             {testimonials.map((_, i) => (
               <span
                 key={i}
                 className={`w-2.5 h-2.5 rounded-full ${
-                  i === index ? "bg-brand-accent" : "bg-gray-300"
+                  i === index ? "bg-brandSecondary" : "bg-gray-300"
                 }`}
               />
             ))}
           </div>
           <button
             onClick={nextSlide}
-            className="p-2 rounded-full border border-brand-accent/30 hover:bg-brand-accent/20 transition-all"
+            className="p-2 rounded-full border border-brandSecondary/30 hover:bg-brandSecondary/20 transition-all"
           >
-            <ChevronRight className="w-5 h-5 text-brand-dark" />
+            <ChevronRight className="w-5 h-5 text-brandSecondary" />
           </button>
         </div>
       </div>

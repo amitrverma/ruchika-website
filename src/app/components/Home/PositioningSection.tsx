@@ -7,24 +7,24 @@ import { ArrowRight, Rocket, Mail, Globe, Sparkles } from "lucide-react";
 export default function PositioningSection() {
   const points = [
     {
-      icon: <Globe className="w-5 h-5 text-brand-dark" />,
+      icon: <Globe className="w-8 h-8 text-brandSecondary" />,
       text: "You want a website that aligns with your expert-level positioning and rates.",
     },
     {
-      icon: <Mail className="w-5 h-5 text-brand-dark" />,
+      icon: <Mail className="w-8 h-8 text-brandSecondary" />,
       text: "You want to get intentional with your email marketing strategy.",
     },
     {
-      icon: <Sparkles className="w-5 h-5 text-brand-dark" />,
+      icon: <Sparkles className="w-8 h-8 text-brandSecondary" />,
       text: "You want to build consistency through emails — a space that’s yours, not the algorithm’s.",
     },
     {
-      icon: <Rocket className="w-5 h-5 text-brand-dark" />,
+      icon: <Rocket className="w-8 h-8 text-brandSecondary" />,
       text: (
         <>
           You’re selling a program, course, or digital product — and you need copy that helps your audience
           see your offer as the natural next step{" "}
-          <span className="block text-sm text-brand-dark/70">
+          <span className="block text-sm text-brandSecondary/70">
             (without resorting to pressure or gimmicks)
           </span>
         </>
@@ -39,20 +39,20 @@ export default function PositioningSection() {
 
       <div className="container relative z-10 max-w-6xl grid md:grid-cols-2 gap-16 items-center">
         {/* === Left: Copy block === */}
-        <div className="space-y-6 text-brand-dark">
-          <p className="text-sm uppercase tracking-wide text-brand-dark/70">
+        <div className="space-y-6 text-brandDark">
+          <p className="text-sm uppercase tracking-wide text-brandDark/70">
             You’re probably looking for a professional copywriter because…
           </p>
 
           <h2 className="text-3xl md:text-5xl font-serif leading-tight">
             It’s time to move from{" "}
-            <span className="bg-brand-dark text-brandAccent px-2 py-1 rounded-sm">
+            <span className=" text-brandSecondary px-2 py-1 rounded-sm">
               order-taker
             </span>{" "}
             to{" "}
             <Link
               href="#"
-              className="inline-block text-brand-accent font-semibold hover:underline decoration-brand-accent/70"
+              className="inline-block text-brandSecondary font-semibold hover:underline decoration-brand-accent/70"
             >
               boss business owner
             </Link>
@@ -70,7 +70,7 @@ export default function PositioningSection() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-brand-accent text-brand-dark font-medium rounded-md hover:bg-brand-dark hover:text-white transition-all shadow-sm"
+              className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-brandSecondary text-white font-medium rounded-md hover:bg-brandDark hover:text-white transition-all shadow-sm"
             >
               Let’s Talk Messaging
               <ArrowRight className="w-4 h-4" />
@@ -89,10 +89,10 @@ export default function PositioningSection() {
           {points.map((p, i) => (
             <li
               key={i}
-              className="flex items-start gap-3 bg-brand-accent/10 hover:bg-brand-accent/20 transition-colors p-5 rounded-lg shadow-sm"
+              className="flex items-start gap-3 bg-brandPrimary/10 hover:bg-brand-accent/20 transition-colors p-5 rounded-lg shadow-sm"
             >
               <div className="flex-shrink-0 mt-1">{p.icon}</div>
-              <p className="text-brand-dark leading-relaxed">{p.text}</p>
+              <p className="text-brandDark leading-relaxed">{p.text}</p>
             </li>
           ))}
         </motion.ul>

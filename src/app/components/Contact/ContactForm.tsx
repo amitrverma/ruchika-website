@@ -49,7 +49,7 @@ export default function ContactForm() {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full border border-brandDark/20 rounded-md px-4 py-2.5 text-brandDark bg-white focus:outline-none focus:ring-2 focus:ring-brandAccent/50 focus:border-transparent transition-all"
+            className="w-full border border-brandDark/20 rounded-md px-4 py-2.5 text-brandDark bg-white focus:outline-none focus:ring-2 focus:ring-brandPrimary/50 focus:border-transparent transition-all"
           />
         </div>
 
@@ -67,7 +67,7 @@ export default function ContactForm() {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full border border-brandDark/20 rounded-md px-4 py-2.5 text-brandDark bg-white focus:outline-none focus:ring-2 focus:ring-brandAccent/50 focus:border-transparent transition-all"
+            className="w-full border border-brandDark/20 rounded-md px-4 py-2.5 text-brandDark bg-white focus:outline-none focus:ring-2 focus:ring-brandPrimary/50 focus:border-transparent transition-all"
           />
         </div>
 
@@ -85,7 +85,7 @@ export default function ContactForm() {
             required
             value={formData.message}
             onChange={handleChange}
-            className="w-full border border-brandDark/20 rounded-md px-4 py-2.5 text-brandDark bg-white focus:outline-none focus:ring-2 focus:ring-brandAccent/50 focus:border-transparent resize-none transition-all"
+            className="w-full border border-brandDark/20 rounded-md px-4 py-2.5 text-brandDark bg-white focus:outline-none focus:ring-2 focus:ring-brandPrimary/50 focus:border-transparent resize-none transition-all"
           />
         </div>
       </div>
@@ -93,7 +93,7 @@ export default function ContactForm() {
       {/* Submit Button */}
       <button
         type="submit"
-        className="group w-full flex items-center justify-center gap-2 bg-brandAccent text-brandDark font-medium tracking-wide px-6 py-3 rounded-full hover:bg-brandDark hover:text-white transition-all duration-300"
+        className="group w-full flex items-center justify-center gap-2 bg-brandSecondary text-white font-medium tracking-wide px-6 py-3 rounded-full hover:bg-brandDark hover:text-white transition-all duration-300"
       >
         <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
         SEND MESSAGE
@@ -101,7 +101,7 @@ export default function ContactForm() {
 
       {/* Status Messages */}
       {status === "success" && (
-        <p className="text-brandDark/80 bg-brandAccent/10 border border-brandAccent/20 rounded-md px-4 py-3 text-center font-medium mt-4 animate-fade-in">
+        <p className="text-brandDark/80 bg-brandPrimary/10 border border-brandPrimary/20 rounded-md px-4 py-3 text-center font-medium mt-4 animate-fade-in">
           Thanks for reaching out! I’ll get back to you soon. ☕
         </p>
       )}

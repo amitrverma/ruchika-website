@@ -13,17 +13,9 @@ export default function FitSection() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-brand-accent/10 py-24">
-      {/* Soft decorative circles */}
-      <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <div className="relative w-[700px] h-[700px] md:w-[900px] md:h-[900px]">
-          <div className="absolute inset-0 rounded-full border-2 border-brand-accent/10"></div>
-          <div className="absolute inset-[60px] rounded-full border-2 border-brand-accent/20"></div>
-          <div className="absolute inset-[120px] rounded-full border-2 border-brand-accent/30"></div>
-        </div>
-      </div>
+    <section className="bg-brandPrimary py-14 md:py-20">
 
-      <div className="container relative z-10 max-w-4xl text-brand-dark">
+      <div className="container relative z-10 max-w-4xl text-brandSecondary">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +37,7 @@ export default function FitSection() {
               className="flex items-start gap-4 bg-white/80 backdrop-blur-md border border-brand-accent/20 rounded-xl shadow-sm hover:shadow-md transition-all p-6"
             >
               <div className="flex-shrink-0 mt-1">
-                <CheckCircle2 className="w-6 h-6 text-brand-accent" />
+                <CheckCircle2 className="w-8 h-8 text-brandSecondary" />
               </div>
               <p className="text-gray-800 leading-relaxed">{point}</p>
             </motion.div>
@@ -57,7 +49,7 @@ export default function FitSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center mt-14 text-brand-dark font-medium"
+          className="text-center mt-14 text-brandDark font-medium"
         >
           If this sounds like you — we’ll make a great team.
         </motion.p>

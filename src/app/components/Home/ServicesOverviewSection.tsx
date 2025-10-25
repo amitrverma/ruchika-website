@@ -14,22 +14,22 @@ export default function ServicesOverviewSection() {
     {
       title: "Brand Messaging & Tone of Voice Guide",
       desc: "Before we write a single word of copy, we get clear on your messaging. This guide nails down your positioning, who you serve, what you stand for, and how you sound. It’s the foundation for everything else — your website, emails, and social content.",
-      icon: <Megaphone className="w-8 h-8 text-brand-accent" />,
+      icon: <Megaphone className="w-8 h-8 text-brandSecondary" />,
     },
     {
       title: "Website Copywriting",
       desc: "Your website is where people decide if they trust you enough to work with you. I write copy that clearly shows what you do, who it’s for, and why it matters — so visitors don’t just scroll, they reach out. Each page connects and converts.",
-      icon: <Globe className="w-8 h-8 text-brand-accent" />,
+      icon: <Globe className="w-8 h-8 text-brandSecondary" />,
     },
     {
       title: "Email Copywriting",
       desc: "Your email list is one of your most valuable assets. I write emails that sound human, build trust over time, and guide your subscribers to act — whether that’s booking a call, buying your offer, or just staying engaged.",
-      icon: <Mail className="w-8 h-8 text-brand-accent" />,
+      icon: <Mail className="w-8 h-8 text-brandSecondary" />,
     },
     {
       title: "Sales Page Copywriting",
       desc: "When you’re launching a program, course, or high-ticket offer, you need a sales page that does the heavy lifting. I craft long-form pages that walk your audience through the transformation, overcome objections, and make your offer the obvious next step.",
-      icon: <FileText className="w-8 h-8 text-brand-accent" />,
+      icon: <FileText className="w-8 h-8 text-brandSecondary" />,
     },
   ];
 
@@ -46,7 +46,7 @@ const fadeUp: Variants = {
 
 
   return (
-    <section className="bg-brand-accent/10 py-20">
+     <section className="bg-brandPrimary py-14 md:py-20">
       <div className="container max-w-5xl text-brand-dark">
         {/* Heading */}
         <motion.div
@@ -75,7 +75,7 @@ const fadeUp: Variants = {
               whileInView="visible"
               viewport={{ once: true }}
               custom={i}
-              className="flex flex-col gap-3 bg-white font-serif rounded-2xl shadow-sm hover:shadow-md border border-brand-accent/20 p-8 transition-all hover:-translate-y-1"
+              className="flex flex-col gap-3 bg-white font-serif rounded-2xl shadow-sm hover:shadow-md border border-brandSecondary/20 p-8 transition-all hover:-translate-y-1"
             >
               <div className="flex items-center gap-3 mb-1">
                 {s.icon}
@@ -83,7 +83,7 @@ const fadeUp: Variants = {
                   {s.title}
                 </h3>
               </div>
-              <p className="text-gray-700 leading-relaxed text-sm">{s.desc}</p>
+              <p className="text-md md:text-md leading-relaxed text-brandDark font-light">{s.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -98,7 +98,7 @@ const fadeUp: Variants = {
         >
           <Link
             href="/services"
-            className="inline-block px-8 py-3 rounded-md font-medium tracking-wide bg-brand-accent text-brand-dark hover:bg-brand-dark hover:text-brandPrimary transition-all shadow-md hover:shadow-lg"
+            className="inline-block px-8 py-3 rounded-md font-medium tracking-wide bg-brandSecondary text-white hover:bg-brandDark hover:text-brandPrimary transition-all shadow-md hover:shadow-lg"
           >
             EXPLORE SERVICES IN DETAIL
           </Link>

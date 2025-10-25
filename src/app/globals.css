@@ -2,10 +2,9 @@
 
 /* Define custom theme values */
 @theme {
-  --color-brandPrimary: #D77A61;
-  --color-brandAccent: #FCDE9C;
+  --color-brandPrimary: #fef7eb;
+  --color-brandSecondary: #d77a61;
   --color-brandDark: #638475;
-  --color-brandSecondary: #B2ABF2;
   
   --font-family-sans: var(--font-inter), Inter, sans-serif;
   --font-family-serif: var(--font-playfair), "Playfair Display", serif;

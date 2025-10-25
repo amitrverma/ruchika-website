@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function AboutIntroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-brand-accent/10 via-white to-brand-accent/20 py-24 overflow-hidden">
+    <section className="bg-brandPrimary py-14 md:py-20">
       <div className="container grid md:grid-cols-[3fr_2fr] items-center gap-12 max-w-6xl relative z-10">
 
         {/* === TEXT COLUMN === */}
@@ -14,7 +14,7 @@ export default function AboutIntroSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="space-y-5 text-brand-dark"
+          className="space-y-5 text-brandDark"
         >
           <h2 className="text-3xl md:text-5xl font-serif leading-snug mb-4">
             Hi, I’m <span className="text-brand-accent relative">
@@ -83,7 +83,7 @@ export default function AboutIntroSection() {
           {/* Profile image */}
           <motion.div
             whileHover={{ scale: 1.03 }}
-            className="relative w-[280px] h-[280px] rounded-2xl overflow-hidden border border-brand-accent/20 shadow-lg shadow-brand-accent/10"
+            className="relative w-[280px] h-[280px] rounded-2xl overflow-hidden border border-brandSecondary/20 shadow-lg shadow-brand-accent/10"
           >
             <Image
               src="/assets/ruchika-profile.png"
@@ -100,6 +100,7 @@ export default function AboutIntroSection() {
               { src: "/assets/badge-webcopy.png", alt: "Web Copy Certificate", delay: 0 },
               { src: "/assets/badge-emails.png", alt: "Email Copy Certificate", delay: 0.15 },
               { src: "/assets/badge-brandvoice.png", alt: "Brand Voice Certificate", delay: 0.3 },
+              { src: "/assets/badge-conversion.png", alt: "Brand Voice Certificate", delay: 0.45 },
             ].map((badge, i) => (
               <motion.div
                 key={i}

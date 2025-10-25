@@ -1,7 +1,7 @@
 export default function ScalingPhilosophySection() {
   return (
     <section className="relative bg-gradient-to-b from-white via-[#f9f9f7] to-white py-28">
-      <div className="container max-w-4xl text-brand-dark leading-relaxed px-6">
+      <div className="container max-w-4xl text-brandDark leading-relaxed px-6">
         {/* Opening line as a pull quote */}
         <h3 className="text-2xl md:text-3xl font-serif font-medium text-center md:text-left mb-10 md:mb-12 max-w-2xl">
           As you scale, it’s time to position yourself as{" "}
@@ -20,7 +20,7 @@ export default function ScalingPhilosophySection() {
             It’s becoming a place where the right partnerships naturally lead to the right results.
           </p>
 
-          <p className="text-brand-dark/90 italic border-l-4 border-brand-accent pl-5 py-1">
+          <p className="text-brandDark/90 italic border-l-4 border-brandSecondary pl-5 py-1">
             The next level isn’t just about more — it’s about better.
           </p>
 

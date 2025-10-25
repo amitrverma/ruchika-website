@@ -49,7 +49,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-brandAccent after:transition-all after:duration-300 hover:after:w-full hover:text-brandAccent"
+              className="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-brandSecondary after:transition-all after:duration-300 hover:after:w-full hover:text-brandSecondary"
             >
               {link.label}
             </Link>
@@ -76,13 +76,14 @@ export default function Navbar() {
           <Link
             key={link.href}
             href={link.href}
-            className="block px-6 py-4 text-brandDark font-medium hover:bg-brandAccent/10 hover:text-brandDark transition-colors"
+            className="block px-6 py-4 text-brandDark font-medium hover:bg-brandSecondary/10 hover:text-brandDark transition-colors"
             onClick={() => setOpen(false)}
           >
             {link.label}
           </Link>
         ))}
       </div>
+       <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
     </header>
   );
 }
