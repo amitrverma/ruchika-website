@@ -15,28 +15,34 @@ export default function OriginStorySection() {
 
         <div className="space-y-6 text-lg md:text-[1.125rem] max-w-3xl">
           <p>
-            After my master’s in marketing, I spent nine years working full-time in corporate.
-            In 2021, I took a break. Like a long-overdue chai.
+            After my master’s in marketing, I spent 9 years working full-time in corporate.
+          </p>
+          <p>
+           In 2017, I took a break. Like, a loooong break.
           </p>
 
           <p>
-            That pause helped me reflect — I had enjoyed the work, but I’d lost connection with
-            myself in the process. My identity had become tied to deliverables, not purpose.
+           My health had taken a hit, I had a young child to care for, and I was completely
+overwhelmed. I felt drained—physically and mentally. So I chose to press pause.
           </p>
 
           <p>
-            I focused on healing, moving my body, and writing again. For the first time in a
-            long while, I felt at home.
+I focused on healing, moving my body, and eating better. And for the first time in a long
+while, I just felt better.
           </p>
 
           <p>
-            When I eventually returned to work, it wasn’t to the 9-to-5 grind. It was to the
-            craft of writing — with more empathy, more clarity, and more purpose.
+            I wanted to get back to work, but not the 8-to-10-hour grind. Not at the cost of my
+well-being.
+          </p>
+            <p>
+            Even with all the doubts in my head—especially after such a long gap—I took the first
+step. I chose to reinvent myself. To freelance.
           </p>
 
-          <p className="border-l-4 border-brand-accent/50 pl-5 italic text-brandDark/90">
-            That’s how <strong>Ruchika Copy Solutions</strong> was born — a partnership built on
-            reflection, authenticity, and the belief that good copy comes from genuine understanding.
+          <p className="border-l-4 border-brand-accent/50 pl-5 italic text-brandSecondary/90">
+            I believe that everyone has the ability to reinvent themselves, no matter what they've
+been through. It's never too late.
           </p>
         </div>
 

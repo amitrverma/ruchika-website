@@ -41,15 +41,37 @@ export default function GuaranteeSection() {
     <section className="relative overflow-hidden bg-white py-24">
 
       <div className="container relative z-10 max-w-3xl text-center text-brand-dark leading-relaxed">
-        <motion.h2
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-2xl md:text-3xl font-serif mb-12"
-        >
-          The <span className="text-brandDark">Copywriter-Who-Really-Cares</span> Guarantee
-        </motion.h2>
+<motion.h2
+  initial={{ opacity: 0, y: -20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  className="text-2xl md:text-3xl font-serif mb-12 flex flex-col items-center"
+>
+  <span className="relative inline-block">
+    <span className="relative z-10 font-semibold text-brandDark">
+      The Copywriter-Who-Really-Cares Guarantee
+    </span>
+
+    {/* === Wavy underline SVG === */}
+    <svg
+      className="absolute left-0 bottom-0 w-full h-[6px] text-brandSecondary"
+      viewBox="0 0 200 6"
+      preserveAspectRatio="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      
+      <path
+        d="M2 4C50 6 80 2 10 4C140 6 170 2 198 4"
+        stroke="currentColor"
+        strokeWidth="4"
+        fill="none"
+        strokeLinecap="round"
+      />
+    </svg>
+  </span>
+</motion.h2>
+
 
         <div className="grid gap-8 text-left">
           {items.map((item, i) => (

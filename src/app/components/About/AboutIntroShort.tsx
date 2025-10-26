@@ -2,63 +2,53 @@ import Image from "next/image";
 
 export default function AboutIntroShort() {
   return (
-    <section className="relative bg-brandPrimary py-30">
-      {/* Background motif */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-brand-accent/10 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3" />
-        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-brand-accent/20 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3" />
-      </div>
+    <section className="relative bg-brandPrimary py-20 md:py-30">
+      <div className="container mx-auto max-w-6xl grid md:grid-cols-[1fr_1.3fr] gap-12 items-center px-6">
 
-      <div className="container relative z-10 grid md:grid-cols-[2fr_1fr] gap-12 items-center max-w-6xl px-6">
-        {/* === TEXT === */}
-        <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-serif text-brandDark leading-snug">
-            Hi, I’m <span className="text-brand-accent font-semibold">Ruchika</span>
-          </h2>
-
-          <p className="text-lg md:text-xl text-brandDark/90 leading-relaxed">
-            I help scaling service providers with their{" "}
-            <span className="font-semibold text-brand-accent">
-              brand messaging and conversion-focused copy
-            </span>{" "}
-            — so they can confidently market their services, connect with their audience,
-            and attract right-fit clients.
-          </p>
-
-          <div className="h-[2px] w-20 bg-brand-accent/40 my-6" />
-
-          <div className="space-y-3 text-brandDark/80">
-            <p>
-              Whether you’re revamping your website, launching a new offer, or clarifying
-              your brand voice, I blend strategy + storytelling to help your message land
-              — and last.
-            </p>
-            <p>
-              <span className="font-medium text-brandDark">
-                Strategic thinking meets human insight.
-              </span>{" "}
-              That’s my approach to copywriting — because clarity converts better than hype.
-            </p>
-          </div>
-        </div>
-
-        {/* === IMAGE === */}
-        <div className="relative mx-auto md:mx-0">
-          {/* Framed photo */}
-          <div className="relative w-[260px] h-[260px] rounded-2xl overflow-hidden shadow-md border border-brand-accent/20">
+        {/* === LEFT COLUMN — RESPONSIVE OVERLAPPING IMAGES === */}
+        <div className="relative w-fit mx-auto md:mx-0">
+          {/* Top portrait */}
+          <div className="relative w-[220px] h-[300px] sm:w-[260px] sm:h-[360px] md:w-[300px] md:h-[400px] rounded-lg overflow-hidden shadow-md z-10 border border-brandSecondary">
             <Image
-              src="/assets/ruchika-about.png"
-              alt="Ruchika Ratna - Copywriter"
+              src="/assets/about.jpg"
+              alt="Ruchika smiling"
               fill
               className="object-cover"
               priority
             />
           </div>
 
-          {/* Framed tagline block */}
-          <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white text-brandSecondary rounded-xl shadow-sm border border-brand-accent/10 py-2 px-4 text-sm font-medium tracking-wide">
-            Certified Conversion Copywriter
+          {/* Bottom landscape (overlapped) */}
+          <div className="absolute w-[160px] h-[220px] sm:w-[180px] sm:h-[260px] md:w-[200px] md:h-[300px] 
+                          -bottom-16 sm:-bottom-20 md:-bottom-40 
+                          -left-6 sm:-left-10 md:-left-20 
+                          rounded-lg overflow-hidden shadow-md z-20 border border-brandDark">
+            <Image
+              src="/assets/about-beach.jpg"
+              alt="Ruchika at the beach with child"
+              fill
+              className="object-cover"
+            />
           </div>
+        </div>
+
+        {/* === RIGHT COLUMN — TEXT === */}
+        <div className="text-brandDark space-y-5 text-center md:text-left">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif italic">
+            Hi, I am <span className="not-italic font-bold">Ruchika</span>
+          </h2>
+
+          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed">
+            I help scaling service providers with their{" "}
+            <span className="font-semibold text-brandSecondary">
+              brand messaging and conversion-focused copy
+            </span>
+          </p>
+
+          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed">
+            So they can confidently market their services, connect with their audience,
+            and attract right-fit clients.
+          </p>
         </div>
       </div>
     </section>

@@ -6,32 +6,45 @@ import { Plus, Minus } from "lucide-react";
 export default function FAQSection() {
   const faqs = [
     {
-      q: "Can you recommend a designer who’s as good at design as you are at messaging?",
-      a: "Yes, I collaborate with a few trusted designers who share the same approach to thoughtful, conversion-friendly design. I’ll be happy to connect you once we start working together.",
+      q: "How much do your services cost?",
+      a: "Every project is unique, so pricing depends on scope, deliverables, and timeline. After our discovery call, I’ll send you a detailed proposal with transparent pricing tailored to your specific needs.",
     },
     {
-      q: "What about SEO? Do you do that?",
-      a: "Yes — I write SEO-friendly copy that’s optimized for humans first and search engines second. If you need deep keyword research or technical SEO, I can coordinate with your SEO specialist.",
+      q: "How long does a typical project take?",
+      a: "It depends on the scope of the project. A brand messaging guide typically takes a minimum of 4 weeks. Website copy (up to 4 pages) takes a minimum of 6 weeks. Email sequences take 3–5 weeks and sales pages take 4–6 weeks, depending on length and complexity. I’ll give you a clear timeline once we discuss your specific needs.",
     },
     {
-      q: "Who do you work with?",
-      a: "Mostly service-based business owners, creative professionals, and founders who want clarity and connection in their brand voice — not hype or fluff.",
+      q: "Do you work with clients outside your timezone?",
+      a: "Yes! I work with clients globally. I’m based in Pune, India, and work Monday through Friday. I’m flexible with scheduling calls to accommodate different time zones. We’ll find a communication rhythm that works for both of us.",
     },
     {
-      q: "What’s the timeline? How soon can we start?",
-      a: "Most projects are booked 2–3 weeks in advance. Once confirmed, timelines typically range from 3–6 weeks depending on the scope.",
+      q: "How much input do I need to provide?",
+      a: "I’ll need you to fill out a brand questionnaire, hop on a call with me to discuss your business and audience, and be available for any follow-up questions during the research phase. You’ll also review drafts and provide feedback within a reasonable timeframe.",
     },
     {
-      q: "What’s the process for website copywriting services?",
-      a: "It starts with a discovery call → strategy questionnaire → messaging foundations → drafts and revisions → final delivery. Each step is clear and collaborative.",
+      q: "Do you offer payment plans?",
+      a: "Yes, I offer payment plans at no extra cost. It’s 50% upfront to get started and 50% once the final draft is approved. For larger projects, we can structure payments based on project milestones.",
+    },
+    {
+      q: "Which service should I start with?",
+      a: "If you don’t have clear messaging yet, start with the Brand Messaging & Tone of Voice Guide. It’s the foundation for everything else. If your messaging is solid and you’re ready to launch or refresh your website, we can start there. Not sure? Book a call and we’ll figure out what makes the most sense for where you are now.",
+    },
+    {
+      q: "What if I need revisions?",
+      a: "Every project includes one round of revisions to ensure the copy feels right. If we need to make tweaks later, within the two-week post-delivery support period, I’m here for that too. My goal is to make sure you’re confident in the final copy.",
+    },
+    {
+      q: "Do you do other types of copy other than you have mentioned?",
+      a: "Yes! While website copy, emails, and sales pages are my core services, I can also help with blogs and social media content. If you need something specific, let’s discuss on our call.",
+    },
+    {
+      q: "Should I hire a copywriter or a designer first for my website?",
+      a: "Start with copy first. Otherwise, your designer is creating visuals without direction. They need to know what the website will say before they can decide how it should look.",
     },
   ];
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggle = (i: number) => {
-    setOpenIndex(openIndex === i ? null : i);
-  };
+  const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
   return (
     <section className="relative bg-brandPrimary py-30">
@@ -44,21 +57,29 @@ export default function FAQSection() {
           </span>
         </h2>
 
-        <div className="divide-y divide-brandSecondary">
+        <div className="divide-y divide-brandSecondary/30">
           {faqs.map((item, i) => (
-            <div key={i} className="py-5 cursor-pointer select-none" onClick={() => toggle(i)}>
+            <div
+              key={i}
+              className="py-5 cursor-pointer select-none"
+              onClick={() => toggle(i)}
+            >
               <div className="flex justify-between items-center">
                 <h4 className="font-medium text-brandDark text-base md:text-lg">
                   {item.q}
                 </h4>
                 <span className="text-brandSecondary text-xl">
-                  {openIndex === i ? <Minus strokeWidth={2} /> : <Plus strokeWidth={2} />}
+                  {openIndex === i ? (
+                    <Minus strokeWidth={2} />
+                  ) : (
+                    <Plus strokeWidth={2} />
+                  )}
                 </span>
               </div>
 
               <div
                 className={`transition-all duration-300 overflow-hidden ${
-                  openIndex === i ? "max-h-40 mt-3 opacity-100" : "max-h-0 opacity-0"
+                  openIndex === i ? "max-h-96 mt-3 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
                 <p className="text-gray-700 text-sm md:text-base leading-relaxed">

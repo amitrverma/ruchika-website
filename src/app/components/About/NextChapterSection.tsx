@@ -8,37 +8,24 @@ export default function NextChapterSection() {
 
         <div className="space-y-6 text-lg md:text-[1.125rem] max-w-3xl text-brandDark">
           <p>
-            I decided to invest in myself and upskill — because I can’t expect others to invest
-            in me if I haven’t done that for myself first.
+I decided to invest in myself and upskill. Because I can't expect others to invest in me if
+I haven't done the same.
           </p>
 
           <p>
-            I learned brand messaging and conversion copywriting from top experts in the field,
-            including courses from{" "}
-            <strong>Copyhackers</strong>,{" "}
-            <strong>Conversion Copywriting School</strong>, and several mentoring programs.
+So I learned brand messaging and conversion copywriting from top experts in the field.
           </p>
 
           <p>
-            My approach blends{" "}
-            <strong>clarity</strong>,{" "}
-            <strong>psychology</strong>, and{" "}
-            <strong>authentic tone of voice</strong>{" "}
-            to craft copy that genuinely resonates with your right-fit clients.
+My overall approach is
           </p>
-        </div>
 
-        {/* Credentials bar */}
-        <div className="flex flex-wrap items-center justify-center gap-6 mt-12">
-          <div className="px-5 py-2 bg-brandSecondary rounded-full text-sm font-medium text-white border border-brandDark/20">
-            Certified Conversion Copywriter
-          </div>
-          <div className="px-5 py-2 bg-brandSecondary rounded-full text-sm font-medium text-white border border-brandDark/20">
-            Brand Messaging Specialist
-          </div>
-          <div className="px-5 py-2 bg-brandSecondary rounded-full text-sm font-medium text-white border border-brandDark/20">
-            9+ Years in Marketing
-          </div>
+                    <p className="text-brandSecondary/90 italic border-l-4 border-brandSecondary pl-5 py-1">
+            Understand your audience inside and out. Get your messaging right. Combine it with
+
+your one-of-a-kind voice to write copy that gets "heck yes" inquiries from your right-
+fit clients.
+          </p>
         </div>
       </div>
     </section>

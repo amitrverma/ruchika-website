@@ -10,24 +10,28 @@ export default function ScalingPhilosophySection() {
 
         <div className="space-y-6 text-lg md:text-[1.125rem]">
           <p>
-            Your expertise grows. Your results are more compelling, and people want to work with you. 
-            But your messaging hasn’t kept up. The right people aren’t seeing your work the way it deserves to be seen.
+            Your expertise, your results, are so compelling that people want to work with you.
+          </p>
+          <p>  
+            But over the years, you’ve learned that true success comes from intentional alignment
+— surrounding yourself with the right people, the right energy, and the right vision.
           </p>
 
           <p>
-            At this stage, you’re not starting from scratch — your business isn’t just growing,
-            it’s evolving. It’s gaining clarity. It’s building stronger relationships and better results.
-            It’s becoming a place where the right partnerships naturally lead to the right results.
+            As you enter this next phase, It’s stepping into its full potential. It’s becoming a space
+where the right partnerships create extraordinary results.<br/>
+You’re not just looking for ready-to-invest clients; you’re looking for right-fit clients
+who are ready to invest.
           </p>
 
-          <p className="text-brandDark/90 italic border-l-4 border-brandSecondary pl-5 py-1">
+          <p className="text-brandSecondary/90 italic border-l-4 border-brandSecondary pl-5 py-1">
             The next level isn’t just about more — it’s about better.
           </p>
 
-          <p>
+          <span className="text-brand-accent font-semibold">
             You’re building your dream business, and if I can support that in any way through the power of messaging and words,
             I’d be honored.
-          </p>
+          </span>
         </div>
 
         {/* Soft underline accent */}

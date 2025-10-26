@@ -1,106 +1,100 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Rocket, Mail, Globe, Sparkles } from "lucide-react";
 
-export default function PositioningSection() {
-  const points = [
+export default function CelebrationSection() {
+  const topPoints = [
     {
-      icon: <Globe className="w-8 h-8 text-brandSecondary" />,
-      text: "You want a website that aligns with your expert-level positioning and rates.",
+      title: "You’ve built a business with care",
+      desc: "You’re already getting leads through referrals, social media and word of mouth.",
     },
     {
-      icon: <Mail className="w-8 h-8 text-brandSecondary" />,
-      text: "You want to get intentional with your email marketing strategy.",
+      title: "You’ve built a reputation through real results.",
+      desc: "You’ve put in the work and it shows. Clients come back. They know you bring value every single time.",
     },
     {
-      icon: <Sparkles className="w-8 h-8 text-brandSecondary" />,
-      text: "You want to build consistency through emails — a space that’s yours, not the algorithm’s.",
+      title: "You’re building intentionally. Expanding thoughtfully.",
+      desc: "You’re growing in a way that feels aligned with your values and the kind of business you want to build long term.",
+    },
+  ];
+
+  const bottomPoints = [
+    {
+      title: "You’re ready to attract more right-fit clients",
+      desc: "The ones who respect your process, your time, and your expertise. In short — value YOU.",
     },
     {
-      icon: <Rocket className="w-8 h-8 text-brandSecondary" />,
-      text: (
-        <>
-          You’re selling a program, course, or digital product — and you need copy that helps your audience
-          see your offer as the natural next step{" "}
-          <span className="block text-sm text-brandSecondary/70">
-            (without resorting to pressure or gimmicks)
-          </span>
-        </>
-      ),
+      title: "You’re refining your brand’s messaging",
+      desc: "Launching, updating, rebranding, optimizing to match where your business has evolved to.",
+    },
+    {
+      title: "You’re not just doing more. You’re doing better.",
+      desc: "Thinking long term. Choosing partners who value the same level of thought and strategy.",
     },
   ];
 
   return (
-    <section className="relative bg-white py-24 overflow-hidden">
-      {/* === Split background stripe === */}
-      <div className="absolute inset-0 bg-gradient-to-r from-brand-accent/15 via-transparent to-transparent"></div>
+    <section className="relative bg-white py-24 text-brandDark">
+      <div className="container max-w-6xl mx-auto px-6 text-center">
+        {/* Header */}
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-2xl md:text-3xl font-medium mb-10 leading-relaxed"
+        >
+          Take a moment — you’re right on the edge of something exciting.{" "}
+          <span className="font-semibold">But first let's celebrate this.</span>
+        </motion.h2>
 
-      <div className="container relative z-10 max-w-6xl grid md:grid-cols-2 gap-16 items-center">
-        {/* === Left: Copy block === */}
-        <div className="space-y-6 text-brandDark">
-          <p className="text-sm uppercase tracking-wide text-brandDark/70">
-            You’re probably looking for a professional copywriter because…
-          </p>
+        {/* Top 3 Columns */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          viewport={{ once: true }}
+          className="grid md:grid-cols-3 gap-10 mb-16"
+        >
+          {topPoints.map((item, i) => (
+            <div key={i} className="space-y-3">
+              <h3 className="font-semibold text-lg md:text-xl">{item.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </motion.div>
 
-          <h2 className="text-3xl md:text-5xl font-serif leading-tight">
-            It’s time to move from{" "}
-            <span className=" text-brandSecondary px-2 py-1 rounded-sm">
-              order-taker
-            </span>{" "}
-            to{" "}
-            <Link
-              href="#"
-              className="inline-block text-brandSecondary font-semibold hover:underline decoration-brand-accent/70"
-            >
-              boss business owner
-            </Link>
-          </h2>
+        {/* Center Divider Text */}
+        <motion.h3
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-xl md:text-2xl font-medium leading-snug mb-14"
+        >
+          Now it’s time to own your next-level era. <br />
+          Time to move from order-taker to{" "}
+          <span className="text-brand-accent font-semibold underline decoration-brand-accent/50">
+            boss business owner
+          </span>
+          .
+        </motion.h3>
 
-          <p className="text-lg font-medium">
-            You’re ready to lead with clarity, conviction, and copy that carries your voice.
-          </p>
-
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 mt-6 px-6 py-3 bg-brandSecondary text-white font-medium rounded-md hover:bg-brandDark hover:text-white transition-all shadow-sm"
-            >
-              Let’s Talk Messaging
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </motion.div>
-        </div>
-
-        {/* === Right: Visual List === */}
-        <motion.ul
+        {/* Bottom 3 Columns */}
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.7, delay: 0.3 }}
           viewport={{ once: true }}
-          className="space-y-5"
+          className="grid md:grid-cols-3 gap-10"
         >
-          {points.map((p, i) => (
-            <li
-              key={i}
-              className="flex items-start gap-3 bg-brandPrimary/10 hover:bg-brand-accent/20 transition-colors p-5 rounded-lg shadow-sm"
-            >
-              <div className="flex-shrink-0 mt-1">{p.icon}</div>
-              <p className="text-brandDark leading-relaxed">{p.text}</p>
-            </li>
+          {bottomPoints.map((item, i) => (
+            <div key={i} className="space-y-3">
+              <h3 className="font-semibold text-lg md:text-xl">{item.title}</h3>
+              <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+            </div>
           ))}
-        </motion.ul>
-      </div>
-
-      {/* === Floating wordmark accent === */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 opacity-10 text-6xl font-serif pointer-events-none select-none">
-        BOSS ENERGY
+        </motion.div>
       </div>
     </section>
   );

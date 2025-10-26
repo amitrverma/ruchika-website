@@ -1,77 +1,77 @@
 "use client";
 
-import { motion } from "framer-motion";
 import {
-  Heart,
-  Handshake,
+  HeartHandshake,
   Sparkles,
-  Leaf,
-  Target,
+  Users,
+  Smile,
+  ShieldCheck,
 } from "lucide-react";
+import React from "react";
 
 export default function ValuesSection() {
   const values = [
     {
-      icon: <Leaf className="w-8 h-8 text-brandSecondary" />,
       title: "Flexibility",
-      desc: "I run my business in a way that supports my life — not the other way around. Hustling isn’t my forte. And I don’t expect you to be “always available” either. I respect your timing and mine. The work we create flows better that way.",
+      subtitle:
+        "I run my business in a way that supports my life—not the other way around",
+      body: "Hustling isn’t my forte, and I don’t expect you to be “always available” either. I respect your time and mine. No pressure to reply in the evenings or on weekends. I focus on delivering quality work while keeping space for flexibility and freedom.",
+      icon: <Sparkles className="w-6 h-6 text-brandSecondary" />,
     },
     {
-      icon: <Target className="w-8 h-8 text-brandSecondary" />,
       title: "Effort",
-      desc: "I put 100% effort and intention into every project I take on. Quality means clarity, communication, and commitment to what we’re building together.",
+      subtitle: "I put 100% effort and intention into every project I take on.",
+      body: "Quality is important for me. So setting realistic expectations for time and results is very important before starting a project. You’ll never get half-hearted work from me. I don’t skip any part of my process. And I’ll always keep you informed where we are in terms of project.",
+      icon: <HeartHandshake className="w-6 h-6 text-brandSecondary" />,
     },
     {
-      icon: <Handshake className="w-8 h-8 text-brandSecondary" />,
       title: "Collaboration",
-      desc: "I believe good work gets better when we do it together. I don’t work in isolation. I ask for input and share ideas — because your insights matter as much as the strategy and the words.",
+      subtitle: "I believe good work gets better when we do it together.",
+      body: "I don’t work in isolation. I ask for input and share ideas. Your success matters to me, and your input is essential. This is not a one-way process. It is a team effort. I believe building a business is much easier when you focus on what you are good at and lean on others for the rest.",
+      icon: <Users className="w-6 h-6 text-brandSecondary" />,
     },
     {
-      icon: <Heart className="w-8 h-8 text-brandSecondary" />,
       title: "Empathy",
-      desc: "Your audience comes first. Always. I approach copy as a human talking to another human, not a brand shouting at a crowd.",
+      subtitle: "Your audience comes first.",
+      body: "I understand that there’s a human on the other side of your online business. My focus is on your audience’s core values, needs, and frustrations. That’s why I don’t believe in using salesy tactics in my copy. Research is a non-negotiable part of my process because the best messaging comes from your audience, not just from a copywriter’s head.",
+      icon: <Smile className="w-6 h-6 text-brandSecondary" />,
     },
     {
-      icon: <Sparkles className="w-8 h-8 text-brandSecondary" />,
       title: "Integrity",
-      desc: "I walk my talk. I’m still learning, still growing — but always aligned with honesty, respect, and doing what feels true to both our brands.",
+      subtitle: "Walking the talk.",
+      body: "I am human, and I make mistakes. But I’m committed to learning and getting better. For me, it’s about honesty, clear communication, and following through. I focus on building trust through real conversations, realistic expectations, and copy that feels true to your brand.",
+      icon: <ShieldCheck className="w-6 h-6 text-brandSecondary" />,
     },
   ];
 
   return (
-    <section className="bg-white/10 py-20">
-      <div className="container max-w-5xl text-brand-dark leading-relaxed">
-        <motion.h3
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-2xl md:text-3xl font-serif text-center mb-14"
-        >
-          The values that shape how I show up <br className="hidden md:block" />
-          <span className="text-base md:text-lg font-normal">
-            & guide our work together
-          </span>
-        </motion.h3>
+    <section className="bg-white py-24">
+      <div className="container mx-auto max-w-5xl px-6">
+        <h2 className="text-3xl md:text-4xl font-serif text-brandDark mb-16 text-center">
+          The values that shape how I show up & guide our work together
+        </h2>
 
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 ">
-          {values.map((value, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              viewport={{ once: true }}
-              className="flex flex-col items-center text-center bg-white rounded-2xl hover:shadow-md p-8 border border-brandSecondary/20 transition-all"
-            >
-              <div className="mb-4">{value.icon}</div>
-              <h4 className="font-serif text-lg font-semibold mb-2 text-brand-dark">
-                {value.title}
-              </h4>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                {value.desc}
-              </p>
-            </motion.div>
+        {/* === Timeline === */}
+        <div className="relative border-l-2 border-brandSecondary/40 pl-8 md:pl-12 space-y-14">
+          {values.map((item, i) => (
+            <div key={i} className="relative group">
+              {/* Dot */}
+              <span className="absolute -left-[11px] md:-left-[13px] top-2 w-5 h-5 bg-brandSecondary rounded-full border-4 border-brandPrimary transition-all group-hover:scale-110"></span>
+
+              {/* Content Card */}
+              <div className="bg-white rounded-xl p-6 shadow-sm border border-brandSecondary hover:shadow-md transition-all duration-300">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex-shrink-0">{item.icon}</div>
+                  <h3 className="text-xl md:text-2xl font-serif font-semibold text-brandDark">
+                    {item.title}
+                  </h3>
+                </div>
+                <p className="font-medium text-brandSecondary mb-3">
+                  {item.subtitle}
+                </p>
+                <p className="text-brandDark/80 leading-relaxed">{item.body}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>

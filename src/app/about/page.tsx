@@ -37,7 +37,7 @@ export default function AboutPage() {
       <ValuesSection />
 <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
       {/* Section 7 — Closing CTA */}
-      <section className="bg-brandSecondary/50 py-20 text-center">
+      <section className="bg-brandPrimary py-20 text-center">
         <div className="container max-w-2xl">
           <h3 className="text-xl md:text-2xl font-serif text-brandDark mb-3">
             I’m so glad you’re still here!
@@ -55,6 +55,7 @@ export default function AboutPage() {
           </a>
         </div>
       </section>
+      <Divider />
     </main>
   );
 }

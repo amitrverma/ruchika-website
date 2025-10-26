@@ -8,16 +8,16 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 export default function TestimonialSection() {
   const testimonials = [
     {
-      image: "/tanishq.jpg",
+      image: "/assets/tanishq.jpg",
       quote:
         "The final copy not only captured my vision, but also provided a clear path for my audience to take action.",
       body: "With a few years in the business and experience working with multiple clients, I knew it was time to create a website that truly resonated with my ideal audience. Ruchika brought so much clarity to the process. Her in-depth research and ability to deeply understand my target audience helped craft messaging that feels genuine and speaks directly to my clients.",
       name: "Tanishq Jha",
       title: "Founder, Tanishqjha.co — OBM & VA",
-      logo: "/logo-tanishq.svg",
+      logo: "/asset/tanishq.jpg",
     },
     {
-      image: "/testimonial-green-trinkets.png",
+      image: "/assets/trinklet.png",
       quote:
         "Her knowledge, professionalism, and commitment to delivering exceptional results make her an invaluable asset for any business.",
       body: "Throughout our collaboration, Ruchika showed exceptional understanding of our business goals and target audience. Her deep research and clarity helped us refine our brand voice and strengthen our messaging foundation.",
@@ -26,7 +26,7 @@ export default function TestimonialSection() {
       logo: "/logo-green-trinkets.svg",
     },
     {
-      image: "/testimonial-another.png",
+      image: "/assets/xaltris.png",
       quote:
         "Ruchika has a rare ability to translate complex thoughts into words that connect and convert.",
       body: "Working with her felt effortless — her process is structured but deeply human. The copy we developed not only resonates with our audience but also elevated our brand’s presence across channels.",

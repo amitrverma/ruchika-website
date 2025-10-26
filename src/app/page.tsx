@@ -1,6 +1,8 @@
 import Hero from "./components/Home/Hero";
 import PositioningSection from "./components/Home/PositioningSection";
+import MessagingSection from "./components/Home/MessagingSection";
 import AboutIntroSection from "./components/Home/AboutIntroSection";
+import ProcessHighlightSection from "./components/Home/ProcessHighlightSection";
 import BeliefSection from "./components/Home/BeliefSection";
 import ServicesOverviewSection from "./components/Home/ServicesOverviewSection";
 import TestimonialSection from "./components/Home/TestimonialSection";
@@ -18,7 +20,11 @@ export default function HomePage() {
       <Divider />
       <PositioningSection />
       <Divider />
+      <MessagingSection />
+      <Divider />
       <AboutIntroSection />
+      <Divider />
+      <ProcessHighlightSection />
       <Divider />
       <BeliefSection />
       <Divider />

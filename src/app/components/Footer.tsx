@@ -3,7 +3,7 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-br from-brandPrimary/20 via-white to-brandPrimary/10 border-t border-brandDark/10">
+    <footer className="relative overflow-hidden bg-gradient-to-br from-white via-brandSecondary/20 to-white border-t border-brandDark/10">
       {/* Decorative motifs */}
       <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-brandPrimary/10 rounded-full blur-3xl -translate-x-1/3 -translate-y-1/3" />
       <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-brandPrimary/15 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
@@ -16,11 +16,12 @@ export default function Footer() {
             May I enter your inbox?
           </h3>
           <p className="text-brandDark/90 mb-4 leading-relaxed max-w-md">
-            Thoughtful, chai-fueled reflections on messaging, copy, and building
-            a business that supports your life — not the other way around.
+Asking your permission to have a clear, reflective conversation like a
+chai or coffee-fuelled chat that leaves you feeling understood. About
+messages, copy, and building a business.
           </p>
           <p className="text-brandDark/80 mb-6 italic">
-            You can reply to any email — it’s a real conversation.
+            Also, You can email me back any time.
           </p>
 
           <form className="max-w-sm space-y-3">
@@ -68,7 +69,7 @@ export default function Footer() {
 
           <div className="mt-10 md:mt-0">
             <h4 className="font-semibold text-brandDark mb-3">
-              Let’s connect beyond this page
+              Let’s connect on social and be biz friends beyond this page
             </h4>
             <div className="flex gap-5 text-2xl">
               <Link

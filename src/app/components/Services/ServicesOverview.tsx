@@ -7,38 +7,52 @@ export default function ServicesOverview() {
       title: "Brand Messaging & Tone of Voice Guide",
       icon: <Megaphone className="w-8 h-8 text-brand-accent" />,
       description:
-        "Clarity first. Define who you are, who you serve, and how you sound — so every word feels cohesive, consistent, and strategic.",
+        "This is where we get clear on who you are, who you serve, and how you communicate, so all your copy and content stays cohesive and strategic",
       bullets: [
-        "Brand voice guide",
-        "Audience insights",
-        "Messaging pillars",
-        "Word phrases & examples",
-        "Digital booklet (Canva)",
+        "Brand values",
+        "Mission statement",
+        "Brand promise",
+        "Brand positioning",
+        "Brand story",
+        "Brand archetypes",
+        "Brand personality",
+        "Ideal client archetypes",
+        "Ideal client profiles",
+        "Tone of voice",
+        "Word + phrases",
+        "Content pillars",
+        "Digital booklet created in Canva",
       ],
     },
     {
       title: "Website Copywriting",
       icon: <Globe className="w-8 h-8 text-brand-accent" />,
       description:
-        "Conversion-ready web copy that blends psychology and storytelling — helping visitors trust, relate, and take action.",
+        "Strategic, conversion-focused website copywriting that positions you as the expert, speaks directly to your ideal client, and turns curious visitors into confident buyers.",
       bullets: [
-        "Home, About, Services pages",
-        "SEO best practices",
-        "Design-aligned for flow & conversion",
+        "Website copy created for your brand and written with SEO best practices in mind",
+        "Mini Brand messaging guide",
+        "Customer/market research to get to know your target audience",
+        "Communication with your website designer so your new copy fits perfectly into your website",
       ],
     },
     {
       title: "Email Copywriting",
       icon: <Mail className="w-8 h-8 text-brand-accent" />,
       description:
-        "Emails that build relationships, not noise. Designed to nurture, connect, and convert.",
-      bullets: ["Welcome sequences", "Launch campaigns", "Newsletters"],
+        "Sequences that nurture your audience, warm up leads, and drive action—whether that's booking calls, buying offers, or building long-term trust.",
+      bullets: [
+        "Welcome sequences", 
+        "Webinar Sequences", 
+        "Sales sequences",
+        "Newsletters",
+      ],
     },
     {
       title: "Sales Page Copywriting",
       icon: <FileText className="w-8 h-8 text-brand-accent" />,
       description:
-        "Research-driven, long-form storytelling that walks your reader from curiosity to clarity — and yes, to clicking 'buy'.",
+        "Research-backed, long-form sales page copy that speaks to your audience's deeper desires, addresses their objections, and positions your offer as the solution they've been looking for.",
     },
   ];
 
@@ -96,12 +110,14 @@ export default function ServicesOverview() {
 
         {/* === Custom Needs CTA === */}
         <div className="mt-16 text-center text-sm text-brandDark/80">
-          Need something different? Every project is customized.{" "}
+          Need something different? All my services are project-based and can be tailored to your specific needs. If you have a
+unique scope in mind or need a custom combination of services, let's talk about what works
+best for your business.{" "}
           <Link
             href="/contact"
             className="text-brand-accent font-medium underline-offset-2 hover:underline hover:text-brandDark"
           >
-            Let’s talk about what’s best for your business.
+            Inquire here
           </Link>
         </div>
       </div>
