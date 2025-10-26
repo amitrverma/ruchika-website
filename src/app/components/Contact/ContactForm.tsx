@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send } from "lucide-react";
+import { Send, CheckCircle2, AlertCircle } from "lucide-react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -9,104 +9,128 @@ export default function ContactForm() {
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  ) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    setStatus("success");
-    setTimeout(() => setStatus("idle"), 4000); // Reset message
-  };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setStatus("idle");
+
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (res.ok) {
+      setStatus("success");
+      setFormData({ name: "", email: "", message: "" });
+    } else {
+      setStatus("error");
+    }
+  } catch (err) {
+    console.error(err);
+    setStatus("error");
+  } finally {
+    setTimeout(() => setStatus("idle"), 4000);
+  }
+};
+
 
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-6 bg-white/90 backdrop-blur-sm p-10 rounded-2xl border border-brandDark/10 shadow-[0_4px_30px_rgba(0,0,0,0.05)] transition-all"
+      className="group relative space-y-8 bg-white/80 backdrop-blur-md p-10 rounded-3xl border border-brandDark/10 shadow-[0_12px_40px_-12px_rgb(0,0,0,0.15)] transition-transform duration-300 hover:-translate-y-0.5"
     >
       {/* Header */}
-      <h3 className="text-xl font-serif text-brandDark text-center mb-2">
+      <h3 className="text-2xl font-serif text-brandDark text-center mb-2">
         Send me a message
       </h3>
-      <p className="text-sm text-brandDark/70 text-center mb-6">
+      <p className="text-sm text-brandDark/70 text-center mb-8">
         I’ll personally read and reply within 24–48 hours (Mon–Fri).
       </p>
 
       {/* Inputs */}
-      <div className="space-y-5">
-        <div>
-          <label
-            htmlFor="name"
-            className="block text-sm font-medium text-brandDark mb-1"
-          >
-            Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full border border-brandDark/20 rounded-md px-4 py-2.5 text-brandDark bg-white focus:outline-none focus:ring-2 focus:ring-brandPrimary/50 focus:border-transparent transition-all"
-          />
-        </div>
-
-        <div>
-          <label
-            htmlFor="email"
-            className="block text-sm font-medium text-brandDark mb-1"
-          >
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full border border-brandDark/20 rounded-md px-4 py-2.5 text-brandDark bg-white focus:outline-none focus:ring-2 focus:ring-brandPrimary/50 focus:border-transparent transition-all"
-          />
-        </div>
-
-        <div>
-          <label
-            htmlFor="message"
-            className="block text-sm font-medium text-brandDark mb-1"
-          >
-            Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows={5}
-            required
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full border border-brandDark/20 rounded-md px-4 py-2.5 text-brandDark bg-white focus:outline-none focus:ring-2 focus:ring-brandPrimary/50 focus:border-transparent resize-none transition-all"
-          />
-        </div>
+      <div className="space-y-6">
+        {["name", "email", "message"].map((field) => (
+          <div key={field} className="relative">
+            {field !== "message" ? (
+              <input
+                type={field === "email" ? "email" : "text"}
+                name={field}
+                id={field}
+                required
+                value={formData[field as "name" | "email"]}
+                onChange={handleChange}
+                className="peer w-full border border-brandDark/20 rounded-md px-4 pt-5 pb-2.5 text-brandDark bg-white/60 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-brandSecondary/40 focus:border-transparent transition-all"
+                placeholder={field === "name" ? "Your name" : "Your email"}
+              />
+            ) : (
+              <textarea
+                name={field}
+                id={field}
+                rows={5}
+                required
+                value={formData.message}
+                onChange={handleChange}
+                className="peer w-full border border-brandDark/20 rounded-md px-4 pt-5 pb-2.5 text-brandDark bg-white/60 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-brandSecondary/40 focus:border-transparent resize-none transition-all"
+                placeholder="Your message"
+              />
+            )}
+            <label
+              htmlFor={field}
+              className="absolute left-4 top-2.5 text-sm text-brandDark/60 transition-all 
+                        peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-brandDark/40 
+                        peer-focus:top-2 peer-focus:text-sm peer-focus:text-brandSecondary"
+            >
+              {field === "name"
+                ? "Name"
+                : field === "email"
+                ? "Email"
+                : "Message"}
+            </label>
+          </div>
+        ))}
       </div>
 
-      {/* Submit Button */}
+      {/* Submit */}
       <button
         type="submit"
-        className="group w-full flex items-center justify-center gap-2 bg-brandSecondary text-white font-medium tracking-wide px-6 py-3 rounded-full hover:bg-brandDark hover:text-white transition-all duration-300"
+        disabled={status !== "idle"}
+        className={`group relative w-full flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-white text-sm tracking-wide transition-all duration-300 ${
+          status === "success"
+            ? "bg-green-600"
+            : status === "error"
+            ? "bg-red-600"
+            : "bg-brandSecondary hover:bg-brandDark"
+        } ${status === "idle" ? "hover:-translate-y-0.5 shadow-md" : ""}`}
       >
-        <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-        SEND MESSAGE
+        {status === "success" ? (
+          <>
+            <CheckCircle2 className="w-5 h-5 animate-[pop_0.4s_ease-out]" />
+            Sent!
+          </>
+        ) : status === "error" ? (
+          <>
+            <AlertCircle className="w-5 h-5 animate-[shake_0.4s_ease-in-out]" />
+            Try Again
+          </>
+        ) : (
+          <>
+            <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+            SEND MESSAGE
+          </>
+        )}
       </button>
 
-      {/* Status Messages */}
+      {/* Status message */}
       {status === "success" && (
-        <p className="text-brandDark/80 bg-brandPrimary/10 border border-brandPrimary/20 rounded-md px-4 py-3 text-center font-medium mt-4 animate-fade-in">
-          Thanks for reaching out! I’ll get back to you soon. ☕
+        <p className="text-brandDark/80 bg-brandPrimary/20 border border-brandPrimary/30 rounded-lg px-4 py-3 text-center font-medium mt-4 animate-fade-in">
+          Thanks for reaching out! I’ll get back to you soon ☕
         </p>
       )}
       {status === "error" && (
-        <p className="text-red-600 text-center font-medium mt-2">
+        <p className="text-red-600 text-center font-medium mt-2 animate-fade-in">
           Oops! Something went wrong. Please try again.
         </p>
       )}

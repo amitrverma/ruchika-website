@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
@@ -37,7 +37,6 @@ export default function TestimonialSection() {
   ];
 
   const [index, setIndex] = useState(0);
-  const controls = useAnimation();
 
   const nextSlide = () => {
     setIndex((prev) => (prev + 1) % testimonials.length);

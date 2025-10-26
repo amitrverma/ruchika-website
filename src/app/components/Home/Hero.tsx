@@ -8,7 +8,10 @@ export default function Hero() {
         <div className="text-center md:text-left space-y-5 text-brandSecondary">
           <p>Messaging-first copywriter for websites, emails & sales pages.</p>
           <h1 className="text-4xl md:text-6xl font-serif text-brandDark leading-tight">
-           Strategic copywriting <br/>for service providers on the cusp of growth who want more visibility, authority, and right-fit clients 
+           Strategic copywriting for
+service providers on the cusp of
+growth<br/> - Positioning you as the
+expert you’re becoming
         </h1>
 
           <p className="text-lg md:text-xl  leading-relaxed max-w-xl md:mt-2">

@@ -25,7 +25,7 @@ export default function AboutIntroSection() {
             When there are many amazing copywriters out there, why choose me?{" "}
             <br className="hidden md:block" />
             <span className="text-sm text-brandDark/60 font-medium">
-              (And I'm only comparing myself to other HUMANS)
+              (And I&apos;m only comparing myself to other HUMANS)
             </span>
           </p>
 
@@ -46,7 +46,7 @@ export default function AboutIntroSection() {
           </ul>
 
           <p className="font-semibold text-brandDark mt-6">
-            I'm a Copyhackers certified copywriter.
+            I&apos;m a Copyhackers certified copywriter.
           </p>
 
           <p className="text-gray-700 leading-relaxed">

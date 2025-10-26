@@ -36,17 +36,17 @@ export default function ProcessHighlightSection() {
           className="space-y-6 text-lg leading-relaxed"
         >
           <h3 className="font-semibold text-xl md:text-2xl text-brandDark">
-            But credentials are just the starting point. Here's what sets my process apart:
+            But credentials are just the starting point. Here&apos;s what sets my process apart:
           </h3>
 
           <div className="space-y-4">
             <h4 className="font-semibold text-brandDark text-lg">Deep audience research:</h4>
             <ul className="list-disc pl-5 space-y-3 text-gray-700">
               <li>
-                Copy that connects and converts requires deep understanding of who you're talking to.
+                Copy that connects and converts requires deep understanding of who you&apos;re talking to.
               </li>
               <li>
-                In my research phase, I dive into your audience's mindset through review mining,
+                In my research phase, I dive into your audience&apos;s mindset through review mining,
                 surveys, and competitor analysis—building the foundation for copy that converts.
               </li>
             </ul>
@@ -56,7 +56,7 @@ export default function ProcessHighlightSection() {
             <h4 className="font-semibold text-brandDark text-lg">Brand voice that feels human:</h4>
             <ul className="list-disc pl-5 space-y-3 text-gray-700">
               <li>
-                Memorable brands don't just sell. They stand for something and make you feel something.
+                Memorable brands don&apos;t just sell. They stand for something and make you feel something.
                 Your brand messaging and tone shape every piece of copy you create.
               </li>
               <li>

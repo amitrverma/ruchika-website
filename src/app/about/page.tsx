@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ValuesSection from "../components/About/ValuesSection"
 import AboutIntroShort from "../components/About/AboutIntroShort";
 import ScalingPhilosophySection from "../components/About/ScalingPhilosophySection";

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import ServicesOverview from "../components/Services/ServicesOverview";
 import FAQSection from "../components/Services/FAQection";
 import ProcessSection from "../components/Services/ProcessSection";
