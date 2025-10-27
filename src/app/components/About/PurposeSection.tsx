@@ -6,7 +6,7 @@ export default function PurposeSection() {
         <h3 className="text-2xl md:text-3xl font-serif font-semibold text-white mb-8 leading-snug">
           My deeper purpose behind doing what I do
           <br />
-          <span className="text-brand-accent font-normal">
+          <span className="text-brandSecondary font-normal">
             (clear messaging and strategic copy)
           </span>
         </h3>
@@ -32,12 +32,15 @@ export default function PurposeSection() {
           <div className="w-24 h-[2px] bg-white/40 rounded-full" />
         </div>
 
-        <a
-          href="/services"
-          className="inline-block bg-brandDark text-white px-8 py-3 rounded-full font-medium tracking-wide hover:bg-brandDark transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.2)]"
-        >
-          READY FOR MESSAGING & COPYWRITING SUPPORT
-        </a>
+        {/* Centered button */}
+        <div className="flex justify-center">
+          <a
+            href="/services"
+            className="inline-block bg-brandDark text-white px-8 py-3 rounded-full font-medium tracking-wide hover:bg-brandDark/90 transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.2)]"
+          >
+            READY FOR MESSAGING & COPYWRITING SUPPORT
+          </a>
+        </div>
       </div>
     </section>
   );

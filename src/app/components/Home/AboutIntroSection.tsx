@@ -17,7 +17,7 @@ export default function AboutIntroSection() {
           className="space-y-6"
         >
           <h2 className="text-2xl md:text-3xl font-semibold leading-snug text-brandDark">
-            Hi, I am <span className="text-brand-accent font-bold">Ruchika</span>, your strategic partner for brand messaging
+            Hi, I am <span className="text-brandSecondary font-bold">Ruchika</span>, your strategic partner for brand messaging
             and copywriting services
           </h2>
 
@@ -33,7 +33,7 @@ export default function AboutIntroSection() {
             With my marketing background and copywriting skills, I’ve got your back. Here’s what I bring:
           </h3>
 
-          <ul className="list-disc pl-5 space-y-3 text-gray-700 leading-relaxed text-[1.05rem]">
+          <ul className="list-disc pl-5 space-y-3  leading-relaxed text-[1.05rem]">
             <li>Master’s in marketing,</li>
             <li>
               Spent 9 years in marketing, writing and managing content across websites, emails, and social media
@@ -49,7 +49,7 @@ export default function AboutIntroSection() {
             I&apos;m a Copyhackers certified copywriter.
           </p>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className=" leading-relaxed">
             I invested in myself and learned copywriting and brand messaging & tone of voice from top experts in this field.
           </p>
         </motion.div>
@@ -63,8 +63,8 @@ export default function AboutIntroSection() {
           className="flex flex-col items-center justify-center gap-8"
         >
           {/* Profile Image */}
-          <div className="relative w-[280px] h-[280px] rounded-[2rem] border-2 border-gray-200 bg-white p-2 shadow-md">
-            <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden border border-gray-300">
+          <div className="relative w-[280px] h-[280px] rounded-[2rem] border border-gray-200 bg-white">
+            <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden">
               <Image
                 src="/assets/ruchika-profile.png"
                 alt="Ruchika Ratna - Copywriter and Brand Messaging Specialist"
@@ -104,8 +104,8 @@ export default function AboutIntroSection() {
       </div>
 
       {/* Subtle Background Glow */}
-      <div className="absolute top-10 right-10 w-[300px] h-[300px] bg-brand-accent/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-10 left-10 w-[250px] h-[250px] bg-brand-accent/20 rounded-full blur-3xl"></div>
+      <div className="absolute top-10 right-10 w-[300px] h-[300px] bg-brandSecondary/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 left-10 w-[250px] h-[250px] bg-brandSecondary/20 rounded-full blur-3xl"></div>
     </section>
   );
 }

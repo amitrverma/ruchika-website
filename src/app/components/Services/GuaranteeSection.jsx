@@ -77,7 +77,7 @@ export default function GuaranteeSection() {
           {items.map((item, i) => (
             <motion.div
               key={i}
-              className="flex items-start gap-4 p-5 bg-white/70 rounded-xl shadow-sm hover:shadow-md hover:bg-white transition-all"
+              className="flex items-start gap-4 p-5 bg-white/70 rounded-xl shadow-sm hover:shadow-md hover:bg-white transition-all border border-brandSecondary"
               variants={fadeInUp}
               initial="hidden"
               whileInView="visible"
@@ -86,8 +86,8 @@ export default function GuaranteeSection() {
             >
               <div className="flex-shrink-0">{item.icon}</div>
               <div>
-                <h4 className="font-semibold text-brand-dark mb-1">{item.title}</h4>
-                <p className="text-gray-700 text-sm md:text-base">{item.desc}</p>
+                <h4 className="font-semibold text-brandDark mb-1">{item.title}</h4>
+                <p className=" text-sm md:text-base text-brandDark">{item.desc}</p>
               </div>
             </motion.div>
           ))}

@@ -86,7 +86,7 @@ const fadeUp: Variants = {
               className="relative group"
             >
               {/* Dot */}
-              <span className="absolute -left-[11px] md:-left-[13px] top-2 w-5 h-5 bg-brandSecondary rounded-full border-4 border-white shadow-md transition-all duration-300 group-hover:scale-125" />
+<span className="absolute -left-[11px] md:-left-[13px] top-2 w-5 h-5 bg-brandSecondary rounded-full border-4 border-white shadow-md z-20 transition-all duration-300 group-hover:scale-125" />
 
               {/* Card */}
               <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-sm border border-brandSecondary/10 hover:shadow-[0_10px_30px_-8px_rgb(0_0_0/0.1)] transition-all duration-300">

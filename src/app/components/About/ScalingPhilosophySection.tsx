@@ -19,11 +19,8 @@ const fadeUp: Variants = {
 
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-[#f9f9f7] to-white py-28">
-      {/* Background halos for subtle energy */}
-      <div className="absolute top-0 right-0 w-[320px] h-[320px] bg-brandAccent/10 rounded-full blur-3xl translate-x-1/4 -translate-y-1/4 animate-pulse-slow" />
-      <div className="absolute bottom-0 left-0 w-[280px] h-[280px] bg-brandSecondary/10 rounded-full blur-3xl -translate-x-1/4 translate-y-1/4 animate-pulse-slower" />
-
+    <section className="relative overflow-hidden  py-28">
+    
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -36,14 +33,14 @@ const fadeUp: Variants = {
           className="text-2xl md:text-3xl font-serif font-medium text-center md:text-left mb-10 md:mb-12 max-w-2xl"
         >
           As you scale, it’s time to position yourself as{" "}
-          <span className="text-brand-accent font-semibold relative">
+          <span className="text-brandSecondary font-semibold relative">
             the expert you’re becoming.
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-brandAccent/30 rounded-full"></span>
+            <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-brandSecondary/30 rounded-full"></span>
           </span>
         </motion.h3>
 
         {/* Body paragraphs */}
-        <div className="space-y-8 text-lg md:text-[1.125rem] text-gray-700">
+        <div className="space-y-8 text-lg md:text-[1.125rem] ">
           <motion.p variants={fadeUp}>
             Your expertise and results speak for themselves — people want to work with you.
           </motion.p>
@@ -71,15 +68,9 @@ const fadeUp: Variants = {
           <motion.p variants={fadeUp} className="text-brandDark font-medium">
             You’re building your dream business, and if I can support that through the power of
             messaging and words,{" "}
-            <span className="text-brand-accent font-semibold">I’d be honored.</span>
+            <span className="text-brandSecondary font-semibold">I’d be honored.</span>
           </motion.p>
         </div>
-
-        {/* Accent underline */}
-        <motion.div
-          variants={fadeUp}
-          className="w-16 h-[2px] bg-brandAccent/40 mt-12 mx-auto md:mx-0"
-        />
       </motion.div>
     </section>
   );

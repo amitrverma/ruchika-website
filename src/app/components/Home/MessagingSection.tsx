@@ -7,8 +7,7 @@ import { ArrowRight } from "lucide-react";
 export default function MessagingSection() {
   return (
     <section className="relative bg-gradient-to-b from-white via-[#fdfcfb] to-white py-24 overflow-hidden">
-      {/* Decorative Accent */}
-      <div className="absolute top-0 left-0 w-1/3 h-1 bg-brand-accent/30 rounded-full"></div>
+
 
       <div className="container relative z-10 max-w-3xl mx-auto px-6 text-brandDark">
         {/* Heading */}
@@ -29,16 +28,16 @@ export default function MessagingSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
           viewport={{ once: true }}
-          className="space-y-5 text-gray-700 text-lg leading-relaxed"
+          className="space-y-5  text-lg leading-relaxed"
         >
           <li className="flex items-start gap-3">
-            <span className="mt-2 w-2 h-2 bg-brand-accent rounded-full flex-shrink-0"></span>
+            <span className="mt-2 w-2 h-2 bg-brandSecondary rounded-full flex-shrink-0 "></span>
             <span>
               You want a website that aligns with your expert level positioning and rates
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="mt-2 w-2 h-2 bg-brand-accent rounded-full flex-shrink-0"></span>
+            <span className="mt-2 w-2 h-2 bg-brandSecondary rounded-full flex-shrink-0"></span>
             <span>
               You want to be more intentional with your email marketing — turning your thoughts,
               stories, and experiences into emails that build trust, make sales, and have your
@@ -46,7 +45,7 @@ export default function MessagingSection() {
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="mt-2 w-2 h-2 bg-brand-accent rounded-full flex-shrink-0"></span>
+            <span className="mt-2 w-2 h-2 bg-brandSecondary rounded-full flex-shrink-0"></span>
             <span>
               You’re selling a program, course, or digital product and need email copy and a
               sales page that help your audience see your offer as the right solution,
@@ -56,7 +55,7 @@ export default function MessagingSection() {
         </motion.ul>
 
         {/* Divider */}
-        <div className="w-20 h-[2px] bg-brand-accent/30 my-10 mx-auto"></div>
+        <div className="w-20 h-[2px] bg-brandSecondary/30 my-10 mx-auto"></div>
 
         {/* Emphasis Section */}
         <motion.div
@@ -70,13 +69,13 @@ export default function MessagingSection() {
             Which ultimately starts with your{" "}
             <span className="font-semibold text-brandDark">MESSAGING.</span>
           </p>
-          <p className="text-gray-700">
+          <p className="">
             It’s the foundation of everything — website, emails, social —{" "}
             <span className="font-medium text-brandDark">EVERYTHING</span>
           </p>
           <p>
             And it wouldn’t be an exaggeration to say your{" "}
-            <span className="font-semibold text-brand-accent">COPY</span> makes your
+            <span className="font-semibold text-brandSecondary">COPY</span> makes your
             message come alive.
           </p>
           <p className="font-medium text-brandDark">That’s where I come in.</p>

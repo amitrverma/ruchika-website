@@ -21,9 +21,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     });
 
     const mailOptions = {
-      from: `"Website Contact" <${process.env.CONTACT_EMAIL}>`,
+      from: `"R Copy Contact Form" <${process.env.CONTACT_EMAIL}>`,
       to: "ruchikaratna@gmail.com",
-      subject: `New message from ${name}`,
+      subject: `Message from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     };
 

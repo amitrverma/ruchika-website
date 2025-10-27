@@ -43,7 +43,7 @@ export default function ProcessSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-brandPrimary via-[#fafaf9] to-white py-28">
+    <section className="relative overflow-hidden bg-brandPrimary py-28">
       {/* Subtle background glow */}
       <div className="absolute inset-0 opacity-[0.05] bg-[radial-gradient(circle_at_50%_30%,_var(--tw-gradient-stops))] from-brandSecondary via-transparent to-transparent" />
 
@@ -73,7 +73,7 @@ export default function ProcessSection() {
             className="absolute left-1/2 top-0 h-full w-[3px] bg-gradient-to-b from-brandSecondary/0 via-brandSecondary/50 to-brandSecondary/0 origin-top transform -translate-x-1/2"
           />
 
-          <div className="space-y-24">
+          <div className="space-y-14">
             {phases.map((p, i) => {
               const isLeft = i % 2 === 0;
               return (
@@ -96,7 +96,7 @@ export default function ProcessSection() {
                   {/* Content Card */}
                   <div
                     className={`relative bg-white/90 backdrop-blur-sm border border-brandSecondary/20 shadow-lg rounded-2xl p-6 max-w-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_40px_-12px_rgb(0_0_0/0.2)] ${
-                      isLeft ? "mr-[55%] text-left" : "ml-[55%] text-right"
+                      isLeft ? "mr-[55%] text-left" : "ml-[55%] text-left"
                     }`}
                   >
                     <div
@@ -111,7 +111,7 @@ export default function ProcessSection() {
                         {p.title}
                       </h4>
                     </div>
-                    <p className="text-gray-700 text-sm leading-relaxed">
+                    <p className=" text-md leading-relaxed">
                       {p.desc}
                     </p>
                   </div>
@@ -137,7 +137,7 @@ export default function ProcessSection() {
                   {p.title}
                 </h4>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed">{p.desc}</p>
+              <p className=" text-sm leading-relaxed">{p.desc}</p>
             </motion.div>
           ))}
         </div>

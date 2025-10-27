@@ -41,7 +41,7 @@ export default function ProcessHighlightSection() {
 
           <div className="space-y-4">
             <h4 className="font-semibold text-brandDark text-lg">Deep audience research:</h4>
-            <ul className="list-disc pl-5 space-y-3 text-gray-700">
+            <ul className="list-disc pl-5 space-y-3 ">
               <li>
                 Copy that connects and converts requires deep understanding of who you&apos;re talking to.
               </li>
@@ -54,7 +54,7 @@ export default function ProcessHighlightSection() {
 
           <div className="space-y-4 mt-6">
             <h4 className="font-semibold text-brandDark text-lg">Brand voice that feels human:</h4>
-            <ul className="list-disc pl-5 space-y-3 text-gray-700">
+            <ul className="list-disc pl-5 space-y-3 ">
               <li>
                 Memorable brands don&apos;t just sell. They stand for something and make you feel something.
                 Your brand messaging and tone shape every piece of copy you create.
@@ -70,7 +70,7 @@ export default function ProcessHighlightSection() {
       </div>
 
       {/* Background Glow Elements */}
-      <div className="absolute -top-10 -left-10 w-[300px] h-[300px] bg-brand-accent/10 blur-3xl rounded-full"></div>
+      <div className="absolute -top-10 -left-10 w-[300px] h-[300px] bg-brandSecondary/10 blur-3xl rounded-full"></div>
       <div className="absolute bottom-0 right-0 w-[350px] h-[350px] bg-brandSecondary/10 blur-3xl rounded-full"></div>
     </section>
   );

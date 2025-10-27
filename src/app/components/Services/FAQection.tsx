@@ -82,7 +82,7 @@ export default function FAQSection() {
                   openIndex === i ? "max-h-96 mt-3 opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+                <p className=" text-sm md:text-base leading-relaxed">
                   {item.a}
                 </p>
               </div>

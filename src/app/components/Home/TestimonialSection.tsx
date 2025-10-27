@@ -8,14 +8,14 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 export default function TestimonialSection() {
   const testimonials = [
     {
-      image: "/assets/tanishq.jpg",
-      quote:
-        "The final copy not only captured my vision, but also provided a clear path for my audience to take action.",
-      body: "With a few years in the business and experience working with multiple clients, I knew it was time to create a website that truly resonated with my ideal audience. Ruchika brought so much clarity to the process. Her in-depth research and ability to deeply understand my target audience helped craft messaging that feels genuine and speaks directly to my clients.",
-      name: "Tanishq Jha",
-      title: "Founder, Tanishqjha.co — OBM & VA",
-      logo: "/asset/tanishq.jpg",
-    },
+    image: "/assets/tanishq.jpg",
+    quote:
+      "The final copy not only captured my vision, but also provided a clear path for my audience to take action.",
+    body: `With a few years in the business and experience working with multiple clients, I knew it was time to create a website that truly resonated with my ideal audience. Ruchika brought so much clarity to the process.\n\nHer in-depth research and ability to deeply understand my target audience helped craft messaging that feels genuine and speaks directly to my clients. The process was collaborative, and communication was always clear and timely.\n\nThe final copy not only captured my vision...\n\n...but also provided a clear path for my audience to take action.\n\nIf you’re looking for a copywriter who’s not only skilled but also deeply invested in your success, Ruchika is an excellent choice!`,
+    name: "Tanishq Jha",
+    title: "Founder, Tanishqjha.co — OBM & VA",
+    logo: "/asset/tanishq.jpg",
+  },
     {
       image: "/assets/trinklet.png",
       quote:
@@ -58,7 +58,7 @@ export default function TestimonialSection() {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.6 }}
-          className="bg-white/10 rounded-3xl shadow-md p-10 md:p-14 grid md:grid-cols-[1fr_2fr] items-center gap-10 md:gap-16"
+          className="bg-white/10 rounded-3xl p-10 md:p-14 grid border md:grid-cols-[1fr_2fr] items-center gap-10 md:gap-16"
         >
           {/* Image */}
           <div className="relative w-[180px] h-[180px] mx-auto md:mx-0">
@@ -73,13 +73,13 @@ export default function TestimonialSection() {
           {/* Testimonial text */}
           <div className="text-brandDark">
             <div className="relative mb-6">
-              <Quote className="absolute -top-10 -left-4 w-12 h-12 text-brand-accent/30" />
+              <Quote className="absolute -top-10 -left-4 w-12 h-12 text-brandSecondary/30" />
               <p className="text-xl md:text-2xl font-serif italic leading-snug relative z-10">
                 “{current.quote}”
               </p>
             </div>
 
-            <p className="text-brandDark/90 leading-relaxed mb-4">{current.body}</p>
+            <p className="text-brandDark/90 leading-relaxed mb-4 whitespace-pre-line">{current.body}</p>
 
             <div className="border-t border-brandSecondary/20 pt-4">
               <p className="font-semibold text-brandDark text-lg">{current.name}</p>

@@ -39,9 +39,9 @@ export default function ClientReadinessSection() {
           className="text-3xl md:text-4xl font-serif text-center mb-16"
         >
           What makes ready-to-invest clients say{" "}
-          <span className="relative text-brand-accent font-semibold">
+          <span className="relative text-brandSecondary font-semibold">
             “yes”
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-brandAccent/40 rounded-full" />
+            <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-brandSecondary/40 rounded-full" />
           </span>
           ?
         </motion.h2>
@@ -52,7 +52,7 @@ export default function ClientReadinessSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="space-y-10 text-[1.05rem] md:text-lg text-gray-700"
+          className="space-y-10 text-[1.05rem] md:text-lg "
         >
           {/* Paragraph 1 */}
           <motion.p variants={fadeUp}>
@@ -105,7 +105,7 @@ export default function ClientReadinessSection() {
             className="font-semibold text-brandDark mt-10 border-t border-gray-200 pt-6 text-center"
           >
             When your message speaks to their deeper desires and positions you as the go-to expert,{" "}
-            <span className="text-brand-accent font-bold">
+            <span className="text-brandSecondary font-bold">
               you attract clients who value your expertise — not just price-shop.
             </span>
           </motion.p>

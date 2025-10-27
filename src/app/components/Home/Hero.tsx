@@ -15,10 +15,7 @@ expert you’re becoming
         </h1>
 
           <p className="text-lg md:text-xl  leading-relaxed max-w-xl md:mt-2">
-            Audience research. Clear messaging. Your authentic voice.<br />
-            <strong className="text-brandDark font-semibold">
-              Positioning you as the expert you’re becoming.
-            </strong>
+            Audience research. Clear messaging. Your authentic voice.
           </p>
     
             Prefer to talk, not read? <br/><br/>

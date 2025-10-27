@@ -50,7 +50,7 @@ const fadeUp: Variants = {
     <section className="relative overflow-hidden bg-gradient-to-b from-white via-[#fafaf9] to-brandPrimary/10 py-28 text-brandDark">
       {/* Subtle celebration confetti background */}
       <div className="absolute inset-0 opacity-[0.05] bg-[radial-gradient(circle_at_30%_20%,_var(--tw-gradient-stops))] from-brandSecondary via-transparent to-transparent pointer-events-none" />
-      <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(circle_at_80%_90%,_var(--tw-gradient-stops))] from-brandAccent via-transparent to-transparent pointer-events-none" />
+      <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(circle_at_80%_90%,_var(--tw-gradient-stops))] from-brandSecondary via-transparent to-transparent pointer-events-none" />
 
       <div className="container relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Header */}
@@ -61,7 +61,7 @@ const fadeUp: Variants = {
           viewport={{ once: true }}
           className="text-2xl md:text-3xl font-serif leading-relaxed mb-12 flex items-center justify-center gap-3"
         >
-          <Sparkles className="text-brandAccent w-6 h-6 animate-pulse" />
+          <Sparkles className="text-brandSecondary w-6 h-6 animate-pulse" />
           <span>
             Take a moment — you&apos;re right on the edge of something exciting.
             <br />
@@ -69,7 +69,7 @@ const fadeUp: Variants = {
               But first, let’s celebrate this.
             </span>
           </span>
-          <Sparkles className="text-brandAccent w-6 h-6 animate-pulse" />
+          <Sparkles className="text-brandSecondary w-6 h-6 animate-pulse" />
         </motion.h2>
 
         {/* Top Points */}
@@ -84,7 +84,7 @@ const fadeUp: Variants = {
               key={i}
               variants={fadeUp}
               custom={i}
-              className="group bg-white/90 backdrop-blur-sm border border-brandSecondary/10 rounded-2xl p-6 shadow-sm hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1"
+              className="group bg-white/90 backdrop-blur-sm border border-brandSecondary rounded-2xl p-6 shadow-sm hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1"
             >
               <h3 className="font-semibold text-lg md:text-xl mb-2 group-hover:text-brandSecondary transition-colors">
                 {item.title}
@@ -105,10 +105,10 @@ const fadeUp: Variants = {
           className="relative mb-20"
         >
           <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-brandDark/20 to-transparent" />
-          <h3 className="relative inline-block bg-white px-4 text-xl md:text-2xl font-serif font-medium text-brandDark">
-            Now it’s time to own your next-level era —{" "}
-            <span className="text-brandAccent underline decoration-brandAccent/40">
-              from order-taker to boss business owner
+          <h3 className="relative inline-block px-4 text-xl md:text-2xl font-serif font-medium text-brandDark">
+            Now it’s time to own your next-level era — from order-taker to {" "}
+            <span className="text-brandSecondary underline decoration-brandSecondary/40">
+              boss business owner
             </span>
             .
           </h3>
@@ -126,9 +126,9 @@ const fadeUp: Variants = {
               key={i}
               variants={fadeUp}
               custom={i}
-              className="group bg-white/90 backdrop-blur-sm border border-brandSecondary/10 rounded-2xl p-6 shadow-sm hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1"
+              className="group bg-white/90 backdrop-blur-sm border border-brandSecondary rounded-2xl p-6 shadow-sm hover:shadow-[0_8px_30px_rgba(0,0,0,0.06)] transition-all duration-300 hover:-translate-y-1"
             >
-              <h3 className="font-semibold text-lg md:text-xl mb-2 group-hover:text-brandAccent transition-colors">
+              <h3 className="font-semibold text-lg md:text-xl mb-2 group-hover:text-brandSecondary transition-colors">
                 {item.title}
               </h3>
               <p className="text-brandDark/80 leading-relaxed text-sm md:text-base">

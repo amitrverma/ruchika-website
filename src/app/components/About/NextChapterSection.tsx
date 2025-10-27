@@ -18,11 +18,6 @@ const fadeUp: Variants = {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-white via-[#fafaf9] to-brandPrimary/10 py-28">
-      {/* === Subtle background glow to mark new phase === */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-[280px] h-[280px] bg-brandSecondary/10 rounded-full blur-3xl animate-pulse-slow" />
-        <div className="absolute bottom-0 right-0 w-[340px] h-[340px] bg-brandAccent/15 rounded-full blur-3xl translate-x-1/4 translate-y-1/4 animate-pulse-slower" />
-      </div>
 
       <motion.div
         initial="hidden"
@@ -63,16 +58,11 @@ const fadeUp: Variants = {
             Understand your audience inside and out.  
             Get your messaging right.  
             Combine it with your one-of-a-kind voice to write copy that earns  
-            <span className="font-semibold text-brandAccent"> “heck yes” </span> inquiries  
+            <span className="font-semibold text-brandSecondary"> “heck yes” </span> inquiries  
             from your right-fit clients.
           </motion.div>
         </div>
 
-        {/* === Decorative divider === */}
-        <motion.div
-          variants={fadeUp}
-          className="w-20 h-[2px] bg-brandAccent/40 mt-14 mx-auto md:mx-0"
-        />
       </motion.div>
     </section>
   );

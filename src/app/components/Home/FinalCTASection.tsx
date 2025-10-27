@@ -9,22 +9,22 @@ export default function FinalCTASection() {
     {
       icon: <FileText className="w-7 h-7" />,
       title: "Inquiry",
-      desc: "Fill the form — I’ll reply within 24–48 hrs (Mon–Fri) with a confirmation & call link.",
+      desc: "Once you fill out the inquiry form, you'll hear from me within 24-48 hours (Monday-Friday) with a confirmation email and call details.",
     },
     {
       icon: <Phone className="w-7 h-7" />,
       title: "Clarity Call",
-      desc: "We discuss goals, fit, and scope. You’ll get straight answers, no fluff.",
+      desc: "We'll hop on a call to discuss your project, goals, and what you're looking to achieve.",
     },
     {
       icon: <Calendar className="w-7 h-7" />,
       title: "Proposal",
-      desc: "Clear deliverables, timeline, and pricing so you can decide with confidence.",
+      desc: "If it feels like a good fit, I'll send you a detailed proposal covering what's included, timelines, and pricing. Everything you need to make an informed decision.",
     },
     {
       icon: <Rocket className="w-7 h-7" />,
       title: "Kickoff",
-      desc: "Sign + first milestone → we start. Smooth onboarding and momentum from day one.",
+      desc: "Once you're ready, we'll make it official with a signed agreement and payment, and then we dive in!",
     },
   ];
 const fadeUp: Variants = {
@@ -40,10 +40,8 @@ const fadeUp: Variants = {
 };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-[#fafaf9] to-brandPrimary/10 py-28">
-      {/* Decorative background halo */}
-      <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-brandSecondary/15 rounded-full blur-3xl translate-x-1/4 -translate-y-1/3 pointer-events-none" />
-
+    <section className="relative overflow-hidden py-28">
+     
       <div className="container mx-auto max-w-5xl relative z-10">
         {/* Header */}
         <motion.div
@@ -58,7 +56,7 @@ const fadeUp: Variants = {
             <br className="hidden sm:block" /> confidently attracts your ideal clients
           </h2>
           <p className="text-lg text-brandDark/80 mt-4">
-            Here’s the path — simple, human, and efficient
+            This is how it works. Simple and easy
           </p>
         </motion.div>
 
@@ -92,7 +90,7 @@ const fadeUp: Variants = {
                   </span>
                   <h3 className="text-base font-semibold">{s.title}</h3>
                 </div>
-                <p className="text-sm text-brandDark/80 leading-relaxed">{s.desc}</p>
+                <p className="text-md text-brandDark/80 leading-relaxed">{s.desc}</p>
               </div>
             </motion.li>
           ))}
@@ -106,14 +104,14 @@ const fadeUp: Variants = {
           viewport={{ once: true }}
           className="mt-16"
         >
-          <div className="mx-auto max-w-3xl rounded-2xl border border-brandSecondary/30 bg-white/90 backdrop-blur-sm p-8 md:p-10 shadow-[0_8px_35px_rgba(0,0,0,0.04)]">
+          <div className="mx-auto max-w-3xl rounded-2xl border border-brandSecondary bg-white/90 backdrop-blur-sm p-8 md:p-10 shadow-[0_8px_35px_rgba(0,0,0,0.04)]">
             <p className="text-brandDark text-center text-lg md:text-xl font-medium">
               Ready to move from{" "}
               <span className="italic text-brandSecondary/90">
                 “thinking about it”
               </span>{" "}
               to{" "}
-              <span className="underline underline-offset-4 decoration-brandAccent font-semibold">
+              <span className="underline underline-offset-4 decoration-brandSecondary font-semibold">
                 booking better clients
               </span>
               ?
@@ -127,13 +125,6 @@ const fadeUp: Variants = {
                 <span className="group-hover:scale-105 transition-transform">
                   I’M IN — SCHEDULE A CALL
                 </span>
-              </Link>
-              <span className="text-sm text-brandDark/60">or</span>
-              <Link
-                href="/services"
-                className="text-sm underline underline-offset-4 decoration-brandSecondary/60 hover:text-brandDark"
-              >
-                Review services
               </Link>
             </div>
 

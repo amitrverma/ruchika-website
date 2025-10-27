@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function AboutIntroShort() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-brandPrimary via-[#fafaf9] to-white py-24 md:py-32">
+    <section className="relative bg-brandPrimary py-30">
       {/* Decorative gradient motif */}
       <div className="absolute inset-0 opacity-[0.05] bg-[radial-gradient(circle_at_70%_30%,_var(--tw-gradient-stops))] from-brandSecondary via-transparent to-transparent" />
 
@@ -53,7 +53,7 @@ export default function AboutIntroShort() {
           </motion.div>
 
           {/* Subtle floating glow behind images */}
-          <div className="absolute -bottom-16 -right-20 w-60 h-60 bg-brandAccent/20 rounded-full blur-3xl opacity-40 animate-pulse-slow" />
+          <div className="absolute -bottom-16 -right-20 w-60 h-60 bg-brandSecondary/20 rounded-full blur-3xl opacity-40 animate-pulse-slow" />
         </motion.div>
 
         {/* === RIGHT COLUMN — TEXT === */}
