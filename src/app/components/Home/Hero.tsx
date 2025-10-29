@@ -15,7 +15,9 @@ expert you’re becoming
         </h1>
 
           <p className="text-lg md:text-xl  leading-relaxed max-w-xl md:mt-2">
-            Audience research. Clear messaging. Your authentic voice.
+           Audience research. Clear messaging. Your authentic voice.</p>
+          <p className="text-lg md:text-xl text-brandDark font-bold leading-relaxed max-w-xl">
+So you attract right-fit clients who are ready to invest.
           </p>
     
             Prefer to talk, not read? <br/><br/>

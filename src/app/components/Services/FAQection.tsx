@@ -77,15 +77,15 @@ export default function FAQSection() {
                 </span>
               </div>
 
-              <div
-                className={`transition-all duration-300 overflow-hidden ${
-                  openIndex === i ? "max-h-96 mt-3 opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                <p className=" text-sm md:text-base leading-relaxed">
-                  {item.a}
-                </p>
-              </div>
+<div
+  className={`transition-all duration-300 overflow-hidden ${
+    openIndex === i ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+  }`}
+>
+  <p className="text-brandDark text-sm md:text-base leading-relaxed rounded-lg p-4">
+    {item.a}
+  </p>
+</div>
             </div>
           ))}
         </div>

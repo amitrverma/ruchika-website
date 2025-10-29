@@ -7,22 +7,22 @@ export default function ProcessSection() {
   const phases = [
     {
       title: "Phase 1: Research",
-      desc: "Once we decide to work together, I’ll send you a brand questionnaire to uncover everything about your goals, audience, and offer. Then I dive into customer research, competitor analysis, and review mining to uncover what truly makes your people say yes.",
+      desc: "Once we decide to work together, I’ll send you a brand questionnaire doc. where I ask you enough questions to make your head spin—but this brief will help me shape clear, strategic copy. \n Then as I start working on your project, I dive deep into understanding your audience. This process includes conducting customer surveys, researching competitors, and review mining. It's an essential message-finding process to truly understand your audience and what will make them say yes to your offer.",
       icon: <Search className="w-7 h-7 text-brandSecondary" />,
     },
     {
       title: "Phase 2: Analyzing & Planning",
-      desc: "I synthesize all insights gathered during research to refine your messaging, identify key angles, and craft a clear plan for your copy direction. This ensures every word is backed by strategy.",
+      desc: "In this phase, I'll analyze everything I uncovered in the research phase and use it to refine your core messaging. So we can put the right message in front of your audience",
       icon: <Brain className="w-7 h-7 text-brandSecondary" />,
     },
     {
       title: "Phase 3: Copywriting & Editing",
-      desc: "Here’s where the words come alive. I combine proven copywriting frameworks with your brand’s unique tone to create emotionally resonant, conversion-driven copy. You’ll review the draft before we finalize the layout.",
+      desc: "Here, I roll up my sleeves and use copywriting techniques and frameworks to write compelling copy that reflects your brand’s voice. \n I will present you the first draft to get your approval. Which leads to a wireframe (for web pages) or Google doc (for emails, sales page, etc).",
       icon: <PenTool className="w-7 h-7 text-brandSecondary" />,
     },
     {
       title: "Phase 4: Delivery & Review",
-      desc: "You’ll receive the polished copy and we’ll walk through it together. My goal? To ensure the message sounds like you—only sharper, clearer, and more persuasive.",
+      desc: "I will email you the final copy and then get on a call to review it together.",
       icon: <CheckCircle className="w-7 h-7 text-brandSecondary" />,
     },
   ];
@@ -111,7 +111,7 @@ export default function ProcessSection() {
                         {p.title}
                       </h4>
                     </div>
-                    <p className=" text-md leading-relaxed">
+                    <p className=" text-md leading-relaxed whitespace-pre-line">
                       {p.desc}
                     </p>
                   </div>
@@ -148,9 +148,9 @@ export default function ProcessSection() {
           className="mt-20 text-center font-medium text-brandDark max-w-2xl mx-auto"
         >
           Also, I’m not going anywhere after your project ends. I’ll be your biggest cheerleader.
-          Your success is mine too.{" "}
+          Your success is mine too. <br/>{" "}
           <span className="text-brandSecondary font-semibold">
-            Every project I take on comes with my ongoing support.
+            That is why every project I take on comes with my...
           </span>
         </motion.p>
 

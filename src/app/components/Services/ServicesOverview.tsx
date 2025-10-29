@@ -143,13 +143,15 @@ export default function ServicesOverview() {
           variants={fadeUp}
           className="mt-16 text-center text-sm text-brandDark/80 max-w-2xl mx-auto"
         >
-          Need something different? My services are project-based and can be tailored to your goals.
-          If you have a unique scope or want a custom blend of services, let’s talk about what fits{" "}
+          <p className="text-lg font-semibold">Need something different?</p>
+         All my services are project-based and can be tailored to your specific needs. If you have a
+unique scope in mind or need a custom combination of services, let's talk about what works
+best for your business.<br/> {" "}
           <Link
             href="/contact"
             className="text-brandSecondary font-medium underline-offset-2 hover:underline hover:text-brandDark"
           >
-            best for your business.
+            Inquire here
           </Link>
         </motion.div>
 

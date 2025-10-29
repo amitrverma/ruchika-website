@@ -127,10 +127,6 @@ const fadeUp: Variants = {
                 </span>
               </Link>
             </div>
-
-            <div className="mt-4 text-center text-xs text-brandDark/60">
-              Calendar updated weekly · No high-pressure sales · Clear next steps
-            </div>
           </div>
         </motion.div>
       </div>

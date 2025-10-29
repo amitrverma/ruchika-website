@@ -49,10 +49,10 @@ export default function ServicesOverviewSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-serif font-semibold leading-snug mb-4 text-brandDark">
-            Need copy that connects — and fills your calendar?
+            Need copy that connects with your audience and fills your calendar?
           </h2>
           <p className="text-lg md:text-xl text-brandDark/80 font-light">
-            Strategic messaging and copywriting services tailored for service-based businesses
+            Brand messaging and copywriting services for you
           </p>
         </motion.div>
 

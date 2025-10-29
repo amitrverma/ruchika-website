@@ -69,8 +69,7 @@ const fadeUp: Variants = {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-serif text-brandDark mb-16 text-center leading-snug"
         >
-          The values that shape how I show up —
-          <br className="hidden md:block" /> and guide our work together
+The values that shape how I show up & guide our work together
         </motion.h2>
 
         {/* === Timeline === */}
