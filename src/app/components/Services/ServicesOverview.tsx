@@ -145,7 +145,7 @@ export default function ServicesOverview() {
         >
           <p className="text-lg font-semibold">Need something different?</p>
          All my services are project-based and can be tailored to your specific needs. If you have a
-unique scope in mind or need a custom combination of services, let's talk about what works
+unique scope in mind or need a custom combination of services, let&apos;s talk about what works
 best for your business.<br/> {" "}
           <Link
             href="/contact"
