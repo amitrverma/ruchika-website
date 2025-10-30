@@ -41,14 +41,11 @@ const fadeUp: Variants = {
           </motion.p>
 
           <motion.p variants={fadeUp}>
-            So I immersed myself in learning — brand messaging, storytelling, and
-            conversion-focused copywriting — guided by some of the best mentors in the field.
+            So I learned brand messaging and conversion copywriting from top experts in the field.
           </motion.p>
 
           <motion.p variants={fadeUp}>
-            That experience changed how I approach communication entirely. It became less about
-            “selling” and more about **understanding** — seeing through the eyes of the client and
-            speaking to what truly moves them.
+           My overall approach is
           </motion.p>
 
           <motion.div

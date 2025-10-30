@@ -6,13 +6,15 @@ export default function Hero() {
       <div className="container mx-auto grid md:grid-cols-[3fr_2fr] items-center gap-10 md:gap-16">
         {/* Left — Text */}
         <div className="text-center md:text-left space-y-5 text-brandSecondary">
-          <p>Messaging-first copywriter for websites, emails & sales pages.</p>
-          <h1 className="text-4xl md:text-6xl font-serif text-brandDark leading-tight">
-           Strategic copywriting for
-service providers on the cusp of
-growth<br/> - Positioning you as the
-expert you’re becoming
-        </h1>
+          <p className="font-semibold">Messaging-first copywriter for websites, emails & sales pages.</p>
+<h1 className="text-3xl md:text-5xl font-serif text-brandDark leading-snug">
+  Strategic copywriting for <br/> service providers on the cusp <br/> of growth – Positioning you as <br/> {" "}
+  <span className="font-semibold underline">
+    the obvious choice
+  </span>{" "}
+  in your space
+</h1>
+
 
           <p className="text-lg md:text-xl  leading-relaxed max-w-xl md:mt-2">
            Audience research. Clear messaging. Your authentic voice.</p>

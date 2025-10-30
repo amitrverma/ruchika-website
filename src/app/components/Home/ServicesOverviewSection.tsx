@@ -49,7 +49,7 @@ export default function ServicesOverviewSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-serif font-semibold leading-snug mb-4 text-brandDark">
-            Need copy that connects with your audience and fills your calendar?
+            Need words that match your level of expertise and fill your calendar with right-fit clients?
           </h2>
           <p className="text-lg md:text-xl text-brandDark/80 font-light">
             Brand messaging and copywriting services for you

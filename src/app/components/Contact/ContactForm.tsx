@@ -46,9 +46,6 @@ const handleSubmit = async (e: React.FormEvent) => {
       <h3 className="text-2xl font-serif text-brandDark text-center mb-2">
         Send me a message
       </h3>
-      <p className="text-sm text-brandDark/70 text-center mb-8">
-        I’ll personally read and reply within 24–48 hours (Mon–Fri).
-      </p>
 
       {/* Inputs */}
       <div className="space-y-6">

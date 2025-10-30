@@ -21,7 +21,7 @@ chai or coffee-fuelled chat that leaves you feeling understood. About
 messages, copy, and building a business.
           </p>
           <p className="text-brandDark/80 mb-6 italic">
-            Also, You can email me back any time.
+            Also, you can email me back any time.
           </p>
 
           <form className="max-w-sm space-y-3">

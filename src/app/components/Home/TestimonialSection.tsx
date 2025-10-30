@@ -11,7 +11,7 @@ export default function TestimonialSection() {
     image: "/assets/tanishq.jpg",
     quote:
       "The final copy not only captured my vision, but also provided a clear path for my audience to take action.",
-    body: `With a few years in the business and experience working with multiple clients, I knew it was time to create a website that truly resonated with my ideal audience. Ruchika brought so much clarity to the process.\n\nHer in-depth research and ability to deeply understand my target audience helped craft messaging that feels genuine and speaks directly to my clients. The process was collaborative, and communication was always clear and timely.\n\nThe final copy not only captured my vision...\n\n...but also provided a clear path for my audience to take action.\n\nIf you’re looking for a copywriter who’s not only skilled but also deeply invested in your success, Ruchika is an excellent choice!`,
+    body: `With a few years in the business and experience working with multiple clients, I knew it was time to create a website that truly resonated with my ideal audience. Ruchika brought so much clarity to the process.\nHer in-depth research and ability to deeply understand my target audience helped craft messaging that feels genuine and speaks directly to my clients. The process was collaborative, and communication was always clear and timely.\nThe final copy not only captured my vision...\n...but also provided a clear path for my audience to take action.\nIf you’re looking for a copywriter who’s not only skilled but also deeply invested in your success, Ruchika is an excellent choice!`,
     name: "Tanishq Jha",
     title: "Founder, Tanishqjha.co — OBM & VA",
     logo: "/asset/tanishq.jpg",

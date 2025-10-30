@@ -106,15 +106,7 @@ const fadeUp: Variants = {
         >
           <div className="mx-auto max-w-3xl rounded-2xl border border-brandSecondary bg-white/90 backdrop-blur-sm p-8 md:p-10 shadow-[0_8px_35px_rgba(0,0,0,0.04)]">
             <p className="text-brandDark text-center text-lg md:text-xl font-medium">
-              Ready to move from{" "}
-              <span className="italic text-brandSecondary/90">
-                “thinking about it”
-              </span>{" "}
-              to{" "}
-              <span className="underline underline-offset-4 decoration-brandSecondary font-semibold">
-                booking better clients
-              </span>
-              ?
+             Schedule a no-obligation Intro Call to talk about your goals and next steps.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -127,6 +119,8 @@ const fadeUp: Variants = {
                 </span>
               </Link>
             </div>
+            <br/> <p className="text-brandSecondary text-sm text-center">Calendar updated weekly · No high-pressure sales · Clear next steps</p>
+                         
           </div>
         </motion.div>
       </div>

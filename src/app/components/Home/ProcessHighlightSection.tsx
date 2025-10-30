@@ -43,7 +43,7 @@ export default function ProcessHighlightSection() {
             <h4 className="font-semibold text-brandDark text-lg">Deep audience research:</h4>
             <ul className="list-disc pl-5 space-y-3 ">
               <li>
-                Copy that connects and converts requires deep understanding of who you&apos;re talking to.
+                Copy that moves your people to take action requires a deep understanding of who you’re talking to.
               </li>
               <li>
                 In my research phase, I dive into your audience&apos;s mindset through review mining,
