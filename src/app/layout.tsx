@@ -19,19 +19,40 @@ export const metadata = {
   title: "Ruchika Copy Solutions",
   description:
     "Strategic copywriting for service providers ready to elevate their brand messaging, attract right-fit clients, and grow with authority.",
-  icons: {
-    icon: [
-      { url: "/favicon.ico", type: "image/x-icon" },
+  metadataBase: new URL("https://www.ruchikacopy.com"),
+  openGraph: {
+    title: "Ruchika Copy Solutions",
+    description:
+      "Strategic copywriting for service providers ready to elevate their brand messaging, attract right-fit clients, and grow with authority.",
+    url: "https://www.ruchikacopy.com",
+    siteName: "Ruchika Copy Solutions",
+    images: [
+      {
+        url: "/logo.png", // 👈 ensure this exists in /public
+        width: 800,
+        height: 800,
+        alt: "Ruchika Copy Solutions Logo",
+      },
     ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ruchika Copy Solutions",
+    description:
+      "Strategic copywriting for service providers ready to elevate their brand messaging, attract right-fit clients, and grow with authority.",
+    images: ["/logo.png"],
+  },
+  icons: {
+    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
   },
 };
-
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="font-sans text-brandPrimary">
-        {/* ✅ Wrapper inside body */}
         <div className="flex flex-col min-h-screen">
           <Navbar />
           <main className="flex-1">{children}</main>
