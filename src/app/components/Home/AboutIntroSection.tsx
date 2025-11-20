@@ -33,7 +33,7 @@ export default function AboutIntroSection() {
             With my marketing background and copywriting skills, I’ve got your back. Here’s what I bring:
           </h3>
 
-          <ul className="list-disc pl-5 space-y-3  leading-relaxed text-[1.05rem]">
+          <ul className="list-disc pl-5 space-y-3 leading-relaxed text-[1.05rem]">
             <li>Master’s in marketing,</li>
             <li>
               Spent 9 years in marketing, writing and managing content across websites, emails, and social media
@@ -49,7 +49,7 @@ export default function AboutIntroSection() {
             I&apos;m a Copyhackers certified copywriter.
           </p>
 
-          <p className=" leading-relaxed">
+          <p className="leading-relaxed">
             I invested in myself and learned copywriting and brand messaging & tone of voice from top experts in this field.
           </p>
         </motion.div>
@@ -60,7 +60,7 @@ export default function AboutIntroSection() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="flex flex-col items-center justify-center gap-8"
+          className="flex flex-col items-center justify-center"
         >
           {/* Profile Image */}
           <div className="relative w-[280px] h-[280px] rounded-[2rem] border border-gray-200 bg-white">
@@ -74,33 +74,35 @@ export default function AboutIntroSection() {
               />
             </div>
           </div>
-
-          {/* Certification Badges */}
-          <div className="flex flex-wrap justify-center gap-6 mt-2">
-            {[
-              { src: "/assets/badge-webcopy.png", alt: "Web Copy Certificate" },
-              { src: "/assets/badge-emails.png", alt: "Email Copy Certificate" },
-              { src: "/assets/badge-brandvoice.png", alt: "Brand Voice Certificate" },
-              { src: "/assets/badge-conversion.png", alt: "Conversion Copy Certificate" },
-            ].map((badge, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ delay: i * 0.15, duration: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <Image
-                  src={badge.src}
-                  alt={badge.alt}
-                  width={90}
-                  height={90}
-                  className="object-contain drop-shadow-sm hover:drop-shadow-md transition-all"
-                />
-              </motion.div>
-            ))}
-          </div>
         </motion.div>
+      </div>
+
+      {/* === HORIZONTAL BADGE BAND === */}
+      <div className="mt-16 w-full bg-white/70 backdrop-blur-md py-8 border-t border-brandDark/10">
+        <div className="container max-w-5xl mx-auto flex flex-wrap justify-center gap-10 px-6">
+          {[
+            { src: "/assets/badge-webcopy.png", alt: "Web Copy Certificate" },
+            { src: "/assets/badge-emails.png", alt: "Email Copy Certificate" },
+            { src: "/assets/badge-brandvoice.png", alt: "Brand Voice Certificate" },
+            { src: "/assets/badge-conversion.png", alt: "Conversion Copy Certificate" },
+          ].map((badge, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ delay: i * 0.15, duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <Image
+                src={badge.src}
+                alt={badge.alt}
+                width={150}
+                height={150}
+                className="object-contain drop-shadow-sm hover:drop-shadow-md transition-all"
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
 
       {/* Subtle Background Glow */}
