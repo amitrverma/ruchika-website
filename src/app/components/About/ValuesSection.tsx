@@ -14,32 +14,32 @@ export default function ValuesSection() {
     {
       title: "Flexibility",
       subtitle:
-        "I run my business in a way that supports my life — not the other way around.",
+        "I run my business in a way that supports my life—not the other way around.",
       body: "Hustling isn’t my forte, and I don’t expect you to be “always available” either. I respect your time and mine. No pressure to reply in the evenings or on weekends. I focus on delivering quality work while keeping space for flexibility and freedom.",
       icon: <Sparkles className="w-6 h-6 text-brandSecondary" />,
     },
     {
       title: "Effort",
       subtitle: "I put 100% effort and intention into every project I take on.",
-      body: "Quality matters. Setting realistic expectations for time and results is essential before starting a project. You’ll never get half-hearted work from me. I don’t skip any part of my process — and I’ll always keep you informed on where things stand.",
+      body: "Quality is important for me. So setting realistic expectations for time and results is very important before starting a project. You’ll never get half-hearted work from me. I don't skip any part of my process. And I’ll always keep you informed where are we in terms of project.",
       icon: <HeartHandshake className="w-6 h-6 text-brandSecondary" />,
     },
     {
       title: "Collaboration",
       subtitle: "Good work gets better when we do it together.",
-      body: "I don’t work in isolation. I ask for input, share ideas, and value your perspective. Your success matters to me — this is a partnership, not a handoff. I believe business gets easier when you focus on what you’re best at and trust others with the rest.",
+      body: "I don’t work in isolation. I ask for input and share ideas. Your success matters to me, and your input is essential. This is not a one-way process. It is a team effort. I believe building a business is much easier when you focus on what you are good at and lean on others for the rest.",
       icon: <Users className="w-6 h-6 text-brandSecondary" />,
     },
     {
       title: "Empathy",
       subtitle: "Your audience comes first.",
-      body: "I know there’s a real human on the other side of your business. My focus is on understanding their needs, values, and frustrations. That’s why I don’t believe in manipulative tactics — research and insight guide every word I write.",
+      body: "My focus is on your audience’s core values, needs, and frustrations. That’s why I don’t believe in using salesy tactics in my copy. Research is a non- negotiable part of my process because the best messaging comes from your audience, not just from a copywriter’s head.",
       icon: <Smile className="w-6 h-6 text-brandSecondary" />,
     },
     {
       title: "Integrity",
       subtitle: "Walking the talk.",
-      body: "I’m human, and I make mistakes — but I own them. Integrity to me means transparency, clarity, and reliability. I aim to build trust through honest conversations, realistic expectations, and copy that truly reflects your brand.",
+      body: "I am human, and I make mistakes. But I’m committed to learning and getting better. For me, it’s about honesty, clear communication, and following through. I focus on building trust through real conversations, realistic expectations, and copy that feels true to your brand.",
       icon: <ShieldCheck className="w-6 h-6 text-brandSecondary" />,
     },
   ];

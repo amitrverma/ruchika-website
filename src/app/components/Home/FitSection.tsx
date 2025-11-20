@@ -6,7 +6,7 @@ import { CheckCircle2 } from "lucide-react";
 export default function FitSection() {
   const points = [
     "You're a founder of a service-based business building for the long term. You know your next level requires the right partnerships.",
-    "You've gained clarity on who you want to serve through working with ideal clients. You're not trying to appeal to everyone. You're focused on attracting clients who value what you do.",
+    "You've gained clarity on who you want to serve through working with best-fit clients. You're not trying to appeal to everyone. You're focused on attracting clients who value what you do.",
     "You've outgrown the DIY phase. You know strategic messaging and copy require specialized skills, and you're ready to bring in someone who'll take the time to understand your business, your audience, and your vision.",
     "You care about who you work with: their approach, their process, and whether they truly get what you're building. You're looking for quality, strategy, and a partner who's as committed to your growth as you are.",
     "You want copy that positions you as the go-to in your field and attracts the right clients, because you know your messaging is the foundation for everything else.",

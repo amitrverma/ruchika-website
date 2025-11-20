@@ -12,7 +12,7 @@ export const faqs = [
   {
     question: "How much input do I need to provide?",
     answer:
-      "You’ll complete a brand questionnaire, join a strategy call, and review drafts. I’ll handle research (surveys, competitor, review mining) and guide you through feedback."
+      "You’ll complete a brand questionnaire, join a strategy call, and review drafts. I’ll handle research (surveys, competitor, forum mining) and guide you through feedback."
   },
   {
     question: "Do you offer payment plans?",

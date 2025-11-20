@@ -28,9 +28,8 @@ export default function ServicesHero() {
           </h1>
 
           <p className="text-lg md:text-xl text-brandDark/90 leading-relaxed mb-10">
-            Everything you need to position yourself as an expert and attract the
-            right-fit clients who are ready to invest — with clarity, confidence,
-            and conversion in mind.
+            Everything you need to position yourself as an expert to attract the
+            right-fit clients who are ready to invest.
           </p>
 
           <Link

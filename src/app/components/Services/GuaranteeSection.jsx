@@ -8,23 +8,23 @@ export default function GuaranteeSection() {
   const items = [
     {
       icon: <CheckCircle className="w-8 h-8 text-brandSecondary" />,
-      title: "Post-Delivery Support",
-      desc: "My support doesn’t stop at delivery. You’ll receive two weeks of post-delivery support for any tuning or feedback needed.",
+      title: "Post Delivery support",
+      desc: "My support doesn’t end with the delivery of the copy. You will receive 2 weeks of support after your copy goes live. This support focuses on fine-tuning and improving the existing copy if required.",
     },
     {
       icon: <HeartHandshake className="w-8 h-8 text-brandSecondary" />,
       title: "A Partner Who Cares",
-      desc: "I treat your success as my own. This is a partnership — not just a project.",
+      desc: "I’m 100% invested in your success. Your project isn’t just another job for me. it’s a partnership. I take the time to thoroughly understand your business, your audience, and your goals.",
     },
     {
       icon: <Clock className="w-8 h-8 text-brandSecondary" />,
       title: "On-Time Delivery, Every Time",
-      desc: "Your deadlines matter. I honor them — unless we both agree to an adjustment.",
+      desc: "Your deadlines are my priority. I ensure your copy is delivered on time. Unless we both agree to an extension.",
     },
     {
       icon: <MessageCircle className="w-8 h-8 text-brandSecondary" />,
       title: "Clear Communication, Always",
-      desc: "You’ll always know what’s happening. No confusion, no waiting in the dark.",
+      desc: "You’ll never be left wondering what’s happening. I’ll keep you updated every step of the way, so you’re always in the loop.",
     },
   ];
 

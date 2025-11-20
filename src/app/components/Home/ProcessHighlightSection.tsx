@@ -46,7 +46,7 @@ export default function ProcessHighlightSection() {
                 Copy that moves your people to take action requires a deep understanding of who you’re talking to.
               </li>
               <li>
-                In my research phase, I dive into your audience&apos;s mindset through review mining,
+                In my research phase, I dive into your audience&apos;s mindset through forum mining,
                 surveys, and competitor analysis—building the foundation for copy that converts.
               </li>
             </ul>

@@ -8,22 +8,22 @@ export default function ServicesOverviewSection() {
   const services = [
     {
       title: "Brand Messaging & Tone of Voice Guide",
-      desc: "Before we write a single word of copy, we need to get clear on your messaging. This guide nails down your positioning, who you serve, what you stand for, and how you sound. It's the foundation for everything else: your website, emails, social content.",
+      desc: "Before we write a single word of copy, we need to get clear on your messaging. This guide nails down your positioning, who you serve, what you stand for, and how you sound. \n It's the foundation for everything else: your website, emails, social content.",
       icon: <Megaphone className="w-8 h-8 text-brandSecondary" />,
     },
     {
       title: "Website Copywriting",
-      desc: "Your website is where people decide if they trust you enough to work with you. I write copy that clearly shows what you do, who it's for, and why it matters so visitors don't just scroll, they reach out. Whether it's your homepage, about page, or services, every page is built to connect and convert.",
+      desc: "Your website (aka your most powerful brand asset) is where people decide if you’re the right fit to work with. \n I write website copy that helps your best-fit clients understand what you do, why it matters, and why you’re the right partner to help them move forward.",
       icon: <Globe className="w-8 h-8 text-brandSecondary" />,
     },
     {
       title: "Email Copywriting",
-      desc: "Your email list is one of your most valuable assets. I write emails that feel like they're coming from a real person (because they are), build trust over time, and guide your subscribers to take action. Whether it's booking a call, buying your offer, or just staying engaged with your work. Have an email list? Let's make it work harder for you.",
+      desc: "Your email list is one of your most valuable assets. I write emails that feel like they're coming from a real person (because they are), build trust over time, and guide your subscribers to take action. \n Whether it's booking a call, buying your offer, or just staying engaged with your work. Have an email list? Let's make it work harder for you.",
       icon: <Mail className="w-8 h-8 text-brandSecondary" />,
     },
     {
       title: "Sales Page Copywriting",
-      desc: "When you're launching a program, course, or high-ticket offer, you need a sales page that does the heavy lifting. I write long-form sales pages that walk your audience through the transformation, answer their objections, and make your offer feel like the obvious next step.",
+      desc: "When you're launching a program, course, or high-ticket offer, you need a sales page that does the heavy lifting. \n I write long-form sales pages that walk your audience through the transformation, answer their objections, and make your offer feel like the obvious next step.",
       icon: <FileText className="w-8 h-8 text-brandSecondary" />,
     },
   ];
@@ -74,7 +74,7 @@ export default function ServicesOverviewSection() {
                   {s.title}
                 </h3>
               </div>
-              <p className="text-[1.05rem] text-brandDark/80 leading-relaxed font-sans font-normal max-w-prose">
+              <p className="text-[1.05rem] text-brandDark/80 leading-relaxed font-sans font-normal max-w-prose  whitespace-pre-line">
                 {s.desc}
               </p>
             </motion.div>

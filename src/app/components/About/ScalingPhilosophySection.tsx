@@ -4,23 +4,20 @@ import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 
 export default function ScalingPhilosophySection() {
-
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 25 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut", // ✅ use string literal instead of cubic-bezier array
+  const fadeUp: Variants = {
+    hidden: { opacity: 0, y: 25 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut", // ✅ use string literal instead of cubic-bezier array
+      },
     },
-  },
-};
-
+  };
 
   return (
     <section className="relative overflow-hidden  py-28">
-    
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -42,20 +39,26 @@ const fadeUp: Variants = {
         {/* Body paragraphs */}
         <div className="space-y-8 text-lg md:text-[1.125rem] ">
           <motion.p variants={fadeUp}>
-            Your expertise and results speak for themselves — people want to work with you.
+            Your expertise, your results, are so compelling that people want to
+            work with you.
           </motion.p>
 
           <motion.p variants={fadeUp}>
-            But experience has taught you something deeper: that sustainable success isn’t built on
-            constant hustle, but on alignment — surrounding yourself with the right people, the
-            right energy, and the right vision.
+            But experience has taught you something deeper: As a service
+            provider, sustainable success isn’t built on constant hustle. It
+            comes from the right alignment with the right people.
           </motion.p>
 
           <motion.p variants={fadeUp}>
-            This next phase is about stepping fully into that potential. It’s where your business
-            becomes a space for the right partnerships — collaborations that elevate your impact and
-            feel effortless. You’re not just looking for <em>ready-to-invest</em> clients; you’re
-            calling in <strong>right-fit</strong> clients who are ready to grow with you.
+            This next phase is about stepping fully into that potential. It’s
+            where your business becomes a space for the right partnerships, the
+            kind of collaborations that elevate your impact and feel
+            intentional.
+          </motion.p>
+
+          <motion.p variants={fadeUp}>
+            You’re not just looking for ready-to-invest clients, you’re looking
+            for right-fit clients who are ready to invest.
           </motion.p>
 
           <motion.p
@@ -65,10 +68,9 @@ const fadeUp: Variants = {
             The next level isn’t just about more — it’s about better.
           </motion.p>
 
-          <motion.p variants={fadeUp} className="text-brandDark font-medium">
-            You’re building your dream business, and if I can support that through the power of
-            messaging and words,{" "}
-            <span className="text-brandSecondary font-semibold">I’d be honored.</span>
+          <motion.p variants={fadeUp}>
+            You’re building your dream business, and if I can support that
+            through the power of messaging and words, I’d be honored.
           </motion.p>
         </div>
       </motion.div>

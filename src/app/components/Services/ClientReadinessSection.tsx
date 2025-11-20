@@ -38,7 +38,7 @@ export default function ClientReadinessSection() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-3xl md:text-4xl font-serif text-center mb-16"
         >
-          What makes ready-to-invest clients say{" "}
+          What makes ready-to-invest clients say {" "}
           <span className="relative text-brandSecondary font-semibold">
             “yes”
             <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-brandSecondary/40 rounded-full" />
@@ -68,7 +68,7 @@ export default function ClientReadinessSection() {
           <motion.ul variants={fadeUp} className="space-y-4">
             {[
               "They’re not comparing who talks the most about pain points or promises the biggest transformation. Everyone says that.",
-              "Ready-to-invest clients focus on the big picture — they evaluate your expertise, your approach, whether you truly understand their needs, and whether you stand out in a sea of similar options.",
+              "Ready-to-invest clients focus on the big picture. They evaluate your expertise, your approach, whether you truly understand their needs, and whether you stand out in a sea of similar options.",
             ].map((point, i) => (
               <motion.li key={i} className="flex items-start gap-3" variants={fadeUp}>
                 <CheckCircle2 className="mt-1 w-5 h-5 text-brandSecondary shrink-0" />
@@ -89,8 +89,8 @@ export default function ClientReadinessSection() {
           {/* List 2 */}
           <motion.ul variants={fadeUp} className="space-y-4">
             {[
-              "That’s where your messaging and copy matter. Every touchpoint — social media, website, emails, and sales pages — either positions you as the expert or blends you into the background.",
-              "Shape your messaging for your ideal clients — the ones who are ready to invest.",
+              "That’s where your messaging and copy matter. Every touchpoint—social media, website, emails, and sales pages—either positions you as the expert or blends you into the background.",
+              "Shape your messaging for your right-fit clients, the ones who are ready to invest",
             ].map((point, i) => (
               <motion.li key={i} className="flex items-start gap-3" variants={fadeUp}>
                 <CheckCircle2 className="mt-1 w-5 h-5 text-brandSecondary shrink-0" />

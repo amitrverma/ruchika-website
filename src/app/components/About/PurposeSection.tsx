@@ -1,7 +1,6 @@
 export default function PurposeSection() {
   return (
-     <section className="relative bg-brandSecondary py-30">
-
+    <section className="relative bg-brandSecondary py-30">
       <div className="container relative z-10 max-w-4xl px-6">
         <h3 className="text-2xl md:text-3xl font-serif font-semibold text-white mb-8 leading-snug">
           My deeper purpose behind doing what I do
@@ -13,18 +12,16 @@ export default function PurposeSection() {
 
         <div className="mx-auto text-white/90 space-y-6 text-lg md:text-[1.125rem] eading-relaxed">
           <p>
-            When service providers have the support they need, they create the impactful
-            businesses they dreamed of. And in turn, they help their audiences find new
-            awareness, community, and solutions.
+            When service providers have the support they need, they create the
+            impactful businesses they dreamed of. And in turn, they help their
+            audiences find real answers, community, and solutions.
           </p>
 
           <p className="font-bold">
-            They create wealth doing work they love. They live balanced, healthy lives.
-</p>
-<p>
-
-            That’s the ripple effect I’m here for.
+            They create wealth doing work they love. They live balanced, healthy
+            lives.
           </p>
+          <p>That’s the ripple effect I’m here for.</p>
         </div>
 
         {/* Ripple visual divider */}

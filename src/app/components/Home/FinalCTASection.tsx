@@ -8,8 +8,8 @@ export default function FinalCTASection() {
   const steps = [
     {
       icon: <FileText className="w-7 h-7" />,
-      title: "Inquiry",
-      desc: "Once you fill out the inquiry form, you'll hear from me within 24-48 hours (Monday-Friday) with a confirmation email and call details.",
+      title: "Book Your Call",
+      desc: "Choose a time that works for you and fill out a brief form so I can prepare for our conversation.",
     },
     {
       icon: <Phone className="w-7 h-7" />,
@@ -19,7 +19,7 @@ export default function FinalCTASection() {
     {
       icon: <Calendar className="w-7 h-7" />,
       title: "Proposal",
-      desc: "If it feels like a good fit, I'll send you a detailed proposal covering what's included, timelines, and pricing. Everything you need to make an informed decision.",
+      desc: "If we mutually agree that we're a good fit, I'll send you a detailed proposal with scope, timelines, and pricing. Everything you need to make an informed decision.",
     },
     {
       icon: <Rocket className="w-7 h-7" />,
@@ -53,7 +53,7 @@ const fadeUp: Variants = {
         >
           <h2 className="text-3xl md:text-4xl font-serif text-brandDark leading-snug">
             Let’s skip to the part where your copy
-            <br className="hidden sm:block" /> confidently attracts your ideal clients
+            <br className="hidden sm:block" /> confidently attracts your right-fit clients
           </h2>
           <p className="text-lg text-brandDark/80 mt-4">
             This is how it works. Simple and easy

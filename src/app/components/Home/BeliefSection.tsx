@@ -10,10 +10,7 @@ export default function BeliefSection() {
         <div className="mx-auto w-16 h-[2px] bg-white/50 mb-8" />
 
         <p className="text-lg md:text-[1.125rem] leading-relaxed text-white">
-          Every project I take on begins with <span className="font-medium">audience research</span>,
-          strategic insight, and <span className="font-medium">messaging clarity</span>.{" "}
-          You’re not just getting a writer — you’re gaining a <span className="font-medium">
-          partner</span> who helps your business grow with authority and attract the right-fit clients.
+Every project I take on involves audience research, strategy, messaging clarity, and your brand voice. You're not just getting a writer. You're getting a strategic partner invested in helping your business grow with authority and the right-fit clients.
         </p>
       </div>
     </section>

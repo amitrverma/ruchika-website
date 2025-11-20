@@ -6,23 +6,23 @@ import { Search, Brain, PenTool, CheckCircle } from "lucide-react";
 export default function ProcessSection() {
   const phases = [
     {
-      title: "Phase 1: Research",
-      desc: "Once we decide to work together, I’ll send you a brand questionnaire doc. where I ask you enough questions to make your head spin—but this brief will help me shape clear, strategic copy. \n Then as I start working on your project, I dive deep into understanding your audience. This process includes conducting customer surveys, researching competitors, and review mining. It's an essential message-finding process to truly understand your audience and what will make them say yes to your offer.",
+      title: "Phase 1: Strategy & Research",
+      desc: "Once we decide to work together, I’ll send you a questionnaire to understand your business, ideal client, goals, and voice. We’ll go through it together during our kickoff call. \n\n Then I dive into audience research such as customer surveys, competitor analysis, and forum or online research to understand what makes your right-fit clients say “yes.",
       icon: <Search className="w-7 h-7 text-brandSecondary" />,
     },
     {
       title: "Phase 2: Analyzing & Planning",
-      desc: "In this phase, I'll analyze everything I uncovered in the research phase and use it to refine your core messaging. So we can put the right message in front of your audience",
+      desc: "Before the writing begins, we’ll have a strategy call to review insights from the research phase. I’ll share my recommendations for your chosen copy project so we’re both clear on direction and focus. \n\n This step ensures we’re fully aligned before I start writing.",
       icon: <Brain className="w-7 h-7 text-brandSecondary" />,
     },
     {
-      title: "Phase 3: Copywriting & Editing",
-      desc: "Here, I roll up my sleeves and use copywriting techniques and frameworks to write compelling copy that reflects your brand’s voice. \n I will present you the first draft to get your approval. Which leads to a wireframe (for web pages) or Google doc (for emails, sales page, etc).",
+      title: "Phase 3: Conversion-focused Copywriting & Editing",
+      desc: "Here’s where I roll up my sleeves and use proven copywriting techniques and frameworks to write compelling copy that reflects your brand’s voice. \n\n You’ll first receive the draft for review and approval. Once finalized, I’ll share a wireframe (for webpages) or a Google Doc (for emails, sales pages, etc.).",
       icon: <PenTool className="w-7 h-7 text-brandSecondary" />,
     },
     {
       title: "Phase 4: Delivery & Review",
-      desc: "I will email you the final copy and then get on a call to review it together.",
+      desc: "I will email you the final copy and then get on a call to review it together. \n\n Once it feels right, I’ll be happy to communicate with your designer, marketing team, or with you to put it into action.",
       icon: <CheckCircle className="w-7 h-7 text-brandSecondary" />,
     },
   ];
@@ -101,7 +101,9 @@ export default function ProcessSection() {
                   >
                     <div
                       className={`flex items-center gap-3 mb-3 ${
-                        isLeft ? "justify-start" : "justify-end flex-row-reverse"
+                        isLeft
+                          ? "justify-start"
+                          : "justify-end flex-row-reverse"
                       }`}
                     >
                       <div className="bg-brandPrimary/30 p-2 rounded-full">
@@ -147,8 +149,8 @@ export default function ProcessSection() {
           variants={fadeUp}
           className="mt-20 text-center font-medium text-brandDark max-w-2xl mx-auto"
         >
-          Also, I’m not going anywhere after your project ends. I’ll be your biggest cheerleader.
-          Your success is mine too. <br/>{" "}
+          Also, I’m not going anywhere after your project ends. I’ll be your
+          biggest cheerleader. Your success is mine too. <br />{" "}
           <span className="text-brandSecondary font-semibold">
             That is why every project I take on comes with my...
           </span>

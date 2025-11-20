@@ -10,43 +10,76 @@ export default function ServicesOverview() {
       title: "Brand Messaging & Tone of Voice Guide",
       icon: <Megaphone className="w-8 h-8 text-brandSecondary" />,
       description:
-        "Get crystal clear on who you are, who you serve, and how you communicate — so every word across your brand feels consistent, strategic, and unmistakably you.",
+        "This is the foundation, where we get clear on who you are, who you serve, and how you communicate, so all your copy and content stays cohesive and strategic.",
       bullets: [
-        "Mission statement",
-        "Brand values, promises, and positioning",
-        "Brand story, archetypes, and personality",
-        "Ideal client archetypes",
-        "Ideal client profiles",
-        "Tone of voice",
-        "Key words + phrases",
+        "Brand foundations (values, mission, brand promise)",
+        "Positioning and differentiation",
+        "Right-fit client clarity",
+        "Voice and messaging guide (voice, tone, and key phrases)",
         "Content pillars",
-        "Delivered as a polished Canva booklet",
+        "Delivered as a digital brand booklet in Canva",
       ],
+      extraHeading: "This is for you if you're:",
+      extraBullets: [
+        "Starting out and want your foundation rock solid from day one",
+        "Scaling up and need your messaging to match where your business is now",
+        "Pivoting and need your message and voice crystal clear for your new direction",
+      ],
+      extraDescription:
+        "This becomes your go-to resource for all content creation — whether you're writing it yourself or getting someone else on your team to write for you.\n\nWith clarity on your positioning, POV, and what sets you apart in your space, everything you create calls in the right-fit people.",
     },
+
     {
       title: "Website Copywriting",
       icon: <Globe className="w-8 h-8 text-brandSecondary" />,
       description:
-        "Strategic, conversion-focused website copy that positions you as the expert, connects emotionally with your audience, and turns curious visitors into confident buyers.",
+        "Strategic, conversion-focused website copywriting that positions you as the expert, speaks directly to your right-fit client, and turns curious visitors into confident buyers.",
       bullets: [
-        "SEO-informed copywriting for your website",
-        "Mini brand messaging guide",
-        "Audience and market research",
-        "Collaboration with your designer for perfect fit",
+        "Website strategy (structure and messaging framework)",
+        "Audience research (customer surveys, competitor analysis, forum mining)",
+        "Website copy written with SEO best practices",
+        "Website wireframe in Canva",
+        "Designer collaboration (I'll work with your designer to ensure smooth implementation)",
       ],
+      extraDescription:
+        "Every website is custom-scoped based on your specific needs – whether that's a one-offer and one-audience type site or a more complex structure with multiple service offerings and audience types.",
     },
+
     {
       title: "Email Copywriting",
       icon: <Mail className="w-8 h-8 text-brandSecondary" />,
       description:
-        "Sequences that build connection, nurture trust, and inspire action — from booking calls to buying offers.",
-      bullets: ["Welcome sequences", "Sales sequences", "Webinar series", "Newsletters"],
+        "Sequences that nurture your audience, warm up leads, and drive action — whether that's booking calls, buying offers, or building long-term trust.",
+      bullets: [
+        "Email sequence strategy – Map out the right number of emails and approach based on your business goals",
+        "Audience research to understand their language, motivations, and objections",
+        "Strategic email copy that builds trust and drives action",
+      ],
+      extraHeading: "Pick the sequences that fit your goals:",
+      extraBullets: [
+        "Welcome sequences",
+        "Launch sequence",
+        "Sales sequences",
+        "Webinar sequences",
+        "Newsletter series",
+        "Custom sequences for your specific goals",
+      ],
+      extraDescription:
+        "Each project is tailored to your audience and goals – because effective email strategy isn't one-size-fits-all.",
     },
+
     {
       title: "Sales Page Copywriting",
       icon: <FileText className="w-8 h-8 text-brandSecondary" />,
       description:
-        "Long-form, research-backed copy that speaks to your audience’s deeper motivations, builds trust, and positions your offer as the natural next step.",
+        "Research-backed, long-form sales page copy that speaks to your audience’s deeper desires, addresses their objections, and positions your offer as the solution they've been looking for. Every project will include strategy and research.",
+      bullets: [
+        "Sales page strategy – positioning, flow, and messaging approach",
+        "Audience research to understand their language, motivations, and objections",
+        "Strategic long-form sales page copy",
+      ],
+      extraDescription:
+        "Sales page lengths are customized based on your offer complexity and where your audience is in their decision-making journey.",
     },
   ];
 
@@ -84,7 +117,9 @@ export default function ServicesOverview() {
           className="text-2xl md:text-3xl font-serif text-center mb-14 leading-snug"
         >
           Here’s how I help you attract clients who{" "}
-          <span className="text-brandSecondary font-semibold">value your thinking</span>
+          <span className="text-brandSecondary font-semibold">
+            value your thinking
+          </span>
           <br />
           <span className="text-base font-normal text-brandDark/80">
             (not just your deliverables)
@@ -109,19 +144,47 @@ export default function ServicesOverview() {
                 {service.icon}
               </div>
 
-              {/* Card Content */}
               <div className="mt-8">
-                <h3 className="font-semibold text-lg mb-2 group-hover:text-brandSecondary transition-colors">
+                {/* Title */}
+                <h3 className="font-semibold text-lg mb-3 group-hover:text-brandSecondary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-brandDark/80 leading-relaxed">{service.description}</p>
 
+                {/* Main Description */}
+                <p className="text-brandDark/80 leading-relaxed whitespace-pre-line">
+                  {service.description}
+                </p>
+
+                {/* Main Bullets */}
                 {service.bullets && (
-                  <ul className="list-disc list-outside mt-4 space-y-1 text-brandDark/70">
+                  <ul className="list-disc list-outside mt-4 space-y-1 text-brandDark/80">
                     {service.bullets.map((b, j) => (
                       <li key={j}>{b}</li>
                     ))}
                   </ul>
+                )}
+
+                {/* Extra Section Heading */}
+                {service.extraHeading && (
+                  <p className="mt-6 font-semibold text-brandDark">
+                    {service.extraHeading}
+                  </p>
+                )}
+
+                {/* Extra Bullets */}
+                {service.extraBullets && (
+                  <ul className="list-disc list-outside mt-3 space-y-1 text-brandDark/80">
+                    {service.extraBullets.map((b, j) => (
+                      <li key={j}>{b}</li>
+                    ))}
+                  </ul>
+                )}
+
+                {/* Extra Description */}
+                {service.extraDescription && (
+                  <p className="mt-4 text-brandDark/80 leading-relaxed whitespace-pre-line">
+                    {service.extraDescription}
+                  </p>
                 )}
               </div>
 
@@ -144,9 +207,10 @@ export default function ServicesOverview() {
           className="mt-16 text-center text-sm text-brandDark/80 max-w-2xl mx-auto"
         >
           <p className="text-lg font-semibold">Need something different?</p>
-         All my services are project-based and can be tailored to your specific needs. If you have a
-unique scope in mind or need a custom combination of services, let&apos;s talk about what works
-best for your business.<br/> {" "}
+          All my services are project-based and can be tailored to your specific
+          needs. If you have a unique scope in mind or need a custom combination
+          of services, let&apos;s talk about what works best for your business.
+          <br />{" "}
           <Link
             href="/contact"
             className="text-brandSecondary font-medium underline-offset-2 hover:underline hover:text-brandDark"
