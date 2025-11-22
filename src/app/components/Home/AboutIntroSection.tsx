@@ -34,7 +34,7 @@ export default function AboutIntroSection() {
           </h3>
 
           <ul className="list-disc pl-5 space-y-3 leading-relaxed text-[1.05rem]">
-            <li>Master’s in marketing,</li>
+            <li>Master’s in marketing.</li>
             <li>
               Spent 9 years in marketing, writing and managing content across websites, emails, and social media
               in the corporate world.

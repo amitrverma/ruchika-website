@@ -43,7 +43,7 @@ export default function AboutPage() {
           </h3>
           <p className="text-brandDark mb-8">
             Maybe it’s a sign from the universe :) <br />
-            In that case, here’s how we can work together next.
+            In that case, here’s how we can work together
           </p>
 
           <a

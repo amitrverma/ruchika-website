@@ -44,7 +44,7 @@ export default function ContactPage() {
         >
           {/* Updated main text */}
           <p className="text-lg md:text-xl text-brandDark/80 mb-10">
-            Use the calendar below to book a no-obligation Intro Call.
+            Use the calendar below to book a no-obligation intro call.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-base md:text-lg">

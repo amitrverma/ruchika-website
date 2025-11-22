@@ -8,7 +8,7 @@ export default function ServicesOverviewSection() {
   const services = [
     {
       title: "Brand Messaging & Tone of Voice Guide",
-      desc: "Before we write a single word of copy, we need to get clear on your messaging. This guide helps you get clear and confident in your messaging before any copy is written. It nails down your positioning, who you serve, what you stand for, and how your brand voice shows up in your copy. It’s the foundation for everything else: your website, emails, and social content.",
+      desc: "This guide helps you get clear and confident in your messaging before any copy is written. It nails down your positioning, who you serve, what you stand for, and how your brand voice shows up in your copy. It’s the foundation for everything else: your website, emails, and social content.",
       icon: <Megaphone className="w-8 h-8 text-brandSecondary" />,
     },
     {
