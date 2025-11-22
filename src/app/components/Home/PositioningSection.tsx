@@ -15,7 +15,7 @@ export default function CelebrationSection() {
     },
     {
       title: "You’re expanding thoughtfully",
-      desc: "You’re growing in a way that aligns with your values and the kind of business you want long-term.",
+      desc: "You’re growing in a way that feels aligned with your values, and the kind of business you want to build over the long term.",
     },
   ];
 

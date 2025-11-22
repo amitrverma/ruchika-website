@@ -3,7 +3,7 @@ export default function BeliefSection() {
     <section className="bg-brandSecondary py-28 text-white">
       <div className="container max-w-4xl text-center text-white px-6">
         <h1 className="text-3xl md:text-5xl font-serif font-semibold text-white leading-tight mb-6">
-          Tldr;
+          TL;DR
         </h1>
         <h2 className="text-3xl md:text-5xl font-serif font-semibold text-white leading-tight mb-6">
           I believe good copywriting <br className="hidden md:block" /> is good

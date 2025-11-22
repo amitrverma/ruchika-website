@@ -135,66 +135,93 @@ export default function ServicesOverview() {
             <motion.div
               key={i}
               variants={fadeUp}
-              whileHover={{ y: -5 }}
+              whileHover={{
+                y: -6,
+                scale: 1.01,
+                boxShadow: "0 20px 50px -10px rgba(0,0,0,0.15)",
+              }}
               transition={{ type: "spring", stiffness: 120, damping: 14 }}
-              className="group relative flex flex-col justify-between bg-white/80 backdrop-blur-md border border-brandDark/10 rounded-2xl shadow-[0_8px_25px_-8px_rgb(0_0_0/0.08)] hover:shadow-[0_16px_45px_-10px_rgb(0_0_0/0.15)] transition-all duration-300 p-8"
+              className="
+    group relative flex flex-col
+    bg-white/80 backdrop-blur-md 
+    border border-brandDark/10 
+    rounded-2xl
+    shadow-[0_8px_25px_-8px_rgb(0,0,0/0.08)]
+    transition-all duration-300 p-8
+
+    bg-[radial-gradient(circle_at_90%_20%,transparent)]
+  "
             >
               {/* Floating Icon */}
               <div className="absolute -top-5 left-6 bg-white/90 backdrop-blur-sm border border-brandDark/5 rounded-full p-3 shadow-sm group-hover:shadow-md transition-shadow">
                 {service.icon}
               </div>
 
-              <div className="mt-8">
-                {/* Title */}
-                <h3 className="font-semibold text-lg mb-3 group-hover:text-brandSecondary transition-colors">
-                  {service.title}
-                </h3>
+              <div className="mt-8 space-y-8">
+                {/* === Title & Short Description === */}
+                <div>
+                  <h3 className="font-semibold text-lg mb-2 tracking-tight text-brandSecondary">
+                    {service.title}
+                  </h3>
 
-                {/* Main Description */}
-                <p className="text-brandDark/80 leading-relaxed whitespace-pre-line">
-                  {service.description}
-                </p>
-
-                {/* Main Bullets */}
-                {service.bullets && (
-                  <ul className="list-disc list-outside mt-4 space-y-1 text-brandDark/80">
-                    {service.bullets.map((b, j) => (
-                      <li key={j}>{b}</li>
-                    ))}
-                  </ul>
-                )}
-
-                {/* Extra Section Heading */}
-                {service.extraHeading && (
-                  <p className="mt-6 font-semibold text-brandDark">
-                    {service.extraHeading}
+                  <p className="text-brandDark/75 leading-relaxed whitespace-pre-line">
+                    {service.description}
                   </p>
+                </div>
+
+                {/* Divider */}
+                <div className="h-px bg-gradient-to-r from-transparent via-brandDark/10 to-transparent" />
+
+                {/* === WHAT’S INCLUDED === */}
+                {service.bullets && (
+                  <div>
+                    <span className="inline-block px-3 py-1 rounded-full bg-brandSecondary/10 text-xs tracking-wider font-semibold text-brandSecondary/90">
+                      WHAT’S INCLUDED
+                    </span>
+
+                    <ul className="list-disc list-outside space-y-1 mt-3 ml-4 text-brandDark/75 leading-relaxed">
+                      {service.bullets.map((b, j) => (
+                        <li key={j}>{b}</li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
 
-                {/* Extra Bullets */}
+                {/* Divider */}
+                {(service.extraBullets || service.extraDescription) && (
+                  <div className="h-px bg-gradient-to-r from-transparent via-brandDark/10 to-transparent" />
+                )}
+
+                {/* === WHO THIS IS FOR === */}
                 {service.extraBullets && (
-                  <ul className="list-disc list-outside mt-3 space-y-1 text-brandDark/80">
-                    {service.extraBullets.map((b, j) => (
-                      <li key={j}>{b}</li>
-                    ))}
-                  </ul>
+                  <div>
+                    <span className="inline-block px-3 py-1 rounded-full bg-brandSecondary/10 text-xs tracking-wider font-semibold text-brandSecondary/90">
+                      {service.extraHeading || "WHO THIS IS FOR"}
+                    </span>
+
+                    <ul className="list-disc list-outside space-y-1 mt-3 ml-4 text-brandDark/75 leading-relaxed">
+                      {service.extraBullets.map((b, j) => (
+                        <li key={j}>{b}</li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
 
-                {/* Extra Description */}
+                {/* === SUPPORTING PARAGRAPH === */}
                 {service.extraDescription && (
-                  <p className="mt-4 text-brandDark/80 leading-relaxed whitespace-pre-line">
+                  <p className="text-brandDark/70 leading-relaxed whitespace-pre-line border-l-2 border-brandSecondary/30 pl-4 italic">
                     {service.extraDescription}
                   </p>
                 )}
               </div>
 
               {/* CTA */}
-              <div className="mt-8">
+              <div className="mt-10">
                 <Link
                   href="/contact"
-                  className="relative inline-flex items-center justify-center overflow-hidden rounded-full px-6 py-2.5 text-sm font-semibold text-white bg-brandSecondary transition-all duration-300 hover:bg-brandDark focus:outline-none focus-visible:ring-2 focus-visible:ring-brandSecondary/50 group"
+                  className="inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-semibold text-white bg-brandSecondary transition-all duration-300 hover:bg-brandDark focus:outline-none focus-visible:ring-2 focus-visible:ring-brandSecondary/50"
                 >
-                  <span className="relative z-10">INQUIRE HERE</span>
+                  INQUIRE HERE
                 </Link>
               </div>
             </motion.div>

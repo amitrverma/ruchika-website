@@ -87,7 +87,7 @@ export default function ContactPage() {
           className="container max-w-3xl mx-auto text-center px-6"
         >
           <h2 className="text-xl md:text-2xl font-semibold text-brandDark mb-10">
-            Book a Free Consultation
+            Schedule your call below
           </h2>
 
           {/* Calendly Embed */}

@@ -12,7 +12,7 @@ export default function ProcessSection() {
     },
     {
       title: "Phase 2: Analyzing & Planning",
-      desc: "Before the writing begins, we’ll have a strategy call to review insights from the research phase. I’ll share my recommendations for your chosen copy project so we’re both clear on direction and focus. \n\n This step ensures we’re fully aligned before I start writing.",
+      desc: "Before the writing begins, we’ll have a strategy call to review insights from the research phase. I’ll share my recommendations so we’re both clear on the direction and focus of the project.",
       icon: <Brain className="w-7 h-7 text-brandSecondary" />,
     },
     {

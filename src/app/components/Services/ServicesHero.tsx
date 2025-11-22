@@ -19,8 +19,9 @@ export default function ServicesHero() {
       <div className="absolute inset-0 bg-brandPrimary/30" />
 
       {/* === Content === */}
-      <div className="relative container mx-auto max-w-6xl flex justify-end px-6 md:px-12 z-10">
-        <div className="max-w-xl text-right py-24 md:py-32">
+      <div className="relative w-full flex justify-end px-6 md:px-12 z-10">
+        {/* Background block only around content */}
+        <div className="bg-brandPrimary max-w-xl py-24 md:py-32 px-8 text-right rounded-lg shadow-lg">
           <h1 className="text-3xl md:text-5xl font-serif text-brandDark leading-tight mb-6">
             1:1 Copywriting Services to{" "}
             <span className="text-brandSecondary">Launch, Rebrand,</span> or{" "}
