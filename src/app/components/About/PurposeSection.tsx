@@ -35,7 +35,7 @@ export default function PurposeSection() {
             href="/services"
             className="inline-block bg-brandDark text-white px-8 py-3 rounded-full font-medium tracking-wide hover:bg-brandDark/90 transition-all duration-300 shadow-[0_0_15px_rgba(255,255,255,0.2)]"
           >
-            I'M READY FOR MESSAGING & COPYWRITING SUPPORT
+            I&apos;M READY FOR MESSAGING & COPYWRITING SUPPORT
           </a>
         </div>
       </div>
