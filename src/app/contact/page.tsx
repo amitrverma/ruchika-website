@@ -54,10 +54,10 @@ export default function ContactPage() {
                 Prefer to Email?
               </h3>
               <a
-                href="mailto:ruchikaratna@gmail.com"
+                href="mailto:hello@ruchikacopy.com"
                 className="underline decoration-2 underline-offset-4 font-medium hover:text-brandSecondary transition-colors"
               >
-                ruchikaratna@gmail.com
+                hello@ruchikacopy.com
               </a>
             </div>
 

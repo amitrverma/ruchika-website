@@ -8,14 +8,14 @@ import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 export default function TestimonialSection() {
   const testimonials = [
     {
-    image: "/assets/tanishq.jpg",
-    quote:
-      "The final copy not only captured my vision, but also provided a clear path for my audience to take action.",
-    body: `With a few years in the business and experience working with multiple clients, I knew it was time to create a website that truly resonated with my ideal audience. Ruchika brought so much clarity to the process.\nHer in-depth research and ability to deeply understand my target audience helped craft messaging that feels genuine and speaks directly to my clients. The process was collaborative, and communication was always clear and timely.\nThe final copy not only captured my vision...\n...but also provided a clear path for my audience to take action.\nIf you’re looking for a copywriter who’s not only skilled but also deeply invested in your success, Ruchika is an excellent choice!`,
-    name: "Tanishq Jha",
-    title: "Founder, Tanishqjha.co — OBM & VA",
-    logo: "/asset/tanishq.jpg",
-  },
+      image: "/assets/tanishq.jpg",
+      quote:
+        "The final copy not only captured my vision, but also provided a clear path for my audience to take action.",
+      body: `With a few years in the business and experience working with multiple clients, I knew it was time to create a website that truly resonated with my ideal audience. Ruchika brought so much clarity to the process.\nHer in-depth research and ability to deeply understand my target audience helped craft messaging that feels genuine and speaks directly to my clients. The process was collaborative, and communication was always clear and timely.\nThe final copy not only captured my vision...\n...but also provided a clear path for my audience to take action.\nIf you’re looking for a copywriter who’s not only skilled but also deeply invested in your success, Ruchika is an excellent choice!`,
+      name: "Tanishq Jha",
+      title: "Founder, Tanishqjha.co — OBM & VA",
+      logo: "/asset/tanishq.jpg",
+    },
     {
       image: "/assets/trinklet.png",
       quote:
@@ -42,9 +42,7 @@ export default function TestimonialSection() {
     setIndex((prev) => (prev + 1) % testimonials.length);
   };
   const prevSlide = () => {
-    setIndex((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
-    );
+    setIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
   };
 
   const current = testimonials[index];
@@ -66,7 +64,7 @@ export default function TestimonialSection() {
               src={current.image}
               alt={current.name}
               fill
-              className="object-cover rounded-full border-[6px] border-white shadow-lg ring-4 ring-brandSecondary/30"
+              className="object-contain rounded-full border-[6px] border-white shadow-lg ring-4 ring-brandSecondary/30 bg-white p-2"
             />
           </div>
 
@@ -79,10 +77,14 @@ export default function TestimonialSection() {
               </p>
             </div>
 
-            <p className="text-brandDark/90 leading-relaxed mb-4 whitespace-pre-line">{current.body}</p>
+            <p className="text-brandDark/90 leading-relaxed mb-4 whitespace-pre-line">
+              {current.body}
+            </p>
 
             <div className="border-t border-brandSecondary/20 pt-4">
-              <p className="font-semibold text-brandDark text-lg">{current.name}</p>
+              <p className="font-semibold text-brandDark text-lg">
+                {current.name}
+              </p>
               <p className="text-sm text-brandDark/70">{current.title}</p>
             </div>
           </div>
