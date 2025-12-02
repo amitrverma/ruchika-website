@@ -20,6 +20,7 @@ export default function ProcessHighlightSection() {
               src="/assets/ruchika-working.png"
               alt="Ruchika working on laptop"
               fill
+              sizes="(min-width: 1024px) 320px, (min-width: 768px) 300px, 80vw"
               className="object-cover rounded-[2rem]"
               priority
             />

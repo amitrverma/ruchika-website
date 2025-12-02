@@ -69,6 +69,7 @@ export default function AboutIntroSection() {
                 src="/assets/ruchika-profile.png"
                 alt="Ruchika Ratna - Copywriter and Brand Messaging Specialist"
                 fill
+                sizes="(min-width: 1024px) 320px, (min-width: 768px) 280px, 70vw"
                 className="object-cover"
                 priority
               />

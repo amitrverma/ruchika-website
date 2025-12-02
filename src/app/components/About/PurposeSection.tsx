@@ -5,7 +5,7 @@ export default function PurposeSection() {
         <h3 className="text-2xl md:text-3xl font-serif font-semibold text-white mb-8 leading-snug">
           My deeper purpose behind doing what I do
           <br />
-          <span className="text-brandSecondary font-normal">
+          <span className=" font-normal">
             (clear messaging and strategic copy)
           </span>
         </h3>

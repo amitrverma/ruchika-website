@@ -64,6 +64,7 @@ export default function TestimonialSection() {
               src={current.image}
               alt={current.name}
               fill
+              sizes="180px"
               className="object-contain rounded-full border-[6px] border-white shadow-lg ring-4 ring-brandSecondary/30 bg-white p-2"
             />
           </div>

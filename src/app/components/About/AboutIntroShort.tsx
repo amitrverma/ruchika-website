@@ -10,13 +10,42 @@ export default function AboutIntroShort() {
       <div className="absolute inset-0 opacity-[0.05] bg-[radial-gradient(circle_at_70%_30%,_var(--tw-gradient-stops))] from-brandSecondary via-transparent to-transparent" />
 
       <div className="container mx-auto max-w-6xl grid md:grid-cols-[1fr_1.3fr] gap-12 items-center px-6 relative z-10">
-        {/* === LEFT COLUMN — ANIMATED IMAGE STACK === */}
+
+        {/* === RIGHT COLUMN — TEXT (BUT FIRST ON MOBILE) === */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative w-fit mx-auto md:mx-0"
+          className="text-brandDark space-y-6 text-center md:text-left order-1 md:order-2"
+        >
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif italic leading-tight">
+            Hi, I’m{" "}
+            <span className="not-italic font-bold text-brandDark">Ruchika</span>
+          </h2>
+
+          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl mx-auto md:mx-0">
+            I help scaling service providers with their{" "}
+            <span className="font-semibold text-brandSecondary">
+              brand messaging and conversion-focused copy
+            </span>
+            .
+          </p>
+
+          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl mx-auto md:mx-0">
+            So they can confidently market their services, connect deeply with
+            their audience, and attract right-fit clients who truly value their
+            expertise.
+          </p>
+        </motion.div>
+
+        {/* === LEFT COLUMN — IMAGE STACK (BUT SECOND ON MOBILE) === */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="relative w-fit mx-auto md:mx-0 order-2 md:order-1"
         >
           {/* Main portrait */}
           <motion.div
@@ -29,12 +58,12 @@ export default function AboutIntroShort() {
               alt="Ruchika smiling"
               fill
               priority
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              className="object-cover transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
           </motion.div>
 
-          {/* Overlapped photo */}
+          {/* Overlapped beach photo */}
           <motion.div
             whileHover={{ rotate: -2, y: -6 }}
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
@@ -52,35 +81,10 @@ export default function AboutIntroShort() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
           </motion.div>
 
-          {/* Subtle floating glow behind images */}
+          {/* Glow */}
           <div className="absolute -bottom-16 -right-20 w-60 h-60 bg-brandSecondary/20 rounded-full blur-3xl opacity-40 animate-pulse-slow" />
         </motion.div>
 
-        {/* === RIGHT COLUMN — TEXT === */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-          viewport={{ once: true }}
-          className="text-brandDark space-y-6 text-center md:text-left"
-        >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif italic leading-tight">
-            Hi, I’m <span className="not-italic font-bold text-brandDark">Ruchika</span>
-          </h2>
-
-          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl">
-            I help scaling service providers with their{" "}
-            <span className="font-semibold text-brandSecondary">
-              brand messaging and conversion-focused copy
-            </span>
-            .
-          </p>
-
-          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl">
-            So they can confidently market their services, connect deeply with their audience, and
-            attract right-fit clients who truly value their expertise.
-          </p>
-        </motion.div>
       </div>
     </section>
   );

@@ -16,6 +16,7 @@ export default function ServicesHero() {
               src="/assets/ruchika-service.jpeg" // replace with your real image
               alt="Ruchika"
               fill
+              sizes="(min-width: 1024px) 50vw, (min-width: 768px) 60vw, 100vw"
               className="object-cover"
             />
           </div>
@@ -26,6 +27,7 @@ export default function ServicesHero() {
               src="/assets/coffee-service.jpeg" // replace with your real image
               alt="Workspace"
               fill
+              sizes="300px"
               className="object-cover"
             />
           </div>

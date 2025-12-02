@@ -38,6 +38,7 @@ export default function Navbar() {
             alt="Ruchika Copy Solutions logo"
             width={150}
             height={150}
+            style={{ width: "auto", height: "auto" }}
             priority
             className="object-contain"
           />
