@@ -1,24 +1,26 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function ContactPage() {
-  const fadeUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0 },
-  };
+  // Load Calendly script only on the client
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup if component unmounts
+      script.remove();
+    };
+  }, []);
 
   return (
     <main className="relative bg-white text-brandDark">
       {/* ===== HERO ===== */}
       <section className="py-24 md:py-32 bg-brandPrimary text-center">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.8 }}
-          variants={fadeUp}
-          className="container max-w-3xl mx-auto px-6"
-        >
+        <div className="container max-w-3xl mx-auto px-6">
           <p className="text-sm font-semibold text-brandSecondary mb-6">
             Ready to start your copywriting project? Let’s connect.
           </p>
@@ -30,19 +32,14 @@ export default function ContactPage() {
             </span>{" "}
             for your right-fit clients.
           </h1>
-        </motion.div>
+        </div>
       </section>
+
       <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
+
       {/* ===== CONTACT INFO ===== */}
       <section className="py-20 md:py-28 bg-white text-brandDark">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.8 }}
-          variants={fadeUp}
-          className="container max-w-3xl mx-auto px-6 leading-relaxed"
-        >
-          {/* Updated main text */}
+        <div className="container max-w-3xl mx-auto px-6 leading-relaxed">
           <p className="text-lg md:text-xl text-brandDark/80 mb-10">
             Use the calendar below to book a no-obligation intro call.
           </p>
@@ -61,7 +58,7 @@ export default function ContactPage() {
               </a>
             </div>
 
-            {/* === Business Hours (unchanged) === */}
+            {/* === Business Hours === */}
             <div>
               <h3 className="font-semibold text-brandDark mb-2 uppercase tracking-wide text-sm">
                 Business Hours
@@ -74,18 +71,14 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
+
+      {/* ===== CALENDLY SECTION ===== */}
       <section className="py-24 md:py-28 relative bg-brandPrimary">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          transition={{ duration: 0.8 }}
-          variants={fadeUp}
-          className="container max-w-3xl mx-auto text-center px-6"
-        >
+        <div className="container max-w-6xl mx-auto text-center px-6">
           <h2 className="text-xl md:text-2xl font-semibold text-brandDark mb-10">
             Schedule your call below
           </h2>
@@ -96,16 +89,9 @@ export default function ContactPage() {
               className="calendly-inline-widget"
               data-url="https://calendly.com/ruchikaratna/45-mins-free-consultation"
               style={{ minWidth: "320px", height: "700px" }}
-            ></div>
+            />
           </div>
-
-          {/* Calendly script */}
-          <script
-            type="text/javascript"
-            src="https://assets.calendly.com/assets/external/widget.js"
-            async
-          ></script>
-        </motion.div>
+        </div>
       </section>
 
       <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
