@@ -94,7 +94,7 @@ export default function MessagingSection() {
             size="md"
             className="shadow-md hover:shadow-lg"
           >
-            LET'S TALK MESSAGING
+            LET&apos;S TALK MESSAGING
             <ArrowRight className="w-4 h-4" />
           </CTAButton>
         </motion.div>
