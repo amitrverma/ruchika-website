@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { CTAButton } from "../ui/CTAButton";
 import { motion } from "framer-motion";
 import { HeartHandshake, Clock, MessageCircle, CheckCircle } from "lucide-react";
 
@@ -99,12 +99,9 @@ export default function GuaranteeSection() {
           transition={{ duration: 0.6, delay: 0.8 }}
           viewport={{ once: true }}
         >
-          <Link
-            href="/contact"
-            className="inline-block mt-12 bg-brandSecondary text-white px-8 py-3 rounded-md font-medium tracking-wide hover:bg-brandDark transition-colors"
-          >
-            LET’S CONNECT TODAY
-          </Link>
+          <CTAButton href="/contact" size="md" className="mt-12">
+            LET'S CONNECT TODAY
+          </CTAButton>
         </motion.div>
       </div>
     </section>

@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 import { Megaphone, Globe, Mail, FileText } from "lucide-react";
+import Link from "next/link";
+import { CTAButton } from "../ui/CTAButton";
 
 export default function ServicesOverview() {
   const services = [
@@ -217,12 +218,9 @@ export default function ServicesOverview() {
 
               {/* CTA */}
               <div className="mt-10">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center rounded-full px-6 py-2.5 text-sm font-semibold text-white bg-brandSecondary transition-all duration-300 hover:bg-brandDark focus:outline-none focus-visible:ring-2 focus-visible:ring-brandSecondary/50"
-                >
+                <CTAButton href="/contact" size="sm">
                   INQUIRE HERE
-                </Link>
+                </CTAButton>
               </div>
             </motion.div>
           ))}

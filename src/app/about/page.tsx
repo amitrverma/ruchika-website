@@ -4,6 +4,7 @@ import ScalingPhilosophySection from "../components/About/ScalingPhilosophySecti
 import OriginStorySection from "../components/About/OriginStorySection";  
 import NextChapterSection from "../components/About/NextChapterSection";
 import PurposeSection from "../components/About/PurposeSection";
+import { CTAButton } from "../components/ui/CTAButton";
 
 export const metadata = {
   title: "About | Ruchika Copy Solutions",
@@ -46,12 +47,9 @@ export default function AboutPage() {
             In that case, here’s how we can work together
           </p>
 
-          <a
-            href="/services"
-            className="inline-block bg-[#c0654f] text-white px-8 py-3 rounded-md font-medium tracking-wide hover:bg-brandDark transition-colors"
-          >
+          <CTAButton href="/services" size="md">
             EXPLORE MY COPYWRITING SERVICES IN DETAIL
-          </a>
+          </CTAButton>
         </div>
       </section>
       <Divider />

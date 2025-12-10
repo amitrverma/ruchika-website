@@ -31,10 +31,10 @@
 /* === Component Layer === */
 @layer components {
   .btn {
-    @apply inline-block px-5 py-2.5 font-medium rounded-lg text-white bg-gray-800 hover:bg-gray-700 transition-colors;
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3 font-semibold tracking-wide rounded-full text-white bg-brandSecondary hover:bg-brandDark shadow-md hover:shadow-lg transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brandSecondary;
   }
   .btn-outline {
-    @apply inline-block px-5 py-2.5 font-medium rounded-lg border border-gray-800 text-brandDark hover:bg-gray-800 hover:text-white transition-colors;
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3 font-semibold tracking-wide rounded-full border border-brandSecondary text-brandSecondary hover:bg-brandSecondary hover:text-white transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brandSecondary;
   }
   .container {
     @apply max-w-6xl mx-auto px-6;

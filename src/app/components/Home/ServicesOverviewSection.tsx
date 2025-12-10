@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 import { Megaphone, Globe, Mail, FileText } from "lucide-react";
+import { CTAButton } from "../ui/CTAButton";
 
 export default function ServicesOverviewSection() {
   const services = [
@@ -89,12 +89,9 @@ export default function ServicesOverviewSection() {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <Link
-            href="/services"
-            className="inline-block px-10 py-4 rounded-full font-medium tracking-wide bg-brandSecondary text-white hover:bg-brandDark hover:text-brandPrimary transition-all shadow-md hover:shadow-lg text-lg"
-          >
+          <CTAButton href="/services" size="lg" className="text-lg">
             EXPLORE SERVICES IN DETAIL
-          </Link>
+          </CTAButton>
         </motion.div>
       </div>
     </section>

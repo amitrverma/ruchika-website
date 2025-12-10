@@ -1,8 +1,8 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import Link from "next/link";
 import { Calendar, Phone, FileText, Rocket } from "lucide-react";
+import { CTAButton } from "../ui/CTAButton";
 
 export default function FinalCTASection() {
   const steps = [
@@ -110,14 +110,15 @@ const fadeUp: Variants = {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-              <Link
+              <CTAButton
                 href="/contact"
-                className="inline-flex items-center justify-center px-7 py-3 rounded-full bg-brandSecondary text-white font-medium tracking-wide hover:bg-brandDark transition-all duration-300 shadow-md group"
+                size="md"
+                className="shadow-md hover:shadow-lg group"
               >
                 <span className="group-hover:scale-105 transition-transform">
                   I’M IN — SCHEDULE A CALL
                 </span>
-              </Link>
+              </CTAButton>
             </div>
             <br/> <p className="text-brandSecondary text-sm text-center">Calendar updated weekly · No high-pressure sales · Clear next steps</p>
                          

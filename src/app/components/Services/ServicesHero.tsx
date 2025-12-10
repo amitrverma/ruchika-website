@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { CTAButton } from "../ui/CTAButton";
 
 export default function ServicesHero() {
   return (
@@ -45,12 +45,9 @@ export default function ServicesHero() {
             the right-fit clients who are ready to invest.
           </p>
 
-          <Link
-            href="/contact"
-            className="inline-block bg-brandSecondary text-white px-10 py-4 rounded-md font-medium shadow-md hover:bg-brandDark transition-all duration-300"
-          >
-            LET’S TALK
-          </Link>
+          <CTAButton href="/contact" size="lg" className="shadow-md hover:shadow-lg">
+            LET&apos;S TALK
+          </CTAButton>
         </div>
 
       </div>

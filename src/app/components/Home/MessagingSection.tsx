@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { CTAButton } from "../ui/CTAButton";
 
 export default function MessagingSection() {
   return (
@@ -89,13 +89,14 @@ export default function MessagingSection() {
           viewport={{ once: true }}
           className="text-center mt-10"
         >
-          <Link
+          <CTAButton
             href="/contact"
-            className="inline-flex items-center gap-2 bg-brandSecondary hover:bg-brandDark text-white font-medium tracking-wide px-8 py-3 rounded-md shadow-md transition-all duration-200"
+            size="md"
+            className="shadow-md hover:shadow-lg"
           >
-            LET’S TALK MESSAGING
+            LET'S TALK MESSAGING
             <ArrowRight className="w-4 h-4" />
-          </Link>
+          </CTAButton>
         </motion.div>
       </div>
 

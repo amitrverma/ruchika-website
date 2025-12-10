@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CTAButton } from "../ui/CTAButton";
 
 export default function Hero() {
   return (
@@ -44,12 +45,13 @@ export default function Hero() {
 
           <p className="text-sm md:text-base mt-1">Prefer to talk, not read?</p>
 
-          <a
+          <CTAButton
             href="/contact"
-            className="btn text-sm md:text-md text-white bg-brandSecondary hover:bg-brandDark px-6 py-3 rounded-full font-semibold transition-colors block w-max mx-auto md:mx-0"
+            size="md"
+            className="block w-max mx-auto md:mx-0"
           >
             LET&apos;S CONNECT OVER A CALL
-          </a>
+          </CTAButton>
         </div>
 
         {/* === Desktop Image — untouched === */}
