@@ -17,14 +17,14 @@ export default function AboutIntroShort() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-brandDark space-y-6 text-center md:text-left order-1 md:order-2"
+          className="text-brandDark space-y-6 text-left order-1 md:order-2"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif italic leading-tight">
             Hi, I’m{" "}
             <span className="not-italic font-bold text-brandDark">Ruchika</span>
           </h2>
 
-          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl mx-auto md:mx-0">
+          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl md:mx-0">
             I help scaling service providers with their{" "}
             <span className="font-semibold text-brandSecondary">
               brand messaging and conversion-focused copy
@@ -32,7 +32,7 @@ export default function AboutIntroShort() {
             .
           </p>
 
-          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl mx-auto md:mx-0">
+          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl md:mx-0">
             So they can confidently market their services, connect deeply with
             their audience, and attract right-fit clients who truly value their
             expertise.

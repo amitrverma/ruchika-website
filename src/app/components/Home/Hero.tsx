@@ -18,7 +18,7 @@ export default function Hero() {
         </div>
 
         {/* === Left — Text === */}
-        <div className="text-center md:text-left space-y-5 text-brandSecondary px-4 md:px-0">
+        <div className="text-left space-y-5 text-brandSecondary px-4 md:px-0">
 
           <p className="font-semibold text-sm md:text-base">
             Messaging-first copywriter for websites, emails & sales pages.
@@ -31,7 +31,7 @@ export default function Hero() {
             Strategic copywriting for <br className="hidden md:block" />
             service providers on the cusp <br className="hidden md:block" />
             of growth – Positioning you as <br className="hidden md:block" />
-            <span className="font-semibold underline">the obvious choice</span>{" "}
+            <span className="font-semibold underline whitespace-nowrap">the obvious choice</span>{" "}
             in your space
           </h1>
 
@@ -48,7 +48,7 @@ export default function Hero() {
           <CTAButton
             href="/contact"
             size="md"
-            className="block w-max mx-auto md:mx-0"
+            className="block w-max"
           >
             LET&apos;S CONNECT OVER A CALL
           </CTAButton>
