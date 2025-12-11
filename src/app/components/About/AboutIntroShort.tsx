@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function AboutIntroShort() {
   return (
-    <section className="relative bg-brandPrimary py-30">
+    <section className="relative bg-brandPrimary py-24 md:py-30 pb-28">
       {/* Decorative gradient motif */}
       <div className="absolute inset-0 opacity-[0.05] bg-[radial-gradient(circle_at_70%_30%,_var(--tw-gradient-stops))] from-brandSecondary via-transparent to-transparent" />
 
@@ -51,7 +51,7 @@ export default function AboutIntroShort() {
           <motion.div
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
-            className="relative w-[220px] h-[300px] sm:w-[260px] sm:h-[360px] md:w-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg border border-brandSecondary"
+            className="relative w-[220px] h-[320px] sm:w-[260px] sm:h-[360px] md:w-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-lg border border-brandSecondary"
           >
             <Image
               src="/assets/about.jpg"
@@ -67,9 +67,9 @@ export default function AboutIntroShort() {
           <motion.div
             whileHover={{ rotate: -2, y: -6 }}
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
-            className="absolute w-[160px] h-[220px] sm:w-[180px] sm:h-[260px] md:w-[200px] md:h-[300px]
-                        -bottom-16 sm:-bottom-20 md:-bottom-40
-                        -left-6 sm:-left-10 md:-left-20
+            className="absolute w-[160px] h-[200px] sm:w-[180px] sm:h-[240px] md:w-[200px] md:h-[300px]
+                        -bottom-[70px] sm:-bottom-16 md:-bottom-32
+                        -left-10 sm:-left-12 md:-left-16
                         rounded-2xl overflow-hidden shadow-xl border border-brandDark bg-white"
           >
             <Image
@@ -82,7 +82,7 @@ export default function AboutIntroShort() {
           </motion.div>
 
           {/* Glow */}
-          <div className="absolute -bottom-16 -right-20 w-60 h-60 bg-brandSecondary/20 rounded-full blur-3xl opacity-40 animate-pulse-slow" />
+          <div className="absolute -bottom-10 -right-20 w-60 h-60 bg-brandSecondary/20 rounded-full blur-3xl opacity-40 animate-pulse-slow" />
         </motion.div>
 
       </div>

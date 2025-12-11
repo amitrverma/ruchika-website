@@ -5,13 +5,13 @@ import { CTAButton } from "../ui/CTAButton";
 
 export default function ServicesHero() {
   return (
-    <section className="relative bg-[#F3EDE5] overflow-hidden min-h-[70vh] flex items-center mt-[104px]">
+    <section className="relative bg-[#F3EDE5] overflow-hidden min-h-[70vh] flex items-center mt-[104px] pb-16 md:pb-0">
       <div className="container max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
         
         {/* === LEFT IMAGES === */}
         <div className="relative">
           {/* Main portrait */}
-          <div className="w-full h-[520px] relative rounded-lg overflow-hidden shadow-md">
+          <div className="w-full h-[420px] sm:h-[480px] md:h-[520px] relative rounded-lg overflow-hidden shadow-md">
             <Image
               src="/assets/ruchika-service.jpeg" // replace with your real image
               alt="Ruchika"
@@ -22,7 +22,7 @@ export default function ServicesHero() {
           </div>
 
           {/* Overlapping desk image */}
-          <div className="absolute -bottom-12 -left-10 w-[300px] h-[300px] rounded-lg overflow-hidden shadow-lg hidden md:block">
+          <div className="absolute bottom-6 left-4 sm:bottom-8 sm:left-8 md:-bottom-12 md:-left-10 w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[300px] md:h-[300px] rounded-lg overflow-hidden shadow-lg border border-white/60 bg-white/80">
             <Image
               src="/assets/coffee-service.jpeg" // replace with your real image
               alt="Workspace"
