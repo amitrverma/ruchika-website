@@ -31,7 +31,7 @@ const fadeUp: Variants = {
           variants={fadeUp}
           className="text-2xl md:text-3xl font-serif mb-10 text-center md:text-left"
         >
-          Ruchika Copy Solutions believes in building a business that supports your life —{" "}
+          Ruchika Copy Solutions believes in building a business that supports life —{" "}
           <span className="text-brandSecondary font-semibold">
             not the other way around.
           </span>
