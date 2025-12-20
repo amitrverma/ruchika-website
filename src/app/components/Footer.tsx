@@ -94,7 +94,7 @@ export default function Footer() {
                 <FaLinkedin />
               </Link>
               <Link
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/ruchikacopysolutions/"
                 target="_blank"
                 aria-label="Instagram"
                 className="text-[#E4405F] hover:opacity-80 transition-opacity"
