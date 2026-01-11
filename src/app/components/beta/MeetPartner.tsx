@@ -35,7 +35,7 @@ export default function MeetPartner() {
             <div className="grid gap-4 md:grid-cols-3 border border-brandDark/40">
               <div className="bg-brandPrimary/60 p-4 border-b md:border-b-0 md:border-r border-brandDark/40">
                 <p className="text-sm uppercase tracking-wide text-brandSecondary">Education</p>
-                <p className="text-base md:text-lg leading-relaxed">Master's in marketing</p>
+                <p className="text-base md:text-lg leading-relaxed">Master&apos;s in marketing</p>
               </div>
               <div className="bg-brandPrimary/60 p-4 border-b md:border-b-0 md:border-r border-brandDark/40">
                 <p className="text-sm uppercase tracking-wide text-brandSecondary">Experience</p>

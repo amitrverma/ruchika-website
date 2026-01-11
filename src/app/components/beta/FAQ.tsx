@@ -50,7 +50,7 @@ export default function FAQ() {
                 <p>
                   Even when clients find you through referrals or word of mouth, they still visit
                   your website at a decision point. When they land there, they are asking themselves
-                  one question: "Is this right for me?"
+                    one question: &quot;Is this right for me?&quot;
                 </p>
                 <p>Your website either helps them feel confident about that decision or creates hesitation.</p>
               </div>
@@ -67,13 +67,13 @@ export default function FAQ() {
                   about clearly reflecting where your business is now, so it can support
                   conversations, referrals, and decisions today.
                 </p>
-                <p>There will never be a "perfect" time to get a new website.</p>
+                  <p>There will never be a &quot;perfect&quot; time to get a new website.</p>
                 <p>
                   But to answer you honestly, if your direction is broadly clear, even if details
                   continue to evolve, that is usually enough to move forward.
                 </p>
                 <p>
-                  If timing is what is holding you back, let's discuss it. Sometimes the hesitation
+                  If timing is what is holding you back, let&apos;s discuss it. Sometimes the hesitation
                   is about waiting for certainty that will not arrive, and sometimes waiting is the
                   right call. We will figure that out together.
                 </p>
@@ -239,7 +239,7 @@ export default function FAQ() {
               <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
                 <p>It is best to start with website messaging and copy before design.</p>
                 <p>
-                  Your website's structure, flow, and page decisions should come from what needs to be
+                  Your website&apos;s structure, flow, and page decisions should come from what needs to be
                   communicated: who you serve, how you position your work, what questions your visitors
                   need answered, and what actions you want them to take. That clarity makes the design
                   process smoother, faster, and more effective.

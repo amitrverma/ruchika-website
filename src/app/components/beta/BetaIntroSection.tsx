@@ -105,16 +105,22 @@ export default function BetaIntroSection() {
               <p className="text-base md:text-lg font-semibold">You are moving from:</p>
               <ul className="list-disc pl-5 space-y-3 text-base md:text-lg leading-relaxed">
                 <li>
-                  "Getting clients" to{" "}
-                  <span className="text-brandSecondary">"attracting the right clients."</span>
+                  &quot;Getting clients&quot; to{" "}
+                  <span className="text-brandSecondary">
+                    &quot;attracting the right clients.&quot;
+                  </span>
                 </li>
                 <li>
-                  "Proving your value" to{" "}
-                  <span className="text-brandSecondary">"positioning you as an expert in your space."</span>
+                  &quot;Proving your value&quot; to{" "}
+                  <span className="text-brandSecondary">
+                    &quot;positioning you as an expert in your space.&quot;
+                  </span>
                 </li>
                 <li>
-                  "Doing good work" to{" "}
-                  <span className="text-brandSecondary">"building a business you are deeply proud of."</span>
+                  &quot;Doing good work&quot; to{" "}
+                  <span className="text-brandSecondary">
+                    &quot;building a business you are deeply proud of.&quot;
+                  </span>
                 </li>
               </ul>
             </div>

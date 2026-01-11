@@ -31,7 +31,7 @@ export default function OfferingIntro() {
             </li>
             <li>
               <span className="font-semibold text-brandDark">Conversion focused copywriting:</span>{" "}
-              writing that moves past "what you do" and makes your value and relevance unmistakable
+              writing that moves past &quot;what you do&quot; and makes your value and relevance unmistakable
               to the right audience.
             </li>
             <li>

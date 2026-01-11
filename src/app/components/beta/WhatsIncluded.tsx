@@ -20,7 +20,7 @@ export default function WhatsIncluded() {
                 </p>
               </div>
               <p className="text-base md:text-lg text-brandSecondary font-semibold">
-                You're invited to join as a beta client for website messaging and copywriting.
+                You&apos;re invited to join as a beta client for website messaging and copywriting.
               </p>
               <p className="text-base md:text-lg">
                 Two beta spots - 50% off - First half of 2026 launch
@@ -29,7 +29,7 @@ export default function WhatsIncluded() {
 
             <div className="flex items-center gap-2 text-brandDark">
               <PackageOpen className="h-5 w-5 text-brandSecondary" />
-              <p className="text-base md:text-lg font-semibold">What's included:</p>
+              <p className="text-base md:text-lg font-semibold">What&apos;s included:</p>
             </div>
 
             <div className="space-y-6 text-base md:text-lg leading-relaxed">
@@ -167,9 +167,9 @@ export default function WhatsIncluded() {
 
             <ul className="list-disc pl-5 space-y-2 text-base md:text-lg leading-relaxed">
               <li>Two spots are available at the beta rate.</li>
-              <li>Once the spots are filled, I'll close the form.</li>
+              <li>Once the spots are filled, I&apos;ll close the form.</li>
               <li>Sharing your details shows interest only.</li>
-              <li>We'll connect on a call before anything is finalized.</li>
+              <li>We&apos;ll connect on a call before anything is finalized.</li>
             </ul>
           </div>
         </div>
