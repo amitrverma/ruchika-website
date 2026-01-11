@@ -28,6 +28,7 @@ export default function ServicesOverview() {
       ],
       extraDescription:
         "This becomes your go-to resource for all content creation — whether you're writing it yourself or getting someone else on your team to write for you.\n\nWith clarity on your positioning, POV, and what sets you apart in your space, everything you create calls in the right-fit people.",
+        investment: "Investment starts at $650",
     },
 
     {
@@ -44,6 +45,7 @@ export default function ServicesOverview() {
       ],
       extraDescription:
         "Every website is custom-scoped based on your specific needs – whether that's a one-offer and one-audience type site or a more complex structure with multiple service offerings and audience types.",
+        investment: "Investment starts at $850",
     },
 
     {
@@ -67,20 +69,22 @@ export default function ServicesOverview() {
       ],
       extraDescription:
         "Each project is tailored to your audience and goals – because effective email strategy isn't one-size-fits-all.",
+        investment: "Investment starts at $800",
     },
 
     {
       title: "Sales Page Copywriting",
       icon: <FileText className="w-8 h-8 text-brandSecondary" />,
       description:
-        "Research-backed, long-form sales page copy that speaks to your audience’s deeper desires, addresses their objections, and positions your offer as the solution they've been looking for. Every project will include strategy and research.",
+        "Research-backed, long-form sales page copy that speaks to your audience's deeper desires, addresses their objections, and positions your offer as the solution they've been looking for. Every project will include strategy and research.",
       bullets: [
-        "Sales page strategy – positioning, flow, and messaging approach",
+        "Sales page strategy - positioning, flow, and messaging approach",
         "Audience research to understand their language, motivations, and objections",
         "Strategic long-form sales page copy",
       ],
       extraDescription:
         "Sales page lengths are customized based on your offer complexity and where your audience is in their decision-making journey.",
+      investment: "Investment starts at $1000",
     },
   ];
 
@@ -212,6 +216,12 @@ export default function ServicesOverview() {
                 {service.extraDescription && (
                   <p className="text-brandDark/70 leading-relaxed whitespace-pre-line border-l-2 border-brandSecondary/30 pl-4 italic">
                     {service.extraDescription}
+                  </p>
+                )}
+
+                {service.investment && (
+                  <p className="text-brandDark font-semibold">
+                    {service.investment}
                   </p>
                 )}
               </div>
