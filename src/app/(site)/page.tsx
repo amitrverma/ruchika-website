@@ -1,13 +1,13 @@
-import Hero from "./components/Home/Hero";
-import PositioningSection from "./components/Home/PositioningSection";
-import MessagingSection from "./components/Home/MessagingSection";
-import AboutIntroSection from "./components/Home/AboutIntroSection";
-import ProcessHighlightSection from "./components/Home/ProcessHighlightSection";
-import BeliefSection from "./components/Home/BeliefSection";
-import ServicesOverviewSection from "./components/Home/ServicesOverviewSection";
-import TestimonialSection from "./components/Home/TestimonialSection";
-import FitSection from "./components/Home/FitSection";
-import FinalCTASection from "./components/Home/FinalCTASection";
+import Hero from "../components/Home/Hero";
+import PositioningSection from "../components/Home/PositioningSection";
+import MessagingSection from "../components/Home/MessagingSection";
+import AboutIntroSection from "../components/Home/AboutIntroSection";
+import ProcessHighlightSection from "../components/Home/ProcessHighlightSection";
+import BeliefSection from "../components/Home/BeliefSection";
+import ServicesOverviewSection from "../components/Home/ServicesOverviewSection";
+import TestimonialSection from "../components/Home/TestimonialSection";
+import FitSection from "../components/Home/FitSection";
+import FinalCTASection from "../components/Home/FinalCTASection";
 
 export default function HomePage() {
   const Divider = () => (

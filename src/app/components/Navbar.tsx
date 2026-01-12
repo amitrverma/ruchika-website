@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const navLinks = [
@@ -15,6 +16,8 @@ const navLinks = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const showAnnouncement = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -30,6 +33,23 @@ export default function Navbar() {
           : "bg-transparent border-transparent"
       }`}
     >
+      {showAnnouncement && (
+        <div className="w-full bg-gradient-to-r from-brandDark via-brandDark to-brandSecondary/70 text-brandPrimary shadow-[0_12px_24px_rgba(0,0,0,0.12)]">
+          <div className="container flex flex-col items-center gap-3 py-3 text-center text-sm md:py-4 md:text-base">
+            <div className="flex flex-col items-center gap-1 md:flex-row md:gap-4">
+              <span className="font-semibold">
+                Now inviting beta clients for Website Messaging &amp; Copywriting
+              </span>
+              <span className="text-brandPrimary/90">
+                Two spots - 50% off standard rate
+              </span>
+            </div>
+            <Link href="/beta" className="btn w-full md:w-auto">
+              SEE DETAILS
+            </Link>
+          </div>
+        </div>
+      )}
       <div className="container flex items-center justify-between py-4 md:py-5">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">

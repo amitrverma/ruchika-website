@@ -3,21 +3,7 @@ import { CTAButton } from "../ui/CTAButton";
 
 export default function Hero() {
   return (
-    <section className="relative bg-brandPrimary py-30">
-      <div className="container pt-6 md:pt-10">
-        <div className="mx-auto max-w-3xl text-center space-y-2">
-          <p className="text-base md:text-lg font-semibold text-brandDark">
-            Now inviting beta clients for Website Messaging &amp; Copywriting
-          </p>
-          <p className="text-base md:text-lg font-semibold text-brandDark">
-            Two spots - 50% off standard rate
-          </p>
-          <CTAButton href="/beta" size="md" className="mx-auto w-full max-w-xs">
-            SEE DETAILS
-          </CTAButton>
-        </div>
-      </div>
-
+    <section className="relative bg-brandPrimary pb-30 pt-44 md:pt-58">
       <div className="container mx-auto grid md:grid-cols-[3fr_2fr] items-center gap-10 md:gap-16">
 
         {/* === MOBILE IMAGE (hidden on desktop) === */}
