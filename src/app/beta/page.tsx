@@ -8,12 +8,14 @@ import FAQ from "../components/beta/FAQ";
 import FinalCTA from "../components/beta/FinalCTA";
 import BetaInterestForm from "../components/beta/BetaInterestForm";
 import FinalNote from "../components/beta/FinalNote";
+import TableOfContents from "../components/beta/TableOfContents";
 export default function BetaLandingPage() {
   const Divider = () => (
     <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
   );
   return (
     <main className="flex flex-col">
+      <TableOfContents />
       <BetaIntroSection />
       <Divider />
       <MeetPartner />

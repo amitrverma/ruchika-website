@@ -11,6 +11,11 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
   { href: "/contact", label: "Contact" },
+  {
+    href: "https://ruchikacopysolutions.my.canva.site/portfolio-ruchika-copy-solutions",
+    label: "Portfolio",
+    external: true,
+  },
 ];
 
 export default function Navbar() {
@@ -44,7 +49,7 @@ export default function Navbar() {
                 Two spots - 50% off standard rate
               </span>
             </div>
-            <Link href="/beta" className="btn w-full md:w-auto">
+            <Link href="/beta" className="btn w-full md:w-auto" target="_blank" rel="noreferrer">
               SEE DETAILS
             </Link>
           </div>
@@ -69,6 +74,8 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noreferrer" : undefined}
               className="relative pb-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-brandSecondary after:transition-all after:duration-300 hover:after:w-full hover:text-brandSecondary"
             >
               {link.label}
@@ -96,6 +103,8 @@ export default function Navbar() {
           <Link
             key={link.href}
             href={link.href}
+            target={link.external ? "_blank" : undefined}
+            rel={link.external ? "noreferrer" : undefined}
             className="block px-6 py-4 text-brandDark font-medium hover:bg-brandSecondary/10 hover:text-brandDark transition-colors"
             onClick={() => setOpen(false)}
           >

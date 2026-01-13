@@ -19,7 +19,7 @@ export default function WhatsIncluded() {
                 If this resonates with where your business is...
                 </p>
               </div>
-              <p className="text-base md:text-lg text-brandSecondary font-semibold">
+              <p className="text-xl md:text-2xl text-brandSecondary font-semibold">
                 You&apos;re invited to join as a beta client for website messaging and copywriting.
               </p>
               <p className="text-base md:text-lg">
@@ -160,7 +160,7 @@ export default function WhatsIncluded() {
             <button
               type="button"
               onClick={openModal}
-              className="block text-base md:text-lg font-semibold text-brandSecondary underline underline-offset-4 cursor-pointer"
+              className="block text-lg md:text-xl font-semibold text-brandSecondary underline underline-offset-4 cursor-pointer"
             >
               CLICK HERE TO FILL THE FORM AND EXPRESS INTEREST IN THE BETA SPOT
             </button>

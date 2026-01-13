@@ -11,12 +11,8 @@ export default function FAQ() {
     <section id="faqs" className="bg-brandPrimary">
       <div className="container py-14 md:py-20 text-brandDark">
         <div className="max-w-3xl mx-auto space-y-8">
-          <div className="flex items-center gap-2">
-            <HelpCircle className="h-5 w-5 text-brandSecondary" />
-            <h2 className="text-2xl md:text-3xl font-serif">FAQs</h2>
-          </div>
 
-          <p className="text-base md:text-lg leading-relaxed text-brandSecondary font-semibold">
+          <p className="text-xl md:text-2xl leading-relaxed text-brandSecondary font-semibold">
             A few important questions you may have before you express interest:
           </p>
 
@@ -39,11 +35,11 @@ export default function FAQ() {
                   <li>Clients have mentioned that your online presence does not reflect the work you deliver.</li>
                 </ul>
                 <p>
-                  For businesses with an existing site, this often shows up as outdated messaging,
+                  <span className="font-semibold">For businesses with an existing site,</span> this often shows up as outdated messaging,
                   unclear structure, or a site that no longer supports your pricing or positioning.
                 </p>
                 <p>
-                  For a first website, the goal is different but just as important. It is not about
+                 <span className="font-semibold">For a first website,</span> the goal is different but just as important. It is not about
                   doing more marketing. It is about giving interested people a clear, accurate
                   picture of your work so they can decide whether to move forward.
                 </p>
@@ -256,31 +252,6 @@ export default function FAQ() {
                 </p>
               </div>
             </details>
-          </div>
-
-          <div className="pt-6 space-y-4">
-            <p className="text-base md:text-lg leading-relaxed font-semibold text-brandSecondary">
-              If this resonates with where your business is:
-            </p>
-            <p className="text-base md:text-lg leading-relaxed">
-              You are invited to join as a beta client for website messaging and copywriting.
-            </p>
-            <p className="text-base md:text-lg leading-relaxed">
-              Two beta spots - 50% off - First half of 2026 launch.
-            </p>
-            <button
-              type="button"
-              onClick={openModal}
-              className="inline-flex items-center justify-center gap-2 px-7 py-3 font-semibold tracking-wide rounded-full text-white bg-brandSecondary hover:bg-brandDark shadow-md hover:shadow-lg transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brandSecondary cursor-pointer"
-            >
-              CLICK HERE TO EXPRESS INTEREST IN THE BETA SPOT
-            </button>
-            <p className="text-base md:text-lg leading-relaxed">
-              Two spots are available at the beta rate. Once the spots are filled, I will close the form.
-            </p>
-            <p className="text-base md:text-lg leading-relaxed">
-              Sharing your details shows interest only. We will connect on a call before anything is finalized.
-            </p>
           </div>
         </div>
       </div>

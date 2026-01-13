@@ -13,7 +13,7 @@ export default function FinalCTA() {
             If this resonates with where your business is:
           </p>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-xl md:text-2xl leading-relaxed font-semibold">
             You are invited to join as a beta client for website messaging and
             copywriting.
           </p>
@@ -25,7 +25,7 @@ export default function FinalCTA() {
           <button
             type="button"
             onClick={openModal}
-            className="inline-flex items-center justify-center gap-2 px-7 py-3 font-semibold tracking-wide rounded-full text-white bg-brandSecondary hover:bg-brandDark shadow-md hover:shadow-lg transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brandSecondary cursor-pointer"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3 font-semibold tracking-wide rounded-full text-white bg-brandSecondary hover:bg-brandDark shadow-md hover:shadow-lg transition-all duration-200 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-brandSecondary cursor-pointer"
           >
             CLICK HERE TO EXPRESS INTEREST IN THE BETA SPOT
           </button>

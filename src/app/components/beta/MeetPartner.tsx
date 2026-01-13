@@ -6,14 +6,18 @@ export default function MeetPartner() {
     <section id="meet-your-strategic-partner" className="bg-white">
       <div className="container py-14 md:py-20 text-brandDark">
         <div className="max-w-4xl mx-auto space-y-8">
-          <p className="text-base md:text-lg font-semibold">Meet your strategic partner</p>
+          <p
+            id="meet-the-thinker"
+            className="text-xl md:text-2xl font-semibold text-brandSecondary"
+          >
+            Meet the thinker behind the work
+          </p>
 
           <div className="grid md:grid-cols-[3fr_2fr] border border-brandDark/40">
             <div className="bg-brandPrimary/60 p-6 md:p-8 flex items-center">
-              <p className="text-base md:text-lg leading-relaxed text-brandDark">
+              <p className="text-lg md:text-xl leading-relaxed text-brandDark">
                 Hi, I am{" "}
-                <span className="font-semibold text-brandSecondary">Ruchika</span>, your strategic
-                partner for brand messaging and copywriting services
+                <span className="font-semibold text-brandSecondary">Ruchika</span>, your strategic partner focused on the messaging behind the anchor of your business: your website.
               </p>
             </div>
             <div className="relative min-h-[220px] md:min-h-[260px] border-l border-brandDark/40">
@@ -60,14 +64,14 @@ export default function MeetPartner() {
             </p>
             <div className="border border-brandDark/40 bg-brandPrimary/60 p-5 space-y-3">
               <div className="flex items-start gap-3">
-                <CheckSquare className="mt-1 h-5 w-5 text-brandSecondary" />
+                <CheckSquare className="mt-1 h-5 w-5 shrink-0 text-green-600" />
                 <p className="text-base md:text-lg leading-relaxed">
                   Your website should be an end-of-funnel asset written for clients who are ready to
                   invest and deciding between options.
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <CheckSquare className="mt-1 h-5 w-5 text-brandSecondary" />
+                <CheckSquare className="mt-1 h-5 w-5 shrink-0 text-green-600" />
                 <p className="text-base md:text-lg leading-relaxed">
                   This means your copy focuses on why you are the right choice (your expertise,
                   approach, results), not on convincing people they need your type of service at all.
@@ -77,9 +81,10 @@ export default function MeetPartner() {
           </div>
 
           <p className="text-base md:text-lg leading-relaxed">
-            If you are looking for a professional and conversion-focused website copywriter to
+            If you are looking for a <span className="text-black font-semibold">professional and conversion-focused website copywriter</span> to
             support your website launch in the first half of 2026, I will be honored to help.
           </p>
+          <p>You can explore my work and approach here: <a href="https://www.ruchikacopy.com" className="text-brandSecondary underline underline-offset-4" target="_blank" rel="noreferrer">https://www.ruchikacopy.com</a></p>
         </div>
       </div>
     </section>

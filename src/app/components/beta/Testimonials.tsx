@@ -5,7 +5,7 @@ export default function Testimonials() {
     <section id="testimonials" className="bg-white">
       <div className="container py-14 md:py-20 text-brandDark">
         <div className="max-w-3xl mx-auto space-y-8">
-          <h2 className="text-xl md:text-2xl font-serif">
+          <h2 className="text-xl md:text-2xl font-serif text-brandSecondary">
             What past clients have said about working together
           </h2>
 
@@ -23,7 +23,7 @@ export default function Testimonials() {
                     alt="Tanishq Jha"
                     fill
                     sizes="160px"
-                    className="object-cover"
+                    className="object-cover object-[center_15%]"
                   />
                 </div>
                 <div className="p-5 space-y-3">

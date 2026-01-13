@@ -15,7 +15,7 @@ export default function OfferingIntro() {
               className="h-auto w-auto"
               priority
             />
-            <p className="text-base md:text-lg font-semibold text-brandSecondary">
+            <p className="text-xl md:text-2xl font-semibold text-brandSecondary">
               Ruchika Copy Solutions: Website Messaging and Copywriting for Service Providers
             </p>
           </div>

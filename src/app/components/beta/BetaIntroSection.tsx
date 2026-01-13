@@ -23,39 +23,34 @@ export default function BetaIntroSection() {
               </button>
             </p>
 
-            <p className="text-base md:text-lg font-semibold">
+            <p id="welcome" className="text-xs md:text-sm">
               Welcome. I am glad you are here.
             </p>
 
-            <div className="border border-brandDark/40 bg-brandPrimary/60 p-6 space-y-2">
-              <p className="text-base md:text-lg font-semibold">
+            <div className="border  border-brandDark/40 bg-brandPrimary/60 p-6 space-y-2">
+              <p className="text-lg md:text-xl font-semibold text-black">
                 For service providers planning a website launch in first half of 2026
               </p>
-              <p className="text-base md:text-lg font-semibold text-brandDark">
-                Done-for-you website messaging and copywriting
-              </p>
-              <p className="text-base md:text-lg text-brandDark">
+              <p className="text-lg md:text-xl font-semibold text-brandDark">
+                Done-for-you website messaging and copywriting <br/>
                 To attract right-fit clients who are ready to invest
               </p>
-              <p className="text-base md:text-lg font-semibold text-brandSecondary">
+              <p className="text-lg md:text-xl font-semibold text-brandSecondary">
                 Beta offer. Two spots available at 50% off the standard rate.
               </p>
             </div>
           </div>
 
           <div className="space-y-5">
-            <h2 className="text-xl md:text-2xl font-serif text-brandDark">
+            <h2 id="who-this-is-for" className="text-xs md:text-sm font-serif text-brandDark">
               Who this is for (and why)
             </h2>
 
-            <p className="text-base md:text-lg font-semibold text-brandSecondary">
-              You already know your website matters.
+            <p className="text-xl md:text-2xl font-semibold text-brandSecondary">
+              You already know your website matters. And what your website says matters just as much as how it looks.
             </p>
 
             <ul className="list-disc pl-5 space-y-3 text-base md:text-lg leading-relaxed">
-              <li>
-                You already know that what your website says matters just as much as how it looks.
-              </li>
               <li>
                 Even when people find you through referrals or social media, your website is where
                 they assess your work and decide whether to move forward.
@@ -70,7 +65,7 @@ export default function BetaIntroSection() {
               </li>
             </ul>
 
-            <p className="text-base md:text-lg leading-relaxed">
+            <p className="text-base md:text-lg leading-relaxed text-black font-semibold">
               Because of that,{" "}
               <span className="text-brandSecondary font-semibold">
                 launching a strategic website has become an important milestone
@@ -88,10 +83,12 @@ export default function BetaIntroSection() {
             </ul>
 
             <p className="text-base md:text-lg leading-relaxed">
-              Whatever the case may be, one thing is for sure:
+              Whatever the case may be, one thing is for sure...
             </p>
 
-            <p className="text-base md:text-lg leading-relaxed font-semibold">
+            <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
+
+            <p id="shift-needs" className="text-xl md:text-2xl leading-relaxed font-semibold">
               You are at a stage in your business{" "}
               <span className="text-brandSecondary">
                 where you are not just looking for more clients
@@ -141,14 +138,14 @@ export default function BetaIntroSection() {
 
             <div className="space-y-3 text-base md:text-lg leading-relaxed">
               <div className="flex items-start gap-3">
-                <CheckSquare className="mt-1 h-5 w-5 text-brandSecondary" />
+                <CheckSquare className="mt-1 h-5 w-5 text-green-600" />
                 <p>
                   It helps qualified prospects who have already set aside a budget evaluate your work
                   and decide their next step.
                 </p>
               </div>
               <div className="flex items-start gap-3">
-                <X className="mt-1 h-5 w-5 text-brandSecondary" />
+                <X className="mt-1 h-5 w-5 text-red-500" />
                 <p>
                   It is not meant for audiences who still need to be convinced that services like
                   yours are worth investing in.
@@ -156,7 +153,7 @@ export default function BetaIntroSection() {
               </div>
             </div>
 
-            <p className="text-base md:text-lg leading-relaxed font-semibold">
+            <p className="text-base md:text-lg leading-relaxed font-semibold text-black">
               This means treating your{" "}
               <span className="text-brandSecondary">website as a decision tool</span>, not an
               information or education tool.
@@ -214,7 +211,7 @@ export default function BetaIntroSection() {
             </div>
 
             <p className="text-base md:text-lg leading-relaxed">
-              As a result, you begin receiving inquiries from right-fit clients who are ready to
+              As a result, <span className="font-semibold text-black">you begin receiving inquiries from right-fit clients</span> who are ready to
               invest in your experience and expertise.
             </p>
 
@@ -227,11 +224,11 @@ export default function BetaIntroSection() {
               <div className="space-y-3 text-base md:text-lg leading-relaxed">
                 <div className="flex items-start gap-3">
                   <CheckSquare className="mt-1 h-5 w-5 text-brandSecondary" />
-                  <p>To position themselves as the obvious choice in their space.</p>
+                  <p>To position themselves as the <span className="text-black font-semibold">obvious choice </span>in their space.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckSquare className="mt-1 h-5 w-5 text-brandSecondary" />
-                  <p>To attract right-fit clients who are ready to invest.</p>
+                  <p>To attract <span className="text-black font-semibold">right-fit clients</span> who are ready to invest.</p>
                 </div>
               </div>
             </div>

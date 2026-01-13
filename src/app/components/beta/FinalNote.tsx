@@ -6,8 +6,8 @@ export default function FinalNote() {
       <div className="container py-14 md:py-20 text-brandDark">
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="flex items-center gap-2">
-            <Heart className="h-5 w-5 text-brandSecondary" />
-            <h2 className="text-2xl md:text-3xl font-serif">A final note</h2>
+            <Heart className="h-5 w-5 text-brandDark" />
+            <h2 className="text-2xl md:text-3xl font-serif text-brandSecondary">A final note</h2>
           </div>
 
           <p className="text-base md:text-lg leading-relaxed">
