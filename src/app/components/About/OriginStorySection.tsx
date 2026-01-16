@@ -67,7 +67,7 @@ const fadeUp: Variants = {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
           viewport={{ once: true }}
-          className="mt-8 text-right italic text-brandDark/80 text-sm md:text-base"
+          className="mt-8 text-right italic text-brandDark/80 text-md md:text-base"
         >
           — Ruchika
         </motion.div>

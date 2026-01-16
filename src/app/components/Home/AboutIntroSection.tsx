@@ -21,10 +21,10 @@ export default function AboutIntroSection() {
             and copywriting services
           </h2>
 
-          <p className="italic text-brandDark/80 text-base md:text-lg">
+          <p className="italic text-brandDark/80 text-md md:text-lg">
             When there are many amazing copywriters out there, why choose me?{" "}
             <br className="hidden md:block" />
-            <span className="text-sm text-brandDark/60 font-medium">
+            <span className="text-md text-brandDark/60 font-medium">
               (And I&apos;m only comparing myself to other HUMANS)
             </span>
           </p>

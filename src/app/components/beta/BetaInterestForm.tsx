@@ -84,7 +84,7 @@ export default function BetaInterestForm() {
   const closeModal = () => setIsOpen(false);
 
   const baseButtonClass =
-    "group relative inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-white text-sm tracking-wide transition-all duration-300";
+    "group relative inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-white text-md tracking-wide transition-all duration-300";
   const statusClass =
     status === "success"
       ? "bg-green-600"
@@ -121,14 +121,14 @@ export default function BetaInterestForm() {
             <h2 className="text-2xl md:text-3xl font-serif">
               Beta Client Interest Form - Website Messaging and Copywriting
             </h2>
-            <p className="text-base md:text-lg leading-relaxed">
+            <p className="text-md md:text-lg leading-relaxed">
               Thank you for your interest in my website messaging and copywriting beta offering.
             </p>
-            <p className="text-base md:text-lg leading-relaxed">
+            <p className="text-md md:text-lg leading-relaxed">
               This short form helps me understand a bit about your business, where you are at,
               and what you are looking for from your website.
             </p>
-            <p className="text-base md:text-lg leading-relaxed">
+            <p className="text-md md:text-lg leading-relaxed">
               Filling this out does not commit you to anything. Once I review your responses,
               I will reach out to schedule a conversation so we can see if this feels aligned
               for both of us.
@@ -149,7 +149,7 @@ export default function BetaInterestForm() {
           className="mt-6 border border-brandDark/40 bg-brandPrimary/40 p-6 md:p-8 space-y-5 text-left"
         >
           <div className="space-y-2">
-            <label htmlFor="namePronoun" className="text-sm font-semibold text-brandDark">
+            <label htmlFor="namePronoun" className="text-md font-semibold text-brandDark">
               What is your first and last name and your pronoun? *
             </label>
             <input
@@ -164,7 +164,7 @@ export default function BetaInterestForm() {
           </div>
 
           <div className="space-y-2">
-            <label htmlFor="email" className="text-sm font-semibold text-brandDark">
+            <label htmlFor="email" className="text-md font-semibold text-brandDark">
               Email *
             </label>
             <input
@@ -179,7 +179,7 @@ export default function BetaInterestForm() {
           </div>
 
           <div className="space-y-2">
-            <label htmlFor="businessName" className="text-sm font-semibold text-brandDark">
+            <label htmlFor="businessName" className="text-md font-semibold text-brandDark">
               What is your business name and what services do you offer? *
             </label>
             <input
@@ -194,7 +194,7 @@ export default function BetaInterestForm() {
           </div>
 
           <div className="space-y-2">
-            <label htmlFor="website" className="text-sm font-semibold text-brandDark">
+            <label htmlFor="website" className="text-md font-semibold text-brandDark">
               Do you currently have a website? If yes, share the URL. If no, share your social
               media links (Instagram, LinkedIn, etc.) *
             </label>
@@ -210,7 +210,7 @@ export default function BetaInterestForm() {
           </div>
 
           <div className="space-y-2">
-            <label htmlFor="anythingElse" className="text-sm font-semibold text-brandDark">
+            <label htmlFor="anythingElse" className="text-md font-semibold text-brandDark">
               Anything else you would like me to know
             </label>
             <textarea

@@ -24,7 +24,7 @@ export default function AboutIntroShort() {
             <span className="not-italic font-bold text-brandDark">Ruchika</span>
           </h2>
 
-          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl md:mx-0">
+          <p className="text-md sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl md:mx-0">
             I help scaling service providers with their{" "}
             <span className="font-semibold text-brandSecondary">
               brand messaging and conversion-focused copy
@@ -32,7 +32,7 @@ export default function AboutIntroShort() {
             .
           </p>
 
-          <p className="text-base sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl md:mx-0">
+          <p className="text-md sm:text-lg md:text-2xl font-serif leading-relaxed max-w-xl md:mx-0">
             So they can confidently market their services, connect deeply with
             their audience, and attract right-fit clients who truly value their
             expertise.

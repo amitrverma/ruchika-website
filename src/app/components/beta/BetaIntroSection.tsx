@@ -12,7 +12,7 @@ export default function BetaIntroSection() {
       <div className="container pt-28 pb-16 md:pt-32 md:pb-20 text-brandDark">
         <div className="max-w-3xl mx-auto space-y-10">
           <div className="space-y-4">
-            <p className="text-sm md:text-base text-right">
+            <p className="text-md md:text-base text-right">
               Visiting again?{" "}
               <button
                 type="button"
@@ -23,7 +23,7 @@ export default function BetaIntroSection() {
               </button>
             </p>
 
-            <p id="welcome" className="text-xs md:text-sm">
+            <p id="welcome" className="text-md md:text-base">
               Welcome. I am glad you are here.
             </p>
 
@@ -42,7 +42,7 @@ export default function BetaIntroSection() {
           </div>
 
           <div className="space-y-5">
-            <h2 id="who-this-is-for" className="text-xs md:text-sm font-serif text-brandDark">
+            <h2 id="who-this-is-for" className="text-md md:text-base font-serif text-brandDark">
               Who this is for (and why)
             </h2>
 
@@ -50,7 +50,7 @@ export default function BetaIntroSection() {
               You already know your website matters. And what your website says matters just as much as how it looks.
             </p>
 
-            <ul className="list-disc pl-5 space-y-3 text-base md:text-lg leading-relaxed">
+            <ul className="list-disc pl-5 space-y-3 text-md md:text-lg leading-relaxed">
               <li>
                 Even when people find you through referrals or social media, your website is where
                 they assess your work and decide whether to move forward.
@@ -65,7 +65,7 @@ export default function BetaIntroSection() {
               </li>
             </ul>
 
-            <p className="text-base md:text-lg leading-relaxed text-black font-semibold">
+            <p className="text-md md:text-lg leading-relaxed text-black font-semibold">
               Because of that,{" "}
               <span className="text-brandSecondary font-semibold">
                 launching a strategic website has become an important milestone
@@ -73,7 +73,7 @@ export default function BetaIntroSection() {
               for the first half of your year.
             </p>
 
-            <ul className="list-disc pl-5 space-y-3 text-base md:text-lg leading-relaxed">
+            <ul className="list-disc pl-5 space-y-3 text-md md:text-lg leading-relaxed">
               <li>You are planning to launch your first website.</li>
               <li>Or you might be ready to move on from a site that was built quickly to get you started.</li>
               <li>
@@ -82,11 +82,11 @@ export default function BetaIntroSection() {
               </li>
             </ul>
 
-            <p className="text-base md:text-lg leading-relaxed">
+            <p className="text-md md:text-lg leading-relaxed">
               Whatever the case may be, one thing is for sure...
             </p>
 
-            <div className="w-full h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
+           <div className="relative left-1/2 right-1/2 -mx-[50vw] w-screen h-px bg-gradient-to-r from-transparent via-brandDark to-transparent" />
 
             <p id="shift-needs" className="text-xl md:text-2xl leading-relaxed font-semibold">
               You are at a stage in your business{" "}
@@ -96,11 +96,11 @@ export default function BetaIntroSection() {
               who are ready to invest in your services.
             </p>
 
-            <p className="text-base md:text-lg font-semibold">Instead...</p>
+            <p className="text-md md:text-lg font-semibold">Instead...</p>
 
             <div className="space-y-3">
-              <p className="text-base md:text-lg font-semibold">You are moving from:</p>
-              <ul className="list-disc pl-5 space-y-3 text-base md:text-lg leading-relaxed">
+              <p className="text-md md:text-lg font-semibold">You are moving from:</p>
+              <ul className="list-disc pl-5 space-y-3 text-md md:text-lg leading-relaxed">
                 <li>
                   &quot;Getting clients&quot; to{" "}
                   <span className="text-brandSecondary">
@@ -122,9 +122,9 @@ export default function BetaIntroSection() {
               </ul>
             </div>
 
-            <p className="text-base md:text-lg leading-relaxed">Put simply...</p>
+            <p className="text-md md:text-lg leading-relaxed">Put simply...</p>
 
-            <p className="text-base md:text-lg leading-relaxed font-semibold">
+            <p className="text-md md:text-lg leading-relaxed font-semibold">
               You are{" "}
               <span className="text-brandSecondary">
                 looking for right-fit clients who are ready to invest in your expertise
@@ -132,11 +132,11 @@ export default function BetaIntroSection() {
               . Not just deliverables.
             </p>
 
-            <p className="text-base md:text-lg leading-relaxed">
+            <p className="text-md md:text-lg leading-relaxed">
               And your website plays a crucial role here:
             </p>
 
-            <div className="space-y-3 text-base md:text-lg leading-relaxed">
+            <div className="space-y-3 text-md md:text-lg leading-relaxed">
               <div className="flex items-start gap-3">
                 <CheckSquare className="mt-1 h-5 w-5 text-green-600" />
                 <p>
@@ -153,7 +153,7 @@ export default function BetaIntroSection() {
               </div>
             </div>
 
-            <p className="text-base md:text-lg leading-relaxed font-semibold text-black">
+            <p className="text-md md:text-lg leading-relaxed font-semibold text-black">
               This means treating your{" "}
               <span className="text-brandSecondary">website as a decision tool</span>, not an
               information or education tool.
@@ -161,15 +161,15 @@ export default function BetaIntroSection() {
           </div>
 
           <div className="space-y-6">
-            <p className="text-base md:text-lg font-semibold">So...</p>
+            <p className="text-md md:text-lg font-semibold">So...</p>
 
             <div className="border border-brandDark/40 bg-brandPrimary/60 p-6 space-y-4">
-              <p className="text-base md:text-lg font-semibold text-brandSecondary">
+              <p className="text-md md:text-lg font-semibold text-brandSecondary">
                 Refine your website messaging for people who are ready to invest and hire you as a
                 strategic partner
               </p>
 
-              <div className="space-y-4 text-base md:text-lg leading-relaxed">
+              <div className="space-y-4 text-md md:text-lg leading-relaxed">
                 <div className="flex items-start gap-3">
                   <Target className="mt-1 h-5 w-5 text-brandSecondary" />
                   <p>
@@ -210,18 +210,18 @@ export default function BetaIntroSection() {
               </div>
             </div>
 
-            <p className="text-base md:text-lg leading-relaxed">
+            <p className="text-md md:text-lg leading-relaxed">
               As a result, <span className="font-semibold text-black">you begin receiving inquiries from right-fit clients</span> who are ready to
               invest in your experience and expertise.
             </p>
 
             <div className="space-y-4">
-              <p className="text-base md:text-lg leading-relaxed">
+              <p className="text-md md:text-lg leading-relaxed">
                 This is{" "}
                 <span className="text-brandSecondary font-semibold">my approach</span> when I take
                 website messaging and copywriting projects for scaling service providers who want:
               </p>
-              <div className="space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="space-y-3 text-md md:text-lg leading-relaxed">
                 <div className="flex items-start gap-3">
                   <CheckSquare className="mt-1 h-5 w-5 text-brandSecondary" />
                   <p>To position themselves as the <span className="text-black font-semibold">obvious choice </span>in their space.</p>

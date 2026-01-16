@@ -76,9 +76,9 @@ const handleSubmit = async (e: React.FormEvent) => {
             )}
             <label
               htmlFor={field}
-              className="absolute left-4 top-2.5 text-sm text-brandDark/60 transition-all 
-                        peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-brandDark/40 
-                        peer-focus:top-2 peer-focus:text-sm peer-focus:text-brandSecondary"
+              className="absolute left-4 top-2.5 text-md text-brandDark/60 transition-all 
+                        peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-md peer-placeholder-shown:text-brandDark/40 
+                        peer-focus:top-2 peer-focus:text-md peer-focus:text-brandSecondary"
             >
               {field === "name"
                 ? "Name"
@@ -94,7 +94,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       <button
         type="submit"
         disabled={status !== "idle"}
-        className={`group relative w-full flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-white text-sm tracking-wide transition-all duration-300 ${
+        className={`group relative w-full flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold text-white text-md tracking-wide transition-all duration-300 ${
           status === "success"
             ? "bg-green-600"
             : status === "error"

@@ -89,7 +89,7 @@ const fadeUp: Variants = {
               <h3 className="font-semibold text-lg md:text-xl mb-2 group-hover:text-brandSecondary transition-colors">
                 {item.title}
               </h3>
-              <p className="text-brandDark/80 leading-relaxed text-sm md:text-base">
+              <p className="text-brandDark/80 leading-relaxed text-md md:text-base">
                 {item.desc}
               </p>
             </motion.div>
@@ -131,7 +131,7 @@ const fadeUp: Variants = {
               <h3 className="font-semibold text-lg md:text-xl mb-2 group-hover:text-brandSecondary transition-colors">
                 {item.title}
               </h3>
-              <p className="text-brandDark/80 leading-relaxed text-sm md:text-base">
+              <p className="text-brandDark/80 leading-relaxed text-md md:text-base">
                 {item.desc}
               </p>
             </motion.div>

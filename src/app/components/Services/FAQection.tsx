@@ -1,13 +1,26 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Plus, Minus } from "lucide-react";
 
 export default function FAQSection() {
   const faqs = [
     {
       q: "How much do your services cost?",
-      a: "Every project is unique, so pricing depends on scope, deliverables, and timeline. After our discovery call, I’ll send you a detailed proposal with transparent pricing tailored to your specific needs.",
+      a: (
+        <>
+          Every project is unique, so pricing depends on the scope of work. After our
+          initial conversation, I&apos;ll send you a proposal with transparent pricing
+          tailored to your specific needs.
+          <br /><br/>
+          To give you a rough idea, the starting investment is listed {" "}
+          <Link href="/services#servicesList" className="underline underline-offset-4 text-brandSecondary">
+            here
+          </Link>
+          .
+        </>
+      ),
     },
     {
       q: "How long does a typical project take?",
@@ -52,7 +65,7 @@ export default function FAQSection() {
         <h2 className="text-2xl md:text-3xl font-serif text-center mb-12 text-brandDark">
           Like to know a little more before you say hi?
           <br />
-          <span className="text-base font-normal text-gray-600">
+          <span className="text-sm font-base text-gray-600">
             I’ve answered your FAQs below ↓
           </span>
         </h2>
@@ -65,7 +78,7 @@ export default function FAQSection() {
               onClick={() => toggle(i)}
             >
               <div className="flex justify-between items-center">
-                <h4 className="font-medium text-brandDark text-base md:text-lg">
+                <h4 className="font-medium text-brandDark text-md md:text-lg">
                   {item.q}
                 </h4>
                 <span className="text-brandSecondary text-xl">
@@ -82,7 +95,7 @@ export default function FAQSection() {
     openIndex === i ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
   }`}
 >
-  <p className="text-brandDark text-sm md:text-base leading-relaxed rounded-lg p-4">
+  <p className="text-brandDark text-md md:text-base leading-relaxed rounded-lg p-4">
     {item.a}
   </p>
 </div>

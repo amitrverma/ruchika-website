@@ -15,9 +15,9 @@ const baseStyles =
   "inline-flex items-center justify-center gap-2 font-semibold tracking-wide rounded-md transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brandSecondary";
 
 const sizeStyles: Record<NonNullable<CTAButtonProps["size"]>, string> = {
-  sm: "px-5 py-2.5 text-sm",
-  md: "px-7 py-3 text-sm md:text-base",
-  lg: "px-9 py-4 text-base md:text-lg",
+  sm: "px-5 py-2.5 text-md",
+  md: "px-7 py-3 text-md md:text-base",
+  lg: "px-9 py-4 text-md md:text-lg",
 };
 
 const variantStyles: Record<NonNullable<CTAButtonProps["variant"]>, string> = {

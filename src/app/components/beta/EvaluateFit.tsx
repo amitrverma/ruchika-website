@@ -1,5 +1,3 @@
-import { Search } from "lucide-react";
-
 export default function EvaluateFit() {
   return (
     <section id="evaluate-fit" className="bg-white">
@@ -11,19 +9,19 @@ export default function EvaluateFit() {
             </p>
           </div>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-md md:text-lg leading-relaxed">
             This is for <span className="font-semibold text-brandSecondary">growing service-based businesses </span>built on referrals,
             word of mouth, and solid client work, now ready to launch (or
             relaunch) a website that amplifies your success and attracts
             right-fit clients.
           </p>
 
-          <p className="text-base md:text-lg leading-relaxed font-semibold">
+          <p className="text-md md:text-lg leading-relaxed font-semibold">
             A few things to consider as you evaluate fit:
           </p>
 
-          <p className="text-base md:text-lg font-semibold">If you feel:</p>
-          <ul className="list-disc pl-5 space-y-3 text-base md:text-lg leading-relaxed">
+          <p className="text-md md:text-lg font-semibold">If you feel:</p>
+          <ul className="list-disc pl-5 space-y-3 text-md md:text-lg leading-relaxed">
             <li>
               Your business has evolved since you first launched, and <span className=" text-brandSecondary">your
               current website, or the lack of one, no longer reflects where you
@@ -47,8 +45,8 @@ export default function EvaluateFit() {
             </li>
           </ul>
 
-          <p className="text-base md:text-lg font-semibold">You are looking for:</p>
-          <ul className="list-disc pl-5 space-y-3 text-base md:text-lg leading-relaxed">
+          <p className="text-md md:text-lg font-semibold">You are looking for:</p>
+          <ul className="list-disc pl-5 space-y-3 text-md md:text-lg leading-relaxed">
             <li>
               Website messaging that <span className="text-brandSecondary">focuses on your expertise as a service
               provider</span>, supported by conversion-focused copy.
@@ -65,10 +63,10 @@ export default function EvaluateFit() {
             <li>A website you can <span className="text-brandSecondary">confidently share with referrals.</span>  </li>
           </ul>
 
-          <p className="text-base md:text-lg font-semibold">
+          <p className="text-md md:text-lg font-semibold">
             This is best suited for businesses at a stage where:
           </p>
-          <ul className="list-disc pl-5 space-y-3 text-base md:text-lg leading-relaxed">
+          <ul className="list-disc pl-5 space-y-3 text-md md:text-lg leading-relaxed">
             <li>
               You run a <span className="text-brandSecondary">primarily service-based business.</span> Digital products or
               courses may exist alongside it, but services remain your core
@@ -81,21 +79,21 @@ export default function EvaluateFit() {
             <li>You have an <span className="text-brandSecondary">established track record of client work.</span></li>
             <li>Your business has <span className="text-brandSecondary">moved beyond the early stage.</span></li>
           </ul>
-          <p className="text-base md:text-lg">              This project builds on work that has already been validated
+          <p className="text-md md:text-lg">              This project builds on work that has already been validated
               through referrals, word of mouth, and client results. </p>
 
-          <p className="text-base md:text-lg leading-relaxed font-semibold text-brandSecondary">
+          <p className="text-md md:text-lg leading-relaxed font-semibold text-brandSecondary">
             Finally...
           </p>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-md md:text-lg leading-relaxed">
             You are <span className="text-brandSecondary">comfortable being an early client to help me refine my
             processes, gather testimonials, and build case studies,</span> in exchange
             for a reduced rate.
           </p>
 
-          <p className="text-base md:text-lg font-semibold">This means you are open to:</p>
-          <ul className="list-disc pl-5 space-y-3 text-base md:text-lg leading-relaxed">
+          <p className="text-md md:text-lg font-semibold">This means you are open to:</p>
+          <ul className="list-disc pl-5 space-y-3 text-md md:text-lg leading-relaxed">
             <li>Providing feedback on the experience and process.</li>
             <li>Sharing a testimonial after the project.</li>
             <li>
@@ -104,7 +102,7 @@ export default function EvaluateFit() {
             </li>
           </ul>
 
-          <p className="text-base md:text-lg leading-relaxed font-semibold">
+          <p className="text-md md:text-lg leading-relaxed font-semibold">
             In return, you receive 50% off my regular website messaging and copywriting rate.
           </p>
         </div>

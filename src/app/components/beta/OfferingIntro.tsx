@@ -6,7 +6,7 @@ export default function OfferingIntro() {
       <div className="container py-14 md:py-20 text-brandDark">
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="space-y-3">
-            <p className="text-base md:text-lg font-semibold">Introducing...</p>
+            <p className="text-md md:text-lg font-semibold">Introducing...</p>
             <Image
               src="/logo.png"
               alt="Ruchika Copy Solutions"
@@ -20,11 +20,11 @@ export default function OfferingIntro() {
             </p>
           </div>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-md md:text-lg leading-relaxed">
             A strategic website copywriting process built on...
           </p>
 
-          <ul className="list-disc pl-5 space-y-4 text-base md:text-lg leading-relaxed">
+          <ul className="list-disc pl-5 space-y-4 text-md md:text-lg leading-relaxed">
             <li>
               <span className="font-semibold text-brandDark">Messaging rooted in deep audience research:</span>{" "}
               based on survey responses from your right-fit clients and forum or group mining.

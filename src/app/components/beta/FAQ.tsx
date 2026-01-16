@@ -1,12 +1,6 @@
 "use client";
 
-import { HelpCircle } from "lucide-react";
-
 export default function FAQ() {
-  const openModal = () => {
-    window.dispatchEvent(new Event("open-beta-interest-form"));
-  };
-
   return (
     <section id="faqs" className="bg-brandPrimary">
       <div className="container py-14 md:py-20 text-brandDark">
@@ -21,7 +15,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 Should I invest in a new website right now, even if this is my first one?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <p>
                   For a service provider, a website makes sense when your business has enough
                   clarity for people to evaluate fit and take the next step.
@@ -56,7 +50,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 What if my business might change or evolve again?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <p>That is normal. Most service businesses evolve over time.</p>
                 <p>
                   A strategic website is not about locking yourself into something permanent. It is
@@ -80,7 +74,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 What are the advantages of being a beta client?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <p>The primary advantage is the reduced rate.</p>
                 <p>
                   As a beta client, you receive the same level of strategic thinking and website
@@ -94,7 +88,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 What is the process after I secure my spot and become a beta client?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <div>
                   <p className="font-semibold">Strategy call</p>
                   <p>
@@ -138,7 +132,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 What does the timeline look like?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <p>
                   The typical timeline is around eight weeks from the strategy session to final copy and wireframes.
                 </p>
@@ -156,7 +150,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 When would we begin working together?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <p>Start dates depend on availability and alignment.</p>
                 <p>This beta offering is intended for the first half of 2026 website launches.</p>
                 <p>Once we connect and confirm fit, we will lock in a start date together.</p>
@@ -167,7 +161,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 Does filling out the form guarantee me a beta spot? Does it mean I am committing to anything?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <p>No.</p>
                 <p>Filling out the form simply starts the conversation.</p>
                 <p>It does not guarantee a beta spot, and it does not commit you to moving forward.</p>
@@ -179,7 +173,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 What are the payment options?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <p>Payment is split into two parts:</p>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>50% upfront to secure your spot</li>
@@ -192,7 +186,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 What will you need from me during the process?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <p>You will need to:</p>
                 <ul className="list-disc pl-5 space-y-2">
                   <li>Provide your questionnaire responses</li>
@@ -208,7 +202,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 Are client interviews required?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <p>No.</p>
                 <p>Audience research is primarily done through surveys.</p>
                 <p>Client interviews are optional and can be added if needed, scoped separately.</p>
@@ -219,7 +213,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 Can this still work if I am a writer or marketer myself?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <p>Yes, of course.</p>
                 <p>
                   Many writers benefit from an external strategic lens, especially for their own websites.
@@ -232,7 +226,7 @@ export default function FAQ() {
               <summary className="cursor-pointer text-lg md:text-xl font-semibold text-brandDark">
                 Should I work with a designer or a copywriter first?
               </summary>
-              <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed">
+              <div className="mt-4 space-y-3 text-md md:text-lg leading-relaxed">
                 <p>It is best to start with website messaging and copy before design.</p>
                 <p>
                   Your website&apos;s structure, flow, and page decisions should come from what needs to be

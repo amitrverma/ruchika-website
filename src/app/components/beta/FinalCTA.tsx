@@ -9,7 +9,7 @@ export default function FinalCTA() {
     <section id="final-cta" className="bg-white">
       <div className="container py-14 md:py-20 text-brandDark">
         <div className="max-w-3xl mx-auto space-y-6">
-          <p className="text-base md:text-lg leading-relaxed font-semibold text-brandSecondary">
+          <p className="text-md md:text-lg leading-relaxed font-semibold text-brandSecondary">
             If this resonates with where your business is:
           </p>
 
@@ -18,7 +18,7 @@ export default function FinalCTA() {
             copywriting.
           </p>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-md md:text-lg leading-relaxed">
             Two beta spots - 50% off - First half of 2026 launch.
           </p>
 
@@ -30,12 +30,12 @@ export default function FinalCTA() {
             CLICK HERE TO EXPRESS INTEREST IN THE BETA SPOT
           </button>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-md md:text-lg leading-relaxed">
             Two spots are available at the beta rate. Once the spots are filled,
             I will close the form.
           </p>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-md md:text-lg leading-relaxed">
             Sharing your details shows interest only. We will connect on a call
             before anything is finalized.
           </p>

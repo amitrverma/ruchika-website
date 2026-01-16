@@ -33,24 +33,24 @@ export default function MeetPartner() {
           </div>
 
           <div className="space-y-4">
-            <p className="text-base md:text-lg font-semibold text-brandSecondary">
+            <p className="text-md md:text-lg font-semibold text-brandSecondary">
               This is my foundation:
             </p>
             <div className="grid gap-4 md:grid-cols-3 border border-brandDark/40">
               <div className="bg-brandPrimary/60 p-4 border-b md:border-b-0 md:border-r border-brandDark/40">
-                <p className="text-sm uppercase tracking-wide text-brandSecondary">Education</p>
-                <p className="text-base md:text-lg leading-relaxed">Master&apos;s in marketing</p>
+                <p className="text-md uppercase tracking-wide text-brandSecondary">Education</p>
+                <p className="text-md md:text-lg leading-relaxed">Master&apos;s in marketing</p>
               </div>
               <div className="bg-brandPrimary/60 p-4 border-b md:border-b-0 md:border-r border-brandDark/40">
-                <p className="text-sm uppercase tracking-wide text-brandSecondary">Experience</p>
-                <p className="text-base md:text-lg leading-relaxed">
+                <p className="text-md uppercase tracking-wide text-brandSecondary">Experience</p>
+                <p className="text-md md:text-lg leading-relaxed">
                   Spent 9 years in corporate: writing and managing content across websites, emails,
                   and social media
                 </p>
               </div>
               <div className="bg-brandPrimary/60 p-4">
-                <p className="text-sm uppercase tracking-wide text-brandSecondary">Certification</p>
-                <p className="text-base md:text-lg leading-relaxed">
+                <p className="text-md uppercase tracking-wide text-brandSecondary">Certification</p>
+                <p className="text-md md:text-lg leading-relaxed">
                   Copyhackers certified copywriter: websites, emails, sales page, brand messaging
                   and voice
                 </p>
@@ -59,20 +59,20 @@ export default function MeetPartner() {
           </div>
 
           <div className="space-y-4">
-            <p className="text-base md:text-lg font-semibold text-brandSecondary">
+            <p className="text-md md:text-lg font-semibold text-brandSecondary">
               My point of view on website messaging and copywriting:
             </p>
             <div className="border border-brandDark/40 bg-brandPrimary/60 p-5 space-y-3">
               <div className="flex items-start gap-3">
                 <CheckSquare className="mt-1 h-5 w-5 shrink-0 text-green-600" />
-                <p className="text-base md:text-lg leading-relaxed">
+                <p className="text-md md:text-lg leading-relaxed">
                   Your website should be an end-of-funnel asset written for clients who are ready to
                   invest and deciding between options.
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <CheckSquare className="mt-1 h-5 w-5 shrink-0 text-green-600" />
-                <p className="text-base md:text-lg leading-relaxed">
+                <p className="text-md md:text-lg leading-relaxed">
                   This means your copy focuses on why you are the right choice (your expertise,
                   approach, results), not on convincing people they need your type of service at all.
                 </p>
@@ -80,7 +80,7 @@ export default function MeetPartner() {
             </div>
           </div>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-md md:text-lg leading-relaxed">
             If you are looking for a <span className="text-black font-semibold">professional and conversion-focused website copywriter</span> to
             support your website launch in the first half of 2026, I will be honored to help.
           </p>

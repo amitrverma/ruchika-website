@@ -87,7 +87,7 @@ export default function GuaranteeSection() {
               <div className="flex-shrink-0">{item.icon}</div>
               <div>
                 <h4 className="font-semibold text-brandDark mb-1">{item.title}</h4>
-                <p className=" text-sm md:text-base text-brandDark">{item.desc}</p>
+                <p className=" text-md md:text-base text-brandDark">{item.desc}</p>
               </div>
             </motion.div>
           ))}

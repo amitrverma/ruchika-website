@@ -86,7 +86,7 @@ export default function TestimonialSection() {
               <p className="font-semibold text-brandDark text-lg">
                 {current.name}
               </p>
-              <p className="text-sm text-brandDark/70">{current.title}</p>
+              <p className="text-md text-brandDark/70">{current.title}</p>
             </div>
           </div>
         </motion.div>

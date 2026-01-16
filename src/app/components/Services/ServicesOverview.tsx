@@ -106,7 +106,7 @@ export default function ServicesOverview() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-brandPrimary py-28">
+    <section className="relative overflow-hidden bg-brandPrimary py-28" id="servicesList">
       {/* === Decorative background gradient === */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white via-brandPrimary/60 to-brandPrimary opacity-60" />
 
@@ -126,7 +126,7 @@ export default function ServicesOverview() {
             value your thinking
           </span>
           <br />
-          <span className="text-base font-normal text-brandDark/80">
+          <span className="text-md font-normal text-brandDark/80">
             (not just your deliverables)
           </span>
         </motion.h2>
@@ -180,7 +180,7 @@ export default function ServicesOverview() {
                 {/* === WHAT’S INCLUDED === */}
                 {service.bullets && (
                   <div>
-                    <span className="inline-block px-3 py-1 rounded-full bg-brandSecondary/10 text-xs tracking-wider font-semibold text-brandSecondary/90">
+                    <span className="inline-block px-3 py-1 rounded-full bg-brandSecondary/10 text-md tracking-wider font-semibold text-brandSecondary/90">
                       WHAT’S INCLUDED
                     </span>
 
@@ -200,7 +200,7 @@ export default function ServicesOverview() {
                 {/* === WHO THIS IS FOR === */}
                 {service.extraBullets && (
                   <div>
-                    <span className="inline-block px-3 py-1 rounded-full bg-brandSecondary/10 text-xs tracking-wider font-semibold text-brandSecondary/90">
+                    <span className="inline-block px-3 py-1 rounded-full bg-brandSecondary/10 text-md tracking-wider font-semibold text-brandSecondary/90">
                       {service.extraHeading || "WHO THIS IS FOR"}
                     </span>
 
@@ -239,7 +239,7 @@ export default function ServicesOverview() {
         {/* === Custom Needs CTA === */}
         <motion.div
           variants={fadeUp}
-          className="mt-16 text-center text-sm text-brandDark/80 max-w-2xl mx-auto"
+          className="mt-16 text-center text-md text-brandDark/80 max-w-2xl mx-auto"
         >
           <p className="text-lg font-semibold">Need something different?</p>
           All my services are project-based and can be tailored to your specific

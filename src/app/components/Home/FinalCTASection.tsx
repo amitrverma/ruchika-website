@@ -53,7 +53,7 @@ const fadeUp: Variants = {
         >
           <h2 className="text-3xl md:text-4xl font-serif text-brandDark leading-snug">
             Let’s skip to the part where your copy
-            <br className="hidden sm:block" /> confidently attracts your right-fit clients
+            <br className="hidden sm:block" /> <span className="font-serif text-brandSecondary">confidently attracts </span>your right-fit clients
           </h2>
           <p className="text-lg text-brandDark/80 mt-4">
             This is how it works. Simple and easy
@@ -88,7 +88,7 @@ const fadeUp: Variants = {
                   <span className="opacity-80 group-hover:opacity-100 transition-opacity">
                     {s.icon}
                   </span>
-                  <h3 className="text-base font-semibold">{s.title}</h3>
+                  <h3 className="text-md font-semibold">{s.title}</h3>
                 </div>
                 <p className="text-md text-brandDark/80 leading-relaxed">{s.desc}</p>
               </div>
@@ -120,7 +120,7 @@ const fadeUp: Variants = {
                 </span>
               </CTAButton>
             </div>
-            <br/> <p className="text-brandSecondary text-sm text-center">Calendar updated weekly · No high-pressure sales · Clear next steps</p>
+            <br/> <p className="text-brandSecondary text-md text-center">Calendar updated weekly · No high-pressure sales · Clear next steps</p>
                          
           </div>
         </motion.div>

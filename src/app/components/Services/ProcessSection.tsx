@@ -135,11 +135,11 @@ export default function ProcessSection() {
                 <div className="bg-brandPrimary/30 p-2 rounded-full">
                   {p.icon}
                 </div>
-                <h4 className="font-semibold text-brandDark text-base">
+                <h4 className="font-semibold text-brandDark text-md">
                   {p.title}
                 </h4>
               </div>
-              <p className=" text-sm leading-relaxed">{p.desc}</p>
+              <p className=" text-md leading-relaxed">{p.desc}</p>
             </motion.div>
           ))}
         </div>

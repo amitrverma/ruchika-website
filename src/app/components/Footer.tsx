@@ -106,7 +106,7 @@ export default function Footer() {
         </div>
 
         {/* ----------- COPYRIGHT ----------- */}
-        <div className="mt-12 pt-6 border-t border-brandDark/10 text-center text-sm text-brandDark/80">
+        <div className="mt-12 pt-6 border-t border-brandDark/10 text-center text-md text-brandDark/80">
           <p>
             © {new Date().getFullYear()}{" "}
             <strong>Ruchika Copy Solutions</strong> · Made with clarity & chai ☕

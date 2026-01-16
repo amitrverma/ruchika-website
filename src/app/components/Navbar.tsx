@@ -40,7 +40,7 @@ export default function Navbar() {
     >
       {showAnnouncement && (
         <div className="w-full bg-gradient-to-r from-brandDark via-brandDark to-brandSecondary/70 text-brandPrimary shadow-[0_12px_24px_rgba(0,0,0,0.12)]">
-          <div className="container flex flex-col items-center gap-3 py-3 text-center text-sm md:py-4 md:text-base">
+          <div className="container flex flex-col items-center gap-3 py-3 text-center text-md md:py-4 md:text-base">
             <div className="flex flex-col items-center gap-1 md:flex-row md:gap-4">
               <span className="font-semibold">
                 Now inviting beta clients for Website Messaging &amp; Copywriting

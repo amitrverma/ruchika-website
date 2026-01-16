@@ -3,7 +3,7 @@ import { CTAButton } from "../ui/CTAButton";
 
 export default function Hero() {
   return (
-    <section className="relative bg-brandPrimary pb-30 pt-44 md:pt-58">
+    <section className="relative bg-brandPrimary pb-30 pt-60 md:pt-58">
       <div className="container mx-auto grid md:grid-cols-[3fr_2fr] items-center gap-10 md:gap-16">
 
         {/* === MOBILE IMAGE (hidden on desktop) === */}
@@ -20,7 +20,7 @@ export default function Hero() {
         {/* === Left — Text === */}
         <div className="text-left space-y-5 text-brandSecondary px-4 md:px-0">
 
-          <p className="font-semibold text-sm md:text-base">
+          <p className="font-semibold text-md md:text-base">
             Messaging-first copywriter for websites, emails & sales pages.
           </p>
 
@@ -35,15 +35,15 @@ export default function Hero() {
             in your space
           </h1>
 
-          <p className="text-base md:text-xl leading-relaxed max-w-xl md:mt-2">
+          <p className="text-md md:text-xl leading-relaxed max-w-xl md:mt-2">
             Audience research. Clear messaging. Your authentic voice.
           </p>
 
-          <p className="text-base md:text-xl text-brandDark font-bold leading-relaxed max-w-xl">
+          <p className="text-md md:text-xl text-brandDark font-bold leading-relaxed max-w-xl">
             So you attract right-fit clients who are ready to invest.
           </p>
 
-          <p className="text-sm md:text-base mt-1">Prefer to talk, not read?</p>
+          <p className="text-md md:text-base mt-1">Prefer to talk, not read?</p>
 
           <CTAButton
             href="/contact"
