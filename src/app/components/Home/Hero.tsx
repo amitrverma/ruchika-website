@@ -9,8 +9,8 @@ export default function Hero() {
         {/* === MOBILE IMAGE (hidden on desktop) === */}
         <div className="relative w-full h-64 mb-6 md:hidden">
           <Image
-            src="/assets/hero-image.png"
-            alt="Ruchika Copy Solutions - strategic copywriting"
+            src="/assets/hero-image-optimized.jpg"
+            alt="Ruchika in front of flowering greenery"
             fill
             className="object-cover rounded-2xl shadow-md"
             priority
@@ -21,29 +21,30 @@ export default function Hero() {
         <div className="text-left space-y-5 text-brandSecondary px-4 md:px-0">
 
           <p className="font-semibold text-md md:text-base">
-            Messaging-first copywriter for websites, emails & sales pages.
+            For service providers at the cusp of growth
           </p>
 
           <h1 className="
             text-2xl leading-snug font-serif text-brandDark 
             md:text-5xl
           ">
-            Strategic copywriting for <br className="hidden md:block" />
-            service providers on the cusp <br className="hidden md:block" />
-            of growth – Positioning you as <br className="hidden md:block" />
-            <span className="font-semibold underline whitespace-nowrap">the obvious choice</span>{" "}
-            in your space
+            Strategic copywriting <br className="hidden md:block" />
+            that attracts <br className="hidden md:block" />
+            <span className="font-semibold whitespace-nowrap">right-fit clients</span>{" "}
+            <br className="hidden md:block" />
+            <span className="font-semibold whitespace-nowrap">ready to invest</span>
           </h1>
 
           <p className="text-md md:text-xl leading-relaxed max-w-xl md:mt-2">
-            Audience research. Clear messaging. Your authentic voice.
+            I start with your MESSAGING - getting clear on your right-fit
+            clients, how you&apos;re positioned, and what sets you apart.
           </p>
 
           <p className="text-md md:text-xl text-brandDark font-bold leading-relaxed max-w-xl">
-            So you attract right-fit clients who are ready to invest.
+            Then bring it to life through COPY that makes you the obvious choice.
           </p>
 
-          <p className="text-md md:text-base mt-1">Prefer to talk, not read?</p>
+          <p className="text-md md:text-base mt-8">Prefer to talk, not read?</p>
 
           <CTAButton
             href="/contact"
@@ -57,8 +58,8 @@ export default function Hero() {
         {/* === Desktop Image — untouched === */}
         <div className="relative w-full h-full hidden md:block">
           <Image
-            src="/assets/hero-image.png"
-            alt="Ruchika Copy Solutions - strategic copywriting"
+            src="/assets/hero-image-optimized.jpg"
+            alt="Ruchika in front of flowering greenery"
             fill
             sizes="(min-width: 1024px) 40vw, (min-width: 768px) 50vw, 100vw"
             className="object-cover rounded-2xl shadow-md"
