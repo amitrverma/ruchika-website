@@ -30,6 +30,12 @@ export default function MessagingSection() {
           viewport={{ once: true }}
           className="space-y-5  text-lg leading-relaxed"
         >
+                    <li className="flex items-start gap-3">
+            <span className="mt-2 w-2 h-2 bg-brandSecondary rounded-full flex-shrink-0 "></span>
+            <span>
+              You want a clearer offer, stronger messaging, and social content that attracts better-fit clients.
+            </span>
+          </li>
           <li className="flex items-start gap-3">
             <span className="mt-2 w-2 h-2 bg-brandSecondary rounded-full flex-shrink-0 "></span>
             <span>

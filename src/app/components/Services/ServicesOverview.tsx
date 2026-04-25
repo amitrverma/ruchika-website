@@ -8,31 +8,23 @@ import { CTAButton } from "../ui/CTAButton";
 export default function ServicesOverview() {
   const services = [
     {
-      title: "Brand Messaging & Tone of Voice Guide",
+      title: "The Reset: Offer + Messaging + Social Content",
       icon: <Megaphone className="w-8 h-8 text-brandSecondary" />,
       description:
-        "This is the foundation, where we get clear on who you are, who you serve, and how you communicate, so all your copy and content stays cohesive and strategic.",
+        "For service providers whose business has moved well beyond the early stage. Your work and results speak for themselves, but the enquiries aren't coming in the way they should.\n\nChances are, your offer and the messaging around it need refinement.\n\nI help you refine your offer, strengthen the messaging around it, and create strategic social content that attracts right-fit clients who are ready to invest.",
       bullets: [
-        "Brand foundations (values, mission, brand promise)",
-        "Positioning and differentiation",
-        "Right-fit client clarity",
-        "Voice and messaging guide (voice, tone, and key phrases)",
-        "Content pillars",
-        "Delivered as a digital brand booklet in Canva",
+        "Offer Structure",
+        "Messaging Foundation",
+        "Strategic Social Media Content",
+        "Instagram bio / LinkedIn updates where relevant",
       ],
-      extraHeading: "This is for you if you're:",
-      extraBullets: [
-        "Starting out and want your foundation rock solid from day one",
-        "Scaling up and need your messaging to match where your business is now",
-        "Pivoting and need your message and voice crystal clear for your new direction",
-      ],
-      extraDescription:
-        "This becomes your go-to resource for all content creation — whether you're writing it yourself or getting someone else on your team to write for you.\n\nWith clarity on your positioning, POV, and what sets you apart in your space, everything you create calls in the right-fit people.",
-        investment: "Investment starts at $650",
+      investment: "Total Investment: ₹32,000 ($375 USD)",
+      ctaLabel: "VIEW DETAILS",
+      ctaHref: "/services/the-reset",
     },
 
     {
-      title: "Website Copywriting",
+      title: "Website Messaging & Copywriting",
       icon: <Globe className="w-8 h-8 text-brandSecondary" />,
       description:
         "Strategic, conversion-focused website copywriting that positions you as the expert, speaks directly to your right-fit client, and turns curious visitors into confident buyers.",
@@ -45,7 +37,9 @@ export default function ServicesOverview() {
       ],
       extraDescription:
         "Every website is custom-scoped based on your specific needs – whether that's a one-offer and one-audience type site or a more complex structure with multiple service offerings and audience types.",
-        investment: "Investment starts at $850",
+      investment: "Projects start at ₹45,000 ($500 USD)",
+      ctaLabel: "VIEW DETAILS",
+      ctaHref: "/services/website-messaging-copywriting",
     },
 
     {
@@ -69,7 +63,7 @@ export default function ServicesOverview() {
       ],
       extraDescription:
         "Each project is tailored to your audience and goals – because effective email strategy isn't one-size-fits-all.",
-        investment: "Investment starts at $800",
+      investment: "Projects start at ₹30,000 ($350 USD)",
     },
 
     {
@@ -84,7 +78,7 @@ export default function ServicesOverview() {
       ],
       extraDescription:
         "Sales page lengths are customized based on your offer complexity and where your audience is in their decision-making journey.",
-      investment: "Investment starts at $1000",
+      investment: "Projects start at ₹35,000 ($400 USD)",
     },
   ];
 
@@ -228,8 +222,8 @@ export default function ServicesOverview() {
 
               {/* CTA */}
               <div className="mt-10">
-                <CTAButton href="/contact" size="sm">
-                  INQUIRE HERE
+                <CTAButton href={service.ctaHref || "/contact"} size="sm">
+                  {service.ctaLabel || "INQUIRE HERE"}
                 </CTAButton>
               </div>
             </motion.div>

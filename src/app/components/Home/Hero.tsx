@@ -3,8 +3,8 @@ import { CTAButton } from "../ui/CTAButton";
 
 export default function Hero() {
   return (
-    <section className="relative bg-brandPrimary pb-30 pt-60 md:pt-58">
-      <div className="container mx-auto grid md:grid-cols-[3fr_2fr] items-center gap-10 md:gap-16">
+    <section className="relative bg-brandPrimary pb-30 pt-36 md:pt-36">
+      <div className="container mx-auto grid md:grid-cols-[3fr_2fr] items-center gap-10 md:gap-8">
 
         {/* === MOBILE IMAGE (hidden on desktop) === */}
         <div className="relative w-full h-64 mb-6 md:hidden">
@@ -29,7 +29,7 @@ export default function Hero() {
             md:text-5xl
           ">
             Strategic copywriting <br className="hidden md:block" />
-            that attracts <br className="hidden md:block" />
+            that help you attract <br className="hidden md:block" />
             <span className="font-semibold whitespace-nowrap">right-fit clients</span>{" "}
             <br className="hidden md:block" />
             <span className="font-semibold whitespace-nowrap">ready to invest</span>
