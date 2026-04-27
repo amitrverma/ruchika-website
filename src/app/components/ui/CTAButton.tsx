@@ -9,6 +9,8 @@ type CTAButtonProps = {
   variant?: "primary" | "outline" | "ghost";
   size?: "sm" | "md" | "lg";
   className?: string;
+  target?: string;
+  rel?: string;
 };
 
 const baseStyles =
@@ -34,6 +36,8 @@ export function CTAButton({
   variant = "primary",
   size = "md",
   className,
+  target,
+  rel,
 }: CTAButtonProps) {
   const classes = [baseStyles, sizeStyles[size], variantStyles[variant], className]
     .filter(Boolean)
@@ -43,6 +47,8 @@ export function CTAButton({
     <Link
       href={href}
       className={classes}
+      target={target}
+      rel={rel}
     >
       {children}
     </Link>

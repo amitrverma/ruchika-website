@@ -6,6 +6,11 @@ import Link from "next/link";
 import { CTAButton } from "../ui/CTAButton";
 
 export default function ServicesOverview() {
+  const resetDocHref =
+    "https://docs.google.com/document/d/1WEU9-6zsuIdcnGIjquHvpN99WcbayhbaNHBv7AemUe4/edit?usp=sharing";
+  const websiteMessagingDocHref =
+    "https://docs.google.com/document/d/1CmuZ00y4pWoMuQ5rX0JvEZyNIZydeLIVAeXLvZi7o38/edit?usp=sharing";
+
   const services = [
     {
       title: "The Reset: Offer + Messaging + Social Content",
@@ -20,7 +25,9 @@ export default function ServicesOverview() {
       ],
       investment: "Total Investment: ₹32,000 ($375 USD)",
       ctaLabel: "VIEW DETAILS",
-      ctaHref: "/services/the-reset",
+      ctaHref: resetDocHref,
+      ctaTarget: "_blank",
+      ctaRel: "noopener noreferrer",
     },
 
     {
@@ -39,7 +46,9 @@ export default function ServicesOverview() {
         "Every website is custom-scoped based on your specific needs – whether that's a one-offer and one-audience type site or a more complex structure with multiple service offerings and audience types.",
       investment: "Projects start at ₹45,000 ($500 USD)",
       ctaLabel: "VIEW DETAILS",
-      ctaHref: "/services/website-messaging-copywriting",
+      ctaHref: websiteMessagingDocHref,
+      ctaTarget: "_blank",
+      ctaRel: "noopener noreferrer",
     },
 
     {
@@ -222,7 +231,12 @@ export default function ServicesOverview() {
 
               {/* CTA */}
               <div className="mt-10">
-                <CTAButton href={service.ctaHref || "/contact"} size="sm">
+                <CTAButton
+                  href={service.ctaHref || "/contact"}
+                  size="sm"
+                  target={service.ctaTarget}
+                  rel={service.ctaRel}
+                >
                   {service.ctaLabel || "INQUIRE HERE"}
                 </CTAButton>
               </div>
