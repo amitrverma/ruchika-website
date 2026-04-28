@@ -23,7 +23,7 @@ export default function ServicesOverview() {
         "Strategic Social Media Content",
         "Instagram bio / LinkedIn updates where relevant",
       ],
-      investment: "Total Investment: ₹32,000 ($375 USD)",
+      investment: "Investment starts at ₹32,000 ($375 USD)",
       ctaLabel: "VIEW DETAILS",
       ctaHref: resetDocHref,
       ctaTarget: "_blank",
@@ -44,7 +44,7 @@ export default function ServicesOverview() {
       ],
       extraDescription:
         "Every website is custom-scoped based on your specific needs – whether that's a one-offer and one-audience type site or a more complex structure with multiple service offerings and audience types.",
-      investment: "Projects start at ₹45,000 ($500 USD)",
+      investment: "Investment starts at ₹45,000 ($500 USD)",
       ctaLabel: "VIEW DETAILS",
       ctaHref: websiteMessagingDocHref,
       ctaTarget: "_blank",
@@ -72,7 +72,7 @@ export default function ServicesOverview() {
       ],
       extraDescription:
         "Each project is tailored to your audience and goals – because effective email strategy isn't one-size-fits-all.",
-      investment: "Projects start at ₹30,000 ($350 USD)",
+      investment: "Investment starts at ₹30,000 ($350 USD)",
     },
 
     {
@@ -87,7 +87,7 @@ export default function ServicesOverview() {
       ],
       extraDescription:
         "Sales page lengths are customized based on your offer complexity and where your audience is in their decision-making journey.",
-      investment: "Projects start at ₹35,000 ($400 USD)",
+      investment: "Investment starts at ₹35,000 ($400 USD)",
     },
   ];
 
