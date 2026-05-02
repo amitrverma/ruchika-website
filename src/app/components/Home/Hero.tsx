@@ -25,8 +25,8 @@ export default function Hero() {
           </p>
 
           <h1 className="
-            text-2xl leading-snug font-serif text-brandDark 
-            md:text-5xl
+            text-2xl leading-[1.2] font-serif text-brandDark 
+            md:text-5xl md:leading-[1.12]
           ">
             Strategic copywriting <br className="hidden md:block" />
             that help you attract <br className="hidden md:block" />

@@ -7,8 +7,8 @@ import { CTAButton } from "../ui/CTAButton";
 export default function ServicesOverviewSection() {
   const services = [
     {
-      title: "Brand Messaging & Tone of Voice Guide",
-      desc: "This guide helps you get clear and confident in your messaging before any copy is written. It nails down your positioning, who you serve, what you stand for, and how your brand voice shows up in your copy. It’s the foundation for everything else: your website, emails, and social content.",
+      title: "The Reset: Offer + Messaging + Social Content",
+      desc: "For scaling founders who are showing up consistently on social media but not attracting the right inquiries. Most assume it is a visibility or sales problem. It is not. It starts with the offer and the messaging underneath it.\n\nI help you identify the strongest-fit client for your offer and clarify the problem it solves for them. Then package the offer, build the messaging around it, and write content that tests whether it is landing with the right people.",
       icon: <Megaphone className="w-8 h-8 text-brandSecondary" />,
     },
     {
