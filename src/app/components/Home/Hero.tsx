@@ -29,7 +29,7 @@ export default function Hero() {
             md:text-5xl md:leading-[1.12]
           ">
             Strategic copywriting <br className="hidden md:block" />
-            that help you attract <br className="hidden md:block" />
+            that helps you attract <br className="hidden md:block" />
             <span className="font-semibold whitespace-nowrap">right-fit clients</span>{" "}
             <br className="hidden md:block" />
             <span className="font-semibold whitespace-nowrap">ready to invest</span>
